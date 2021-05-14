@@ -21,7 +21,6 @@ if(ENVIRONMENT == 'development') {
 	$config['dbuser'] = 'isolutio_bucker';
 	$config['dbpass'] = 'Reo$+vZ-#=pZ';
 }
-}
 
 $config['facebook'] = "";
 $config['twitter'] = "";
