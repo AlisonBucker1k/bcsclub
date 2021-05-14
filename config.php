@@ -16,10 +16,11 @@ if(ENVIRONMENT == 'development') {
 } else {
 	// define("PATH_SITE", "media/");
 	define("BASE_URL", "https://bsbclub.com.br/");
-	$config['dbname'] = 'bsbclubc_blog';
+	$config['dbname'] = 'isolutio_club';
 	$config['host'] = 'localhost';
-	$config['dbuser'] = 'bsbclubc_bucker';
-	$config['dbpass'] = 'Bm}YSYrkw_a{';
+	$config['dbuser'] = 'isolutio_bucker';
+	$config['dbpass'] = 'Reo$+vZ-#=pZ';
+}
 }
 
 $config['facebook'] = "";
