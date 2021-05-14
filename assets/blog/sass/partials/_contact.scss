@@ -1,0 +1,261 @@
+/*====================================================
+    contact-area
+ ====================================================*/
+.label-text {
+  font-size: $font-size-14;
+  color: $theme-color;
+  font-weight: $font-weight-semi-bold;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.form-box {
+  .form-group {
+    position: relative;
+    .form-icon {
+      position: absolute;
+      top: 16px;
+      left: 15px;
+      color: $theme-color-4;
+      font-size: $font-size-18;
+    }
+    .form-icon-2 {
+      top: 12px;
+    }
+    .dollar-icon {
+      top: 8px;
+      font-size: $font-size-16;
+    }
+    .input-btn-append {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media #{$small_mobile_two} {
+        position: inherit;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+  .form-control {
+    height: auto;
+    line-height: inherit;
+    padding: 12px 20px 12px 40px;
+    font-size: $font-size-15;
+    color: $theme-color;
+    border: 1px solid rgba(128, 137, 150, 0.3);
+    font-weight: $font-weight-medium;
+    @include transition(0.3s);
+    &[readonly] {
+      background-color: $white;
+    }
+    &:focus {
+      border-color: rgba(128, 137, 150, 0.6);
+      @include box-shadow(0 0 0 0);
+    }
+    &::-webkit-input-placeholder {
+      color: $theme-color-4;
+    }
+    &:-ms-input-placeholder {
+      color: $theme-color-4;
+    }
+    &::placeholder {
+      color: $theme-color-4;
+    }
+  }
+  .form-control-sm {
+    padding: 7px 14px 7px 40px;
+  }
+  .form-control-long {
+    width: 360px;
+     @media #{$tab_device} {
+      width: 100%;
+    }
+    @media #{$large_mobile} {
+      width: 100%;
+    }
+    @media #{$small_mobile} {
+      width: 100%;
+    }
+  }
+  .form-control-styled {
+    border-left: 5px solid $theme-color-2;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    @include box-shadow(0 4px 40px rgba(0,0,0,.12));
+    &:focus {
+      border-left-color: $theme-color-3;
+      @include box-shadow(0 4px 40px rgba(0,0,0,.12));
+    }
+  }
+  .message-control {
+    height: 160px;
+  }
+}
+/*======== price-range-wrap =======*/
+.price-range-wrap {
+  .form-control-sm {
+    width: 120px;
+  }
+}
+/*======== price-range-wrap-2 =======*/
+.price-range-wrap-2 {
+  .form-control-sm {
+    width: 96px;
+  }
+}
+/*============ Booking Page =========*/
+.payment-logo {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+}
+.payment-tab-toggle {
+  padding-right: 20px;
+  padding-left: 20px;
+  > label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-weight: $font-weight-semi-bold;
+    color: $theme-color;
+    &:before {
+      background-color: $white;
+      border: 2px solid $color-2;
+      @include border-radius(50%);
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      @include transition(0.3s);
+    }
+    &:after {
+      background-color: $color-5;
+      @include border-radius(50%);
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 23px;
+      width: 8px;
+      height: 8px;
+      @include transition(0.3s);
+      @include transform(scale(0));
+    }
+  }
+  > input {
+    position: absolute;
+    visibility: hidden;
+    &:checked ~ label {
+     &:before {
+       border-color: $color-5
+     }
+     &:after {
+        background-color: $color-5;
+        @include transform(scale(1));
+     }
+    }
+  }
+}
+/*====== payment-tab =======*/
+.payment-tab {
+  background-color: $white;
+  max-height: 55px;
+  overflow: hidden;
+  position: relative;
+  @include transition(0.5s);
+  width: 100%;
+  @include border-radius(8px);
+  @include box-shadow(0 10px 40px rgba(82, 85, 90, 0.1));
+  margin-bottom: 15px;
+  &.is-active {
+    max-height: 400px;
+    .payment-tab-content {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.payment-tab-content {
+  padding: 0 20px 20px 20px;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(0.2s);
+}
+/*===== coupon-widget =======*/
+.coupon-widget {
+  .theme-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 50px;
+   @include border-radius(0 4px 4px 0);
+  }
+}
+/*====================================================
+    invoice-area
+ ====================================================*/
+.my-table {
+  table {
+    tr {
+      th {
+        color: $theme-color;
+        font-weight: $font-weight-semi-bold;
+        border-bottom-width: 1px;
+      }
+      th,
+      td {
+        padding: 10px 20px;
+      }
+      td {
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+  .invoice-table-two {
+    margin-bottom: 0;
+    tr {
+      th,
+      td {
+        border-top: none;
+        padding: 5px 0 5px 0;
+      }
+      td {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.coming-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coming-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $theme-color;
+    opacity: 0.7;
+    z-index: -1;
+  }
+}

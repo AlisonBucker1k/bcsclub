@@ -1,0 +1,151 @@
+/*====================================================
+    pricing-area
+ ====================================================*/
+.price-item {
+  @include border-radius(8px);
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  @include transition(0.3s);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  &:hover {
+    .price-head {
+      &:before {
+        bottom: -120px;
+      }
+      &:after {
+        left: -170px;
+      }
+    }
+  }
+}
+.price-head {
+  background-color: $gray;
+  padding-top: 40px;
+  padding-bottom: 105px;
+  position: relative;
+  color: $white;
+  overflow: hidden;
+  text-align: center;
+  @include border-radius(8px 8px 0 0);
+  @include transition(0.3s);
+  .ribbon {
+    padding-right: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 24px;
+    left: -35px;
+    @include transform(rotate(-45deg));
+  }
+  .price__title {
+    font-size: $font-size-28;
+    font-weight: $font-weight-semi-bold;
+    color: $white;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background-color: $white;
+    @include border-radius(50%);
+    opacity: 0.05;
+    @include transition(0.3s);
+  }
+  &:after {
+    bottom: 20px;
+    right: auto;
+    left: -200px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.price-box {
+  width: 140px;
+  height: 140px;
+  @include border-radius(50%);
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  margin-top: -75px;
+  position: relative;
+  text-align: center;
+  .price__text {
+    font-size: $font-size-30;
+    font-weight: $font-weight-semi-bold;
+  }
+  .price__text-meta {
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+    display: block;
+  }
+}
+
+.price-list {
+  @include border-radius(8px);
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  padding: 30px 30px 50px 30px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  li {
+    + li {
+      border-top: 1px solid rgba(127, 136, 150, 0.1);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+  }
+}
+
+.price-btn-box {
+  margin-top: -23px;
+}
+.recommended-wrap {
+  font-weight: $font-weight-semi-bold;
+  i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    @include border-radius(50%);
+    background-color: $theme-color-5;
+    color: $white;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $font-size-30;
+    margin-bottom: 10px;
+  }
+}
+
+.pricing-active {
+  margin-top: -30px;
+  @media #{$tab_device} {
+    margin-top: 0;
+  }
+  @media #{$large_mobile} {
+    margin-top: 0;
+  }
+  @media #{$small_mobile} {
+    margin-top: 0;
+  }
+  .price-head {
+    background-color: $theme-color-5;
+  }
+  .price-content {
+    .price-number {
+      &:before {
+        background-color: $theme-color-5;
+      }
+    }
+  }
+  &:hover {
+    .price-head,
+    .price-number:before {
+      background-color: $theme-color-5;
+    }
+  }
+}

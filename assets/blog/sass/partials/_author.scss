@@ -1,0 +1,117 @@
+/*====================================================
+    author-area
+ ====================================================*/
+.user-thumb {
+  width: 55px;
+  height: 55px;
+  @include border-radius(50%);
+  border: 3px solid $white;
+  @include box-shadow(0 4px 40px rgba(82, 85, 90, 0.2));
+  img {
+    @include border-radius(50%);
+    width: 100%;
+    height: 100%;
+  }
+}
+.user-thumb-xl {
+  width: 132px;
+  height: 132px;
+}
+.user-thumb-lg {
+  width: 80px;
+  height: 80px;
+}
+.user-thumb-md {
+  width: 65px;
+  height: 65px;
+}
+.user-thumb-sm {
+  width: 40px;
+  height: 40px;
+}
+/*==== user-card ====*/
+.user-card {
+  background-color: $white;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  @include border-radius(8px);
+  padding: 30px 20px 30px 20px;
+  position: relative;
+  @include transition(0.3s);
+  margin-bottom: 30px;
+  &:hover {
+    @include transform(translateY(-3px));
+  }
+}
+
+.user-bio{
+  position: relative;
+  .author__title {
+    text-transform: capitalize;
+    color: $theme-color;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-20;
+  }
+  .author__meta {
+    font-weight: $font-weight-medium;
+    color: $theme-color-4;
+  }
+}
+.user-module-list {
+  border-top: 1px solid rgba(127, 137, 150, 0.1);
+  border-bottom: 1px solid rgba(127, 137, 150, 0.1);
+  li {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-14;
+    padding: 10px;
+    + {
+      li {
+        border-left: 1px solid rgba(127, 137, 150, 0.1);
+      }
+    }
+    .user-module-text {
+      display: block;
+      color: $theme-color;
+    }
+  }
+}
+
+
+/*====================================================
+    user-profile-area
+ ====================================================*/
+.user-content {
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  @include border-radius(2px);
+  background-color: $white;
+  @include box-shadow(0 0 18px 0 rgba(0,0,0,.04));
+  padding: 30px;
+  @media #{$tab_device} {
+    margin-bottom: 50px;
+  }
+  @media #{$large_mobile} {
+    margin-bottom: 50px;
+  }
+  @media #{$small_mobile} {
+    margin-bottom: 50px;
+  }
+  .user-item {
+    .user__label {
+      font-size: $font-size-16;
+      color: $theme-color-4;
+      font-weight: $font-weight-medium;
+      margin-bottom: 5px;
+    }
+    .userlist__number {
+      font-size: $font-size-18;
+      font-weight: $font-weight-bold;
+      color: $theme-color;
+    }
+  }
+  .user-details {
+    .author-review {
+      margin-right: 15px;
+      border-right: 1px solid #ddd;
+      padding-right: 15px;
+    }
+  }
+}

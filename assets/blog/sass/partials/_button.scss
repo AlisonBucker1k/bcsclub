@@ -1,0 +1,202 @@
+/*=== theme-btn ====*/
+.theme-btn {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-16;
+  color: $theme-color;
+  line-height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $gray;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  @include border-radius(4px);
+  @include transition(0.3s);
+  z-index: 1;
+  &:hover {
+    color: $white;
+  }
+}
+.theme-btn-primary {
+  font-weight: $font-weight-medium;
+  background-color: $color-20;
+  border-color: $color-20;
+  color: $white;
+  &:hover {
+    background-color: $color-19;
+    border-color: $color-19;
+    color: $white;
+  }
+}
+.btn-text {
+  color: $theme-color-4;
+  font-weight: $font-weight-semi-bold;
+  @include transition(0.3s);
+  position: relative;
+  display: inline-block;
+  .icon {
+    position: absolute;
+    right: -20px;
+    top: 6px;
+    @include transition(0.3s);
+  }
+  &:hover {
+    color: $theme-color-2;
+    .icon {
+      right: -25px;
+    }
+  }
+}
+
+.btn-transparent {
+  background-color: rgba(40, 213, 167, 0.1);
+  color: $color-4;
+  @include box-shadow(none);
+  &:hover {
+    background-color: $color-4;
+    color: $white;
+  }
+}
+
+.gradient-btn {
+  //background: linear-gradient(to right, #ff6b6b, #ffbb3d);
+  background: linear-gradient(270deg, #9f8fff, #7b68ee);
+  position: relative;
+  color: $white;
+  @include box-shadow(0 5px 25px rgba(123,104,238,.3));
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: linear-gradient(270deg, #7b68ee, #9f8fff);
+    @include border-radius(4px);
+    @include transition(0.4s);
+    z-index: -1;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.offer-btn {
+  background: $white;
+  color: $theme-color-2;
+  @include box-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+  font-size: $font-size-24;
+  font-weight: $font-weight-extra-bold;
+  padding: 8px 30px;
+  @include border-radius(12px);
+  @media #{$small_mobile_two} {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: $font-size-21;
+  }
+}
+/*==== collapse-btn =====*/
+.collapse-btn {
+  font-weight: $font-weight-medium;
+  color: $theme-color-4;
+  @include transition(0.3s);
+  &[aria-expanded="true"] {
+    .collapse-btn-show {
+      display: inline-block;
+    }
+    .collapse-btn-hide {
+      display: none;
+    }
+  }
+   &[aria-expanded="false"] {
+     .collapse-btn-show {
+       display: none;
+     }
+  }
+  &:focus {
+    @include box-shadow(none);
+  }
+  &:hover {
+    color: $theme-color;
+  }
+}
+/*====== btn-gray =======*/
+.btn-gray {
+  background-color: $white;
+  color: $theme-color-4;
+  padding: 7px 14px;
+  font-size: $font-size-16;
+  text-align: center;
+  @include border-radius(4px);
+  display: inline-block;
+  @include transition(0.3s);
+  border: 1px solid rgba(128, 137, 150, 0.2);
+  font-weight: $font-weight-medium;
+  &:hover {
+    color: $theme-color;
+  }
+  .active {
+    background-color: $theme-color-5;
+    color: $white;
+    border: $theme-color-5;
+  }
+}
+.btn-gray-lg {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-gray-sm {
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.open-filter-btn {
+  &.active {
+    background-color: $theme-color-5;
+    color: $white;
+    border-color: $theme-color-5;
+    .la-clock {
+      &::before {
+        content: "\f00c";
+      }
+    }
+  }
+}
+
+/*======== dot-action-btn ========*/
+.dot-action-btn {
+  background-color: transparent;
+  font-size: $font-size-25;
+  color: $theme-color-4;
+  @include transition(0.3s);
+  &:hover {
+    color: $theme-color;
+  }
+}
+
+.button-warning {
+  background-color: $color-5 !important;
+}
+.button-danger {
+  background-color: $theme-color-2 !important;
+}
+.fixed-btn {
+  position: fixed;
+  top: 30%;
+  right: -70px;
+  z-index: 1024;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  @include box-shadow(0 10px 20px rgba(82, 85, 90, 0.1));
+  @include transition(0.3s);
+  font-weight: $font-weight-semi-bold;
+  &:hover {
+    right: -1px;
+  }
+}

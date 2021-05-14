@@ -1,0 +1,66 @@
+/*===== tag-list =====*/
+.tag-list {
+  li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+    font-weight: $font-weight-medium;
+    margin-right: 4px;
+    a {
+      background-color: $white;
+      color: $theme-color-4;
+      @include border-radius(4px);
+      @include transition(0.3s);
+      padding: 6px 15px 6px 24px;
+      display: block;
+      @include box-shadow(0 0 20px rgba(82, 85, 90, 0.1));
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 12px;
+        width: 6px;
+        height: 6px;
+        background-color: rgba(51,63,87, 0.2);
+        @include border-radius(50%);
+        @include transform(translateY(-50%));
+        @include transition(0.3s);
+      }
+    }
+    &:hover {
+      a {
+        color: $theme-color;
+        &:after {
+          background-color: $theme-color;
+        }
+      }
+    }
+  }
+}
+/*===== tag-list-sm =====*/
+.tag-list-sm {
+  li {
+    font-size: $font-size-14;
+    a {
+      padding: 2px 14px 2px 24px;
+    }
+  }
+}
+/*===== tag-items =====*/
+.tag-items {
+  @media #{$large_mobile} {
+    display: block !important;
+  }
+  @media #{$small_mobile} {
+    display: block !important;
+  }
+  .tag-list {
+    @media #{$large_mobile} {
+     margin-bottom: 15px;
+    }
+    @media #{$small_mobile} {
+     margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/*====================================================
+    funfact-area
+ ====================================================*/
+.intro-bg {
+  background-image: url("../images/funfact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* counter item */
+.counter-item {
+  margin-bottom: 30px;
+  .counter-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    svg {
+      width: 30px;
+    }
+  }
+  .counter-content {
+    text-align: left;
+  }
+  .counter__number {
+    font-size: $font-size-35;
+    font-weight: $font-weight-bold;
+  }
+  .counter__title {
+    font-size: $font-size-17;
+    font-weight: $font-weight-medium;
+    color: rgba(51, 63, 87, 0.7);
+  }
+}
+/* counter-item-layout-2 */
+.counter-item-layout-2 {
+  text-align: center;
+  .counter-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, rgba(102, 170, 255, 0.25), rgba(255, 202, 197, 0.25));
+    @include transition(0.2s);
+  }
+  .counter-content {
+    text-align: center;
+  }
+  .counter__title {
+    font-weight: $font-weight-semi-bold;
+  }
+  &:hover {
+    .counter-icon {
+      @include transform(translateY(-4px));
+    }
+  }
+}
+
+/*======= countdown-item =======*/
+.countdown-box {
+  @media #{$small_mobile_four} {
+    padding-bottom: 0;
+  }
+}
+/*======= countdown-item =======*/
+.countdown-item {
+  margin-right: 60px;
+  position: relative;
+  @media #{$small_mobile_four} {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  span {
+    display: block;
+    color: $white;
+  }
+  .count-text {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: $font-size-15;
+    margin-bottom: 30px;
+  }
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: $font-size-70;
+    font-weight: $font-weight-bold;
+    @media #{$large_mobile_two} {
+      font-size: $font-size-30;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: ":";
+    top: 51px;
+    right: -38px;
+    color: $white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-40;
+    @media #{$small_mobile_four} {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+/*======== comment ========*/
+.comment {
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+  @media #{$large_mobile} {
+    flex-direction: column;
+  }
+  @media #{$small_mobile} {
+    flex-direction: column;
+  }
+}
+/*======== reviews-list ========*/
+.reviews-list {
+  .comment {
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+/*========= meta-data =========*/
+.meta-data {
+  position: relative;
+  .comment__title {
+    font-weight: $font-weight-semi-bold;
+    color: $theme-color;
+    font-size: $font-size-18;
+    a {
+      color: $theme-color;
+      @include transition(0.3s);
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+  }
+  .comment__meta {
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+    position: relative;
+    + .comment__meta {
+      padding-left: 12px;
+      margin-left: 5px;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        @include border-radius(50%);
+        background-color: rgba(128, 137, 150, 0.6);
+      }
+    }
+  }
+}
+/*========= comment-body =========*/
+.comment-body {
+  margin-left: 18px;
+  @media #{$large_mobile} {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  @media #{$small_mobile} {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .comment-desc {
+    font-size: $font-size-15;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-weight: $font-weight-medium;
+  }
+}
+.review-photos {
+  a {
+    max-width: 23%;
+    margin: 0 5px 10px 5px;
+    img {
+      @include border-radius(4px);
+      width: 100%;
+    }
+  }
+}
+.review-photos-2 {
+  a {
+    max-width: 10%;
+    @media #{$large_mobile} {
+      max-width: 23%;
+    }
+     @media #{$small_mobile} {
+      max-width: 23%;
+    }
+  }
+}
+
+/*========= comment-action =========*/
+.comment-action {
+  @media #{$large_mobile} {
+    display: block !important;
+  }
+  @media #{$small_mobile} {
+    display: block !important;
+  }
+}
+/*========= feedback-box =========*/
+.feedback-box {
+  @media #{$large_mobile} {
+    margin-top: 20px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 20px;
+  }
+}
+
+.comment-reply {
+  margin-left: 95px;
+  @media #{$laptop_m_four} {
+    margin-left: 40px;
+  }
+  @media #{$large_mobile} {
+    margin-left: 0;
+  }
+  @media #{$small_mobile} {
+    margin-left: 0;
+  }
+}

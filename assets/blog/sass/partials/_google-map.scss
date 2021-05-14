@@ -1,0 +1,260 @@
+/* map-container */
+.map-container {
+  position: relative;
+  overflow: hidden;
+}
+/* enable-scroll */
+.enable-scroll {
+  position: absolute;
+  bottom: 24px;
+  right: 60px;
+  z-index: 20;
+  padding: 8px 16px;
+  background-color: $white;
+  @include box-shadow(0px 1px 4px -1px rgba(0, 0, 0, 0.2));
+  border-radius: 4px;
+  color: $theme-color-4;
+  font-size: $font-size-15;
+  @include transition(0.3s);
+  font-weight: $font-weight-medium;
+  &.enabled {
+    background-color: $theme-color-2;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  &:hover {
+    color: $theme-color;
+  }
+}
+/* map-wrap */
+#myMap,
+#map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.height-400 {
+  height: 400px;
+}
+.height-500 {
+  height: 500px;
+}
+.height-980 {
+  height: 980px;
+}
+/* full-screen-container */
+.full-screen-container {
+  @media #{$laptop_m_four} {
+    flex-direction: column;
+  }
+  .card-area {
+    @media #{$laptop_m_four} {
+      width: 100% !important;
+    }
+  }
+  .home-map {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    @media #{$laptop_m_four} {
+      width: 100% !important;
+      position: inherit;
+      top: auto;
+      height: auto;
+    }
+  }
+  .price-range-wrap.ml-3 {
+    @media #{$large_mobile} {
+      margin-left: 0 !important;
+      margin-top: 15px;
+    }
+    @media #{$small_mobile} {
+      margin-left: 0 !important;
+      margin-top: 15px;
+    }
+  }
+}
+
+/* map-info-popup */
+.map-info-popup {
+  display:block;
+  position:relative;
+  @include border-radius(8px);
+  &:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: $white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    @include transform(translateX(-50%) rotate(45deg));
+  }
+}
+/* item-popup-box */
+.item-popup-box {
+  display:block;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  @include border-radius(8px);
+  background-color: $white;
+  @include box-shadow(0 0px 9px rgba(0, 0, 0, 0.01));
+  img {
+    width:100%;
+    height:auto;
+    @include border-radius(8px 8px 14px 14px);
+  }
+  .close-info {
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    top: 20px;
+    text-align: center;
+    right: 20px;
+    color: $white;
+    @include border-radius(50%);
+    z-index: 20;
+    cursor: pointer;
+    background-color: rgba(255,255,255, 0.1);
+    font-size: $font-size-16;
+    @include transition(0.3s);
+    .la-close {
+      @include transition(0.3s);
+      font-weight: $font-weight-bold;
+    }
+    &:hover {
+      background-color: $white;
+      .la-close {
+        @include transform(rotate(90deg));
+        color: $theme-color-2;
+      }
+    }
+  }
+  .map-badge {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: $font-weight-medium;
+    color: $theme-color;
+    z-index: 20;
+    padding: 6px 14px;
+    @include border-radius(4px);
+    background-color: $white;
+    @include transition(0.3s);
+    &:hover {
+      color: $theme-color-2;
+    }
+  }
+  .map-img-box {
+    &:before {
+      content:'';
+      position:absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: $theme-color;
+      opacity:0.4;
+      @include border-radius(4px 4px 12px 12px);
+      @include transition(0.3s);
+    }
+  }
+  .item-list-content {
+    background-color: $white;
+    padding:25px 20px;
+    z-index:20;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    .item-ratting {
+      font-size: $font-size-16;
+      i {
+        color: $color-5;
+        margin-right: 3px;
+      }
+      .map-review-count {
+       font-size: $font-size-15;
+      }
+    }
+    h4 {
+      font-size: $font-size-17;
+      font-weight: $font-weight-semi-bold;
+      color: $theme-color;
+      a {
+        color: $theme-color;
+        @include transition(0.3s);
+        &:hover {
+          color: $theme-color-2;
+        }
+      }
+    }
+    .item-call ,
+    .location-info {
+      color: $theme-color-4;
+      font-size: $font-size-15;
+      a {
+        color: $theme-color-4;
+        @include transition(0.3s);
+        &:hover {
+          color: $theme-color-2;
+        }
+      }
+      i {
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        @include border-radius(50%);
+        background-color: rgba(123, 104, 238, 0.1);
+        margin-right: 8px;
+        color: $theme-color-2;
+        @include transition(0.3s);
+      }
+      &:hover {
+        i {
+          background-color: $theme-color-2;
+          color: $white;
+        }
+      }
+    }
+  }
+  &:hover {
+    .map-img-box {
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/*== general map style ===*/
+.cluster{
+  width:40px !important;
+  height:40px !important;
+  div {
+    text-align:center;
+    font-size: $font-size-16 !important;
+    background: $theme-color;
+    color: $white;
+    font-weight: $font-weight-semi-bold;
+    border-radius:100%;
+    width:40px!important;
+    height:40px!important;
+    line-height:38px!important;
+    @include box-shadow(0 0 0 4px rgba(0,0,0,0.5));
+    border:2px solid  $theme-color;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    animation: cluster-animation 1.5s infinite;
+    &:hover {
+      background-color: $theme-color-4;
+    }
+  }
+}

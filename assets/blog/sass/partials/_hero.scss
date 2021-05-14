@@ -1,0 +1,320 @@
+/*====================================================
+    hero-wrapper
+ ====================================================*/
+.hero-wrapper {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  color: $white;
+  padding-top: 280px;
+  padding-bottom: 30px;
+  @media #{$tab_device} {
+    padding-bottom: 50px;
+  }
+  @media #{$large_mobile} {
+    padding-bottom: 50px;
+  }
+  @media #{$small_mobile} {
+    padding-bottom: 50px;
+  }
+  #fullscreen-slide-container {
+    position: absolute !important;
+  }
+}
+.hero-wrapper-4 {
+  @media #{$small_mobile_four} {
+    padding-top: 320px;
+  }
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+/*====== hero-bg ======*/
+.hero-bg {
+  background-image: url("../images/hero-bg.jpg");
+}
+.hero-bg-2 {
+  background-image: url("../images/hero-bg2.jpg");
+}
+.hero-bg-3 {
+  background-image: url("../images/hero-bg3.jpg");
+}
+.hero-bg-4 {
+  background-image: url("../images/hero-bg4.jpg");
+}
+.hero-bg-5 {
+  background-image: url("../images/hero-bg5.jpg");
+}
+
+/*====== hero-heading ======*/
+.hero-heading {
+  .section-heading {
+    .sec__desc {
+      font-size: $font-size-20;
+      margin-top: 15px;
+      color: rgba(255, 255, 255, 0.9);
+      @media #{$tab_device} {
+        font-size: $font-size-18;
+         margin-top: 10px;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-size-18;
+         margin-top: 10px;
+      }
+      @media #{$small_mobile} {
+        font-size: $font-size-18;
+         margin-top: 10px;
+      }
+    }
+    .sec__title {
+      font-size: $font-size-45;
+      text-transform: capitalize;
+      margin-bottom: 0;
+      color: $white;
+      @media #{$tab_device} {
+        font-size: $font-size-40;
+      }
+      @media #{$large_mobile} {
+        font-size: $font-size-35;
+      }
+      .cd-words-wrapper {
+        b {
+          font-weight: $font-weight-bold;
+        }
+      }
+      @media #{$small_mobile} {
+        font-size: $font-size-30;
+      }
+    }
+  }
+}
+
+.highlight-lists {
+  @media #{$large_mobile} {
+    flex-wrap: wrap;
+  }
+  @media #{$small_mobile} {
+    flex-wrap: wrap;
+  }
+}
+.main-search-input {
+  margin-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  padding: 20px 25px;
+  @include border-radius(8px);
+  @media #{$tab_device} {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  @media #{$large_mobile} {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  @media #{$small_mobile} {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  &.mt-0 {
+    @media #{$tab_device} {
+      margin-top: 35px !important;
+    }
+    @media #{$large_mobile} {
+      margin-top: 35px !important;
+    }
+    @media #{$small_mobile} {
+      margin-top: 35px !important;
+    }
+  }
+}
+.main-search-input-item {
+  width: 25%;
+  @media #{$tab_device} {
+   width: 100%;
+  }
+  @media #{$large_mobile} {
+   width: 100%;
+  }
+  @media #{$small_mobile} {
+   width: 100%;
+  }
+  + .main-search-input-item {
+    margin-left: 10px;
+    @media #{$tab_device} {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    @media #{$large_mobile} {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    @media #{$small_mobile} {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+.main-search-input-btn {
+  @media #{$tab_device} {
+    margin-top: 20px;
+  }
+  @media #{$large_mobile} {
+    margin-top: 20px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 20px;
+  }
+  .theme-btn {
+    @media #{$tab_device} {
+      width: 100%;
+      display: block;
+    }
+    @media #{$large_mobile} {
+      width: 100%;
+      display: block;
+    }
+    @media #{$small_mobile} {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+.highlight-search-desc {
+  @media #{$tab_device} {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  @media #{$large_mobile} {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  @media #{$small_mobile} {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+/*======== highlighted-categories =========*/
+.highlighted-categories {
+  margin-top: 49px;
+  position: relative;
+  z-index: 1;
+  @media #{$tab_device} {
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media #{$large_mobile} {
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media #{$small_mobile} {
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.highlighted__title {
+  font-size: $font-size-16;
+  line-height: 25px;
+  color: $white;
+  font-family: 'Be Vietnam', 'sans-serif';
+  br {
+    @media #{$tab_device} {
+      display: none;
+    }
+    @media #{$large_mobile} {
+      display: none;
+    }
+    @media #{$small_mobile} {
+      display: none;
+    }
+  }
+}
+.cat-arrow-icon {
+  @include transform(rotate(50deg));
+  position: relative;
+  top: 30px;
+  @media #{$tab_device} {
+    display: none;
+  }
+  @media #{$large_mobile} {
+    display: none;
+  }
+  @media #{$small_mobile} {
+    display: none;
+  }
+}
+/*======== highlighted-categories-2 =========*/
+.highlighted-categories-2 {
+  .cat-arrow-icon {
+    @include transform(rotate(-50deg));
+  }
+}
+
+.highlight-lists {
+  @media #{$tab_device} {
+    margin-top: 0 !important;
+  }
+  @media #{$large_mobile} {
+    margin-top: 0 !important;
+  }
+  @media #{$small_mobile} {
+    margin-top: 0 !important;
+  }
+}
+/*=============== main-search-input-2 ===============*/
+.main-search-input-2 {
+  @include box-shadow(0px 10px 40px 0 rgba(0,0,0,.13));
+  padding: 30px;
+  margin-bottom: -80px;
+}
+
+.hero-svg-content {
+  position: absolute;
+  bottom: -42px;
+  left: 50%;
+  @include transform(translateX(-50%));
+  width: 210px;
+  height: 100px;
+  line-height: 90px;
+  i {
+    color: $theme-color;
+    position: relative;
+    z-index: 1;
+    font-size: $font-size-14;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/hero-shape.png");
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+
+
+

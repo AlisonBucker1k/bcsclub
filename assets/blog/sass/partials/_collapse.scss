@@ -1,0 +1,66 @@
+/*======== faq area ======*/
+.accordion-item {
+  .card-header {
+    padding: 0;
+    background-color: $white;
+    border-bottom: none;
+    @include border-radius(8px);
+    .btn {
+      width: 100%;
+      color: $theme-color;
+      font-size: $font-size-16;
+      font-weight: $font-weight-medium;
+      text-decoration: none;
+      padding: 12px 20px 12px 40px;
+      @include border-radius(8px);
+      position: relative;
+      text-align: left;
+      i {
+        @include transition(0.3s);
+        font-size: $font-size-19;
+        display: none;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        @include transform(translateY(-50%));
+        left: 20px;
+        width: 8px;
+        height: 8px;
+        background-color: $theme-color;
+        @include border-radius(50%);
+        opacity: 0.3;
+        @include transition(0.3s);
+      }
+      &[aria-expanded=false] {
+        .la-plus {
+          display: block;
+        }
+      }
+      &[aria-expanded=true] {
+        .la-minus {
+          display: block;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .card {
+    @include box-shadow(0 0 14px rgba(82, 85, 90, 0.1));
+    border-color: rgba(128, 137, 150, 0.1);
+    @include border-radius(8px);
+    + .card {
+      margin-top: 10px;
+    }
+  }
+  .card-body {
+    padding: 0 20px 20px 20px;
+    p {
+      font-weight: $font-weight-medium;
+      font-size: 15px;
+    }
+  }
+}

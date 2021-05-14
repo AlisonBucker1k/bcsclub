@@ -1,0 +1,54 @@
+.icon-element {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: $theme-color-2;
+  @include border-radius(50%);
+  position: relative;
+  font-size: $font-size-26;
+  @include transition(0.3s);
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.icon-element-sm {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: $font-size-20;
+}
+.icon-element-lg {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: $font-size-35;
+}
+
+.icon-element-white {
+  background-color: $white;
+  color: $theme-color;
+  &:hover {
+    color: $theme-color;
+  }
+}
+
+.icon-block-wrap {
+  .icon-block {
+    margin: 4px;
+  }
+}
+/*======= icon-block =========*/
+.icon-block {
+  background-color: $white;
+  border: 1px solid rgba(128, 137, 150, 0.1);
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  @include border-radius(8px);
+  padding: 10px;
+  @include transition(0.3s);
+  .icon-element {
+    @include border-radius(8px);
+  }
+}

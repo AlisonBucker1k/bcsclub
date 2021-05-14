@@ -1,0 +1,48 @@
+/*========= widget title ========*/
+.widget-title {
+  font-size: $font-size-18;
+  color: $theme-color;
+  font-weight: $font-weight-semi-bold;
+  padding-bottom: 15px;
+  position: relative;
+  @media #{$small_mobile_two} {
+    font-size: $font-size-20;
+  }
+}
+
+/*====== sidebar =====*/
+.sidebar {
+  @media #{$tab_device} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media #{$large_mobile} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media #{$small_mobile} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+/*======== sidebar-widget =======*/
+.sidebar-widget {
+  margin-bottom: 30px;
+  border: 1px solid rgba(128, 137, 150, 0.1);
+  padding: 30px;
+  @include border-radius(8px);
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  background-color: $white;
+  position: relative;
+}
+
+.twitter-bg-icon {
+  position: absolute;
+  right: -25px;
+  bottom: -30px;
+  svg {
+    width: 100px;
+    height: 100px;
+    fill: $color-11;
+  }
+}

@@ -1,0 +1,87 @@
+/* section-tab */
+.section-tab {
+  .nav-tabs {
+    border-bottom: none;
+  }
+  .nav-item {
+    margin-bottom: 0;
+    margin-right: 5px;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-18;
+  }
+  .nav-link {
+    @include border-radius(4px);
+    padding: 15px 30px;
+    border: none;
+    color: $theme-color-4;
+    @media #{$tab_device} {
+      margin-bottom: 5px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 5px;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 5px;
+    }
+    &.active {
+      background-color: $white;
+      color: $theme-color-2;
+      @include box-shadow(0 10px 40px rgba(82, 85, 90, 0.2));
+    }
+    &.nav-link-gradient {
+      &.active {
+        background: linear-gradient(270deg, #9f8fff, #7b68ee);
+        @include box-shadow(0 5px 25px rgba(123, 104, 238, 0.3));
+        color: $white;
+      }
+    }
+  }
+}
+/* section--tab */
+.section--tab {
+  .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    @include border-radius(12px 12px 0 0);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @media #{$tab_device} {
+      @include border-radius(8px);
+    }
+    @media #{$large_mobile} {
+      @include border-radius(8px);
+    }
+    @media #{$small_mobile} {
+      @include border-radius(8px);
+    }
+    &.active {
+      @include box-shadow(none);
+    }
+  }
+}
+/* section-tab-layout-2 */
+.section-tab-layout-2 {
+  .nav-link {
+    padding: 7px 16px 7px 30px;
+    position: relative;
+    font-size: $font-size-17;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      @include transform(translateY(-50%));
+      left: 13px;
+      width: 8px;
+      height: 8px;
+      background-color: $theme-color;
+      @include border-radius(50%);
+      opacity: 0.3;
+      @include transition(0.3s);
+    }
+    &.active {
+      color: $theme-color;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}

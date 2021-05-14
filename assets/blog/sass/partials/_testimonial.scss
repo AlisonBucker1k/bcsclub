@@ -1,0 +1,120 @@
+/*====================================================
+    testimonial-area
+ ====================================================*/
+.testimonial-area {
+  position: relative;
+  z-index: 1;
+}
+
+/*======= testimonial-carousel ========*/
+.testimonial-carousel {
+  position: relative;
+  .owl-stage-outer {
+    padding: 40px 0;
+  }
+  .owl-item.active {
+    @include transform(scale(0.8));
+    @include transition(0.5s);
+  }
+  .owl-item.active.center {
+    @include transform(scale(1));
+  }
+  .testimonial-item {
+    .testi__img {
+      width: 90px;
+    }
+  }
+}
+
+/*========= testimonial-item =========*/
+.testimonial-item {
+  .testi__img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include border-radius(50%);
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.2));
+    img {
+      width: 100%;
+      height: 100%;
+      @include border-radius(50%);
+    }
+  }
+  .testi-comment {
+    background-color: $white;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+    @include border-radius(8px);
+    position: relative;
+    padding: 50px 30px 33px 30px;
+    margin-bottom: 42px;
+    z-index: 1;
+    text-align: center;
+    .testi__desc {
+      font-size: $font-size-19;
+      color: $theme-color-4;
+      line-height: 31px;
+      font-weight: $font-weight-medium;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 50%;
+      @include transform(translateX(-50%) rotate(45deg));
+      width: 18px;
+      height: 18px;
+      background-color: $white;
+      border-right: 1px solid rgba(128, 137, 150, 0.1);
+      border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+    }
+    &:after {
+      position: absolute;
+      content: "\f10d";
+      top: -30px;
+      left: 50%;
+      @include transform(translateX(-50%));
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      color: $theme-color-2;
+      z-index: -1;
+      font-size: $font-size-35;
+      width: 65px;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      background-color: $white;
+      @include box-shadow(0 10px 40px rgba(82, 85, 90, 0.1));
+      @include border-radius(50%);
+      border: 1px solid rgba(128, 137, 150, 0.1);
+    }
+  }
+  .tesi__title {
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold;
+    margin-top: 17px;
+    margin-bottom: 15px;
+    color: $theme-color;
+  }
+  .testi__meta {
+    font-size: $font-size-14;
+    text-transform: capitalize;
+    font-weight: $font-weight-medium;
+    color: $theme-color-2;
+    background-color: rgba(123, 104, 238, 0.05);
+    padding: 6px 17px;
+    @include border-radius(30px);
+  }
+}
+
+/*===== testimonial-area2 ======*/
+.testimonial-area2 {
+  padding-top: 173px;
+  @media #{$large_mobile} {
+    padding-top: 96px;
+  }
+  @media #{$small_mobile} {
+    padding-top: 96px;
+  }
+}
