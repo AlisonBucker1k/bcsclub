@@ -91,10 +91,10 @@ class adminController extends Controller {
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 
                 $title = addslashes($_POST['title']);
-                $description = addslashes($_POST['description']);
+                $description = '';// addslashes($_POST['description']);
                 $category = addslashes($_POST['category']);
                 $body = addslashes($_POST['body']);
-                $althor_name = addslashes($_POST['althor_name']);
+                $althor_name = '';//addslashes($_POST['althor_name']);
                 $link = addslashes($_POST['link']);
                 $featured = addslashes($_POST['featured']);
                 $email = addslashes($_POST['email']);
@@ -106,9 +106,9 @@ class adminController extends Controller {
 
                 $discount = addslashes($_POST['discount']);
 
-                $images = (!empty($_FILES['images']))?$_FILES['images']:array();
+                // $images = (!empty($_FILES['images']))?$_FILES['images']:array();
 
-                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount);
+                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount);
                 if($idPost){
                     header('Location: '.BASE_URL."admin/editPost/".$idPost."/?status=success");
                 }

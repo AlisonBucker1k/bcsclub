@@ -24,7 +24,7 @@ if(ENVIRONMENT == 'development') {
 
 $config['facebook'] = "";
 $config['twitter'] = "";
-$config['instagram'] = "";
+$config['instagram'] = "https://www.instagram.com/bcs_club/";
 
 define("SITE_NAME", 'BCSClub');
 define("PATH_SITE", dirname(__FILE__));

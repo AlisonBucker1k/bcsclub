@@ -36,8 +36,8 @@
                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img31.jpg" class="card__img lazy" alt="blog image">
                     </div><!-- end card-image -->
                     <div class="card-content">
-                        <h4 class="card-title">careers</h4>
-                        <p class="card-sub mt-3">Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis.</p>
+                        <h4 class="card-title">BCS Bank</h4>
+                        <p class="card-sub mt-3">O primeiro banco digital de múltiplos benefícios do país.</p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
@@ -47,8 +47,8 @@
                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img32.jpg" class="card__img lazy" alt="blog image">
                     </div><!-- end card-image -->
                     <div class="card-content">
-                        <h4 class="card-title">Newsroom</h4>
-                        <p class="card-sub mt-3">Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis. </p>
+                        <h4 class="card-title">BCS Club</h4>
+                        <p class="card-sub mt-3">Plataforma multi comercial, milhares de estabelecimentos credenciados </p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
@@ -58,8 +58,8 @@
                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img33.jpg" class="card__img lazy" alt="blog image">
                     </div><!-- end card-image -->
                     <div class="card-content">
-                        <h4 class="card-title">Investor Relations</h4>
-                        <p class="card-sub mt-3">Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis. </p>
+                        <h4 class="card-title">BCS Médical</h4>
+                        <p class="card-sub mt-3">Plataforma de intermediação para serviços médicos, odontológicos e exames. </p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
@@ -80,21 +80,22 @@
                 <div class="about-content mt-0">
                     <div class="section-heading">
                         <div class="section-badge pb-3">
-                            <span class="ribbon ribbon-2 bg-2 text-white">Who we are?</span>
+                            <span class="ribbon ribbon-2 bg-2 text-white">O que é a BCS?</span>
                         </div>
-                        <h2 class="sec__title">Welcome to the Listhub Business Directory Service and a Public Company</h2>
+                        <h2 class="sec__title">O que fazemos para nossos clientes e parceiros?</h2>
                         <p class="sec__desc pb-3">
-                            Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla.
-                            Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis
-                            libero sodales eleifend.
+                            O sistema BCS, foi desenvolvido com a finalidade de contribuir com o dia a dia das pessoas, oferecendo serviços que gerem valor e resultados significativos a todos!
                         </p>
-                        <p class="sec__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-                            pulvinar neque.
+                        <p class="sec__desc pb-3">
+                             O novo normal chegou! E com isso a necessidade vada vez maior de comprar e principalmente vender.
                         </p>
+                        <p class="sec__desc pb-3">
+                             Com isso, nós da BCS construímos um sistema que traga cada vez mais conforto, qualidade e praticidade para os nossos clientes e parceiros!
+                        </p>
+                        
                     </div><!-- end section-heading -->
                     <div class="btn-box padding-top-30px">
-                        <a href="#" class="theme-btn gradient-btn">Find out More<i class="la la-arrow-right ml-2"></i></a>
+                        <a href="#" class="theme-btn gradient-btn">Conheça Mais<i class="la la-arrow-right ml-2"></i></a>
                     </div><!-- end btn-box -->
                 </div>
             </div><!-- end col-lg-6 -->
@@ -129,15 +130,17 @@
                 <div class="about-content pl-4 mb-0">
                     <div class="section-heading">
                         <div class="section-badge pb-3">
-                            <span class="ribbon ribbon-2 bg-2 text-white">Our Mission</span>
+                            <span class="ribbon ribbon-2 bg-2 text-white">Diferencial</span>
                         </div>
-                        <h2 class="sec__title">Our Mission Is Simple: Make Finding Business Easier.</h2>
-                        <p class="sec__desc pb-3">
-                            An online marketplace (or online e-commerce marketplace) is a type of e-commerce site where product and inventory information is provided by multiple third parties, whereas transactions are processed by the marketplace operator.
+                        <h2 class="sec__title">O principal fator que nos torna um diferencial:</h2>
+                        <p class="sec__desc">
+                            Auxiliar a todos que precisam se adaptar às n ovas exigências do mercado.
                         </p>
                          <p class="sec__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-                            pulvinar neque. Nulla finibus lobortis pulvinar.
+                            O sistema BCS Club, além de oferecer aos seus clientes uma plataforma comercial com o que há de melhor em produtos e serviços, oferece também aos seus parceiros de forma GRATUITA, conforto e segurança através de seguros para si e para sua família.
+                        </p>
+                        <p class="sec__desc">
+                            Pensar no coletivo e proporcionar tranquilidade, facilidade e comodidade às pessoas. Isso é BCS Club!
                         </p>
                     </div><!-- end section-heading -->
                 </div>
@@ -148,9 +151,12 @@
             <div class="col-lg-10 mx-auto">
                 <div class="about-content text-center">
                     <div class="section-heading">
-                        <h2 class="sec__title">Serving Your Community</h2>
+                        <h2 class="sec__title">Oportuinizarr novos negócios, fortalecer o comércio e o Empreendedorismo.</h2>
                         <p class="sec__desc">
-                            Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms.
+                            A plataforma BCS Club, está presente em todos os municipios da Grande Vitória, trazendo para a sua plataforma negocios que vão desde microempreendedores até grandes empresas, ambas voltadas ao comércio varegista quato a prestação de serviços.
+                        </p>
+                        <p class="sec__desc">
+                            A presença da marca dos seus clientes em nossa plataforma, possibilita o aumento exponencial dos resultados financeiros para o anuncante, e gerar valor aos nossos clientes.
                         </p>
                     </div><!-- end section-heading -->
                 </div>
@@ -208,7 +214,7 @@
                             <span class="counter">3,000</span>
                             <span class="count-symbol">+</span>
                         </h3>
-                        <p class="counter__title">New Users Every Week</p>
+                        <p class="counter__title">Produtos / Serviços</p>
                     </div><!-- end counter-content -->
                 </div><!-- end counter-item -->
             </div><!-- end col-lg-3 -->
@@ -253,7 +259,7 @@
                             <span class="counter">50,100</span>
                             <span class="count-symbol">+</span>
                         </h3>
-                        <p class="counter__title">Customers Every Year</p>
+                        <p class="counter__title">Compras em nossos parceiros</p>
                     </div><!-- end counter-content -->
                 </div><!-- end counter-item -->
             </div><!-- end col-lg-3 -->
@@ -266,10 +272,10 @@
                     </div>
                     <div class="counter-content pl-3">
                         <h3 class="counter__number text-color-5 mb-2">
-                            <span class="counter">110</span>
+                            <span class="counter">20,000</span>
                             <span class="count-symbol">+</span>
                         </h3>
-                        <p class="counter__title">Awards Won</p>
+                        <p class="counter__title">Buscas Por Descontos</p>
                     </div><!-- end counter-content -->
                 </div><!-- end counter-item -->
             </div><!-- end col-lg-3 -->
@@ -282,10 +288,10 @@
                     </div>
                     <div class="counter-content pl-3">
                         <h3 class="counter__number text-color-6 mb-2">
-                            <span class="counter">1200</span>
+                            <span class="counter">1,200</span>
                             <span class="count-symbol">+</span>
                         </h3>
-                        <p class="counter__title">New Listing Every Week</p>
+                        <p class="counter__title">Novos parceiros por mês</p>
                     </div><!-- end counter-content -->
                 </div><!-- end counter-item -->
             </div><!-- end col-lg-3 -->
@@ -304,10 +310,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <h2 class="sec__title">Don't Believe Us Check <br> Client's Word.</h2>
+                    <h2 class="sec__title">Veja alguns depoimentos <br> de nossos clientes.</h2>
                     <p class="sec__desc">
-                        Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero,<br>
-                        a feugiat eros. Nunc ut lacinia tortors.
+                        BCS Club! O serviço ou produto que você precisa com descontos incriveis,<br> a um clique! Venha para BCS!
                     </p>
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-12 -->
@@ -318,75 +323,64 @@
                     <div class="testimonial-item">
                         <div class="testi-comment border border-color">
                             <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
+                                Estava Precisando fazer a manutenção do meu carro, fiz orçamentos e achei a oficina perfeita com 30% de desconto!.
                             </p>
                         </div>
                         <div class="testi-content">
                             <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Richard Doe</h4>
-                            <span class="testi__meta">united states</span>
+                            <h4 class="tesi__title">Amaurir Barreto</h4>
+                            <span class="testi__meta">Aracruz</span>
                         </div>
                     </div><!-- end testimonial-item -->
                     <div class="testimonial-item">
                         <div class="testi-comment border border-color">
                             <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
+                                Minhas empadas e salgados já tinham uma boa clientela. Mas com a BCS Club, aumentei minhas vendas e ainda estou contratando rsrs... Muito bom!
                             </p>
                         </div>
                         <div class="testi-content">
                             <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img2.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Denwen Evil</h4>
-                            <span class="testi__meta">united kingdom</span>
+                            <h4 class="tesi__title">Rose Maria</h4>
+                            <span class="testi__meta">Carapina</span>
                         </div>
                     </div><!-- end testimonial-item -->
                     <div class="testimonial-item">
                         <div class="testi-comment border border-color">
                             <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
+                                Realmente eles entregam o que prometem! Diversos produtos e serviços com um preço diferenciado! Parabéns pela iniciativa!
                             </p>
                         </div>
                         <div class="testi-content">
                             <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img3.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Collis Pong</h4>
-                            <span class="testi__meta">melbourne, australia</span>
+                            <h4 class="tesi__title">Márcio Honoráto</h4>
+                            <span class="testi__meta">Serra</span>
                         </div>
                     </div><!-- end testimonial-item -->
                     <div class="testimonial-item">
                         <div class="testi-comment border border-color">
                             <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
+                                Estava em busca de um profissional para fazer um <a href="<?php echo 'https://bckcode.com.br'?>" target="_blank"></a> para meu novo empreendimento. Através da BCS Club encontrei  a uma agencia de programação perfeita!
                             </p>
                         </div>
                         <div class="testi-content">
                             <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Richard Doe</h4>
-                            <span class="testi__meta">united states</span>
+                            <h4 class="tesi__title">Kevin Douglas</h4>
+                            <span class="testi__meta">Serra</span>
                         </div>
                     </div><!-- end testimonial-item -->
                     <div class="testimonial-item">
                         <div class="testi-comment border border-color">
                             <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
+                                Precisei fazer as unhas urgentemente. Através da BCS Club encontrei a melhor manicure da minha região com o melhor preço, e com o desconto unico da BCS Club!
                             </p>
                         </div>
                         <div class="testi-content">
                             <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img2.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Denwen Evil</h4>
-                            <span class="testi__meta">united kingdom</span>
+                            <h4 class="tesi__title">Gabriela Passos</h4>
+                            <span class="testi__meta">Guarapari</span>
                         </div>
                     </div><!-- end testimonial-item -->
-                    <div class="testimonial-item">
-                        <div class="testi-comment border border-color">
-                            <p class="testi__desc">
-                                Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.
-                            </p>
-                        </div>
-                        <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img3.jpg" class="testi__img" alt="testimonial image">
-                            <h4 class="tesi__title">Collis Pong</h4>
-                            <span class="testi__meta">melbourne, australia</span>
-                        </div>
-                    </div><!-- end testimonial-item -->
+                    
                 </div><!-- end testimonial-carousel -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
@@ -406,10 +400,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading text-center">
-                    <h2 class="sec__title">Why Choose Us</h2>
+                    <h2 class="sec__title">Porque escolher nossos serviços?</h2>
                     <p class="sec__desc">
-                        Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, <br>
-                        a feugiat eros. Nunc ut lacinia tortors.
+                        Somos uma plataforma completa para o seu negócio e para o seu cliente!<br>
+                        BCS Club, levando o produto ou serviço que você procura, sem gastar a mais por isso!
                     </p>
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-12 -->
@@ -447,10 +441,9 @@
                                 </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">+ 50K Customers</h4>
+                        <h4 class="info__title">+ 20k de acessos diários</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                            Milhares de acessos por dia de nossos clientes em busca dos melhores descontos dos comercios credenciados BCS Club.
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -528,10 +521,9 @@
                             </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">H24 Support</h4>
+                        <h4 class="info__title">Consultores on-line</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                            Nossos consultores estão on-line para tirar suas dúvidas e atender as necessidades dos clientes e parceiros.
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -550,10 +542,9 @@
                         </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">+ 6575 Locations</h4>
+                        <h4 class="info__title">Busca por categorias</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                            Realize sua busca através de nosso sistema de busca, selecione a categoria que desejar e confira os melhores descontos!
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -572,10 +563,9 @@
                         </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">Help Direct Line</h4>
+                        <h4 class="info__title">Campanhas e Promoções</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                           Fique por dentro e acompanhe as atualizações sobre campanhas promocionais dos nossos parceiros BCS Club.
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -594,10 +584,9 @@
                         </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">Secure Payments</h4>
+                        <h4 class="info__title">Ambiente Seguro</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                            Faça suas compras ou contrate seus serviços direto com o parceiro, de forma simples e sem intermediação de pagamentos.
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -616,10 +605,9 @@
                         </svg>
                     </div><!-- end info-icon-->
                     <div class="info-content">
-                        <h4 class="info__title">Support via Chat</h4>
+                        <h4 class="info__title">Chat On-line</h4>
                         <p class="info__desc">
-                            Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam
-                            luctus, finibus tellus
+                            Se precisar de unm atendimento mais especifico sobre um parceiro ou sobre nossa plataforma, estaremos aqui para ajuda-lo!
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -639,15 +627,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading text-center">
-                    <h2 class="sec__title">Our Expert Team Members <br> Who Lead the Listhub</h2>
+                    <h2 class="sec__title">Conheça a estrutura da BCS Club!</h2>
                     <p class="sec__desc">
-                        Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero <br>
-                        a feugiat eros. Nunc ut lacinia tortors.
+                        A BCS Club conta com uma equipe de profissionais dedicados a lhe oferecer o que há de melhor, sempre mantendo o foco na sua necessidade, sendo parceiro ou cliente!
                     </p>
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
-        <div class="row mt-5">
+        <div class="row mt-5 justify-content-center">
             <div class="col-lg-3 responsive-column">
                 <div class="card-item card-item-layout-2 hover-y">
                     <div class="card-image after-none">
@@ -655,13 +642,13 @@
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">
-                        <h4 class="card-title mb-0"><a href="#">Kamal Ahmed</a></h4>
-                        <p class="card-sub font-size-14">Business Consultant</p>
+                        <h4 class="card-title mb-0"><a href="#">Edson Miranda</a></h4>
+                        <p class="card-sub font-size-14">Diretor de Operações</p>
                         <ul class="social-profile social-profile-styled pt-4">
-                            <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
+                            <!-- <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
                             <li><a href="#" class="twitter-bg"><i class="la la-twitter"></i></a></li>
                             <li><a href="#" class="instagram-bg"><i class="la la-instagram"></i></a></li>
-                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li>
+                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li> -->
                         </ul>
                     </div><!-- end card-content -->
                 </div>
@@ -673,13 +660,13 @@
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">
-                        <h4 class="card-title mb-0"><a href="#">Kamran Ahmed</a></h4>
-                        <p class="card-sub font-size-14">Front-end developer</p>
+                        <h4 class="card-title mb-0"><a href="#">Walace Campos</a></h4>
+                        <p class="card-sub font-size-14">Gestor Comercial</p>
                         <ul class="social-profile social-profile-styled pt-4">
-                            <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
+                            <!-- <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
                             <li><a href="#" class="twitter-bg"><i class="la la-twitter"></i></a></li>
                             <li><a href="#" class="instagram-bg"><i class="la la-instagram"></i></a></li>
-                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li>
+                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li> -->
                         </ul>
                     </div><!-- end card-content -->
                 </div>
@@ -691,23 +678,23 @@
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">
-                        <h4 class="card-title mb-0"><a href="#">Tanbir Ahmed</a></h4>
-                        <p class="card-sub font-size-14">Backend Developer</p>
+                        <h4 class="card-title mb-0"><a href="#">Ana Carolina</a></h4>
+                        <p class="card-sub font-size-14">Backoffice de Operações</p>
                         <ul class="social-profile social-profile-styled pt-4">
-                            <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
+                            <!-- <li><a href="#" class="facebook-bg"><i class="la la-facebook"></i></a></li>
                             <li><a href="#" class="twitter-bg"><i class="la la-twitter"></i></a></li>
                             <li><a href="#" class="instagram-bg"><i class="la la-instagram"></i></a></li>
-                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li>
+                            <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li> -->
                         </ul>
                     </div><!-- end card-content -->
                 </div>
             </div><!-- end col-lg-3 -->
-            <div class="col-lg-3 responsive-column">
+            <!-- <div class="col-lg-3 responsive-column">
                 <div class="card-item card-item-layout-2 hover-y">
                     <div class="card-image after-none">
                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/team4.jpg" class="card__img lazy" alt="Team member image">
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
-                    </div><!-- end card-image -->
+                    </div><!-- end card-image --
                     <div class="card-content pt-3">
                         <h4 class="card-title mb-0"><a href="#">Juhen Ahmed</a></h4>
                         <p class="card-sub font-size-14">Director</p>
@@ -717,14 +704,14 @@
                             <li><a href="#" class="instagram-bg"><i class="la la-instagram"></i></a></li>
                             <li><a href="#" class="behance-bg"><i class="la la-behance"></i></a></li>
                         </ul>
-                    </div><!-- end card-content -->
+                    </div><!-- end card-content 
                 </div>
-            </div><!-- end col-lg-3 -->
+            </div>end col-lg-3 -->
         </div><!-- end row -->
-        <div class="more-btn-box d-flex flex-wrap align-items-center justify-content-between pt-4">
+        <!-- <div class="more-btn-box d-flex flex-wrap align-items-center justify-content-between pt-4">
             <h4 class="pb-2 font-weight-semi-bold">Career at Listhub</h4>
             <a href="career.html" class="btn-gray">View Open Positions<i class="la la-arrow-right ml-2"></i></a>
-        </div>
+        </div> -->
     </div><!-- end container -->
 </section><!-- end team-area -->
 <!-- ================================
@@ -739,14 +726,18 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading">
-                    <h2 class="sec__title mb-3">Grow Your Business with Listhub</h2>
+                    <h2 class="sec__title mb-3">
+                        Não encontrou o que precisa?<br>
+                        Faça contato e nos diga qual a sua necessidade!
+                    </h2>
                     <p class="sec__desc mb-2">
-                        Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero <br>
-                        a feugiat eros. Nunc ut lacinia tortors.
+                        Ops! Não encontrei o produto ou serviço que preciso!<br>
+                        Não se preocupe, atraves da suas informações faremos a pesquisa pela sua necessidade e lhe traremos mais informações.
                     </p>
                 </div><!-- end section-heading -->
                 <div class="btn-box pt-4">
-                    <a href="#" class="theme-btn gradient-btn hover-scale" data-toggle="modal" data-target="#signUpModal">Create Your Business Listing Today <i class="la la-arrow-right ml-2"></i></a>
+                    <!-- <a href="<?php echo BASE_URL.'pages/contact';?>" class="theme-btn gradient-btn hover-scale" data-toggle="modal" data-target="#signUpModal">Fale conosco por aqui <i class="la la-arrow-right ml-2"></i></a> -->
+                    <a href="<?php echo BASE_URL.'pages/contact';?>" class="theme-btn gradient-btn hover-scale">Fale conosco por aqui <i class="la la-arrow-right ml-2"></i></a>
                 </div><!-- end btn-box -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->

@@ -1,207 +1,263 @@
-<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/blog/css/jquery-te-1.4.0.css">
-<link rel="stylesheet" href="<?php echo BASE_URL;?>assets/blog/css/style.css">
-
-<form method="POST" enctype="multipart/form-data">
+<div class="container-fluid dashboard-inner-body-container">
+    
     <div class="row">
-        <div class="col-lg-8">
-            <div class="block-card mb-4">
-                <div class="block-card-header">
-                    <h2 class="widget-title">Adicionar novo estabelecimento</h2>
-                    <div class="stroke-shape"></div>
-                </div><!-- end block-card-header -->
-                    <div class="block-card-body">
-                        
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Nome do Comércio</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="title" placeholder="Nome do Comércio">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Desconto%</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="discount" placeholder="Porcentagem de desconto para clientes do bcs">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Comercio em destaque?</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <select name="featured" class="form-control" id="">
-                                            <option value="0">Não</option>
-                                            <option value="1">Sim</option>
-                                            
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Detalhes do Comércio</label>
-                                    <div class="form-group">
-                                        <textarea class="message-control form-control user-text-editor" name="body" placeholder="Insira os detalhes sobre o comércio"></textarea>
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Site do Comércio</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="link" placeholder="Porcentagem de desconto para clientes do bcs">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Email do Comércio</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="email" placeholder="Porcentagem de desconto para clientes do bcs">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Telefone</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="phone" placeholder="Porcentagem de desconto para clientes do bcs">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Cidade do Comércio</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="local" placeholder="Cidade">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Estado do Comércio</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <select id="estado" name="estado" class="form-control w-100">
-                                            <option value="Acre">Acre</option>
-                                            <option value="Alagoas">Alagoas</option>
-                                            <option value="Amapá">Amapá</option>
-                                            <option value="Amazonas">Amazonas</option>
-                                            <option value="Bahia">Bahia</option>
-                                            <option value="Ceará">Ceará</option>
-                                            <option value="Distrito Federaç">Distrito Federal</option>
-                                            <option value="Espírito Santo" selected="">Espírito Santo</option>
-                                            <option value="Goias">Goiás</option>
-                                            <option value="Maranhão">Maranhão</option>
-                                            <option value="Mato Grosso">Mato Grosso</option>
-                                            <option value="Mato grosso do Sul">Mato Grosso do Sul</option>
-                                            <option value="Minas Gerais">Minas Gerais</option>
-                                            <option value="Pará">Pará</option>
-                                            <option value="Paraíba">Paraíba</option>
-                                            <option value="Paraná">Paraná</option>
-                                            <option value="Pernambuco">Pernambuco</option>
-                                            <option value="Piauí">Piauí</option>
-                                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                                            <option value="Rndônia">Rondônia</option>
-                                            <option value="Roraima">Roraima</option>
-                                            <option value="Santa Catarina">Santa Catarina</option>
-                                            <option value="São Paulo">São Paulo</option>
-                                            <option value="Sergipe">Sergipe</option>
-                                            <option value="Tocantins">Tocantins</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-
-                            <div class="col-lg-12">
-                                <div class="input-box">
-                                    <label class="label-text">Google Maps</label>
-                                    <div class="form-group">
-                                        <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="map" placeholder="Link do google Maps">
-                                    </div>
-                                </div>
-                            </div><!-- end col-lg-12 -->
-                        
-                    </div><!-- end block-card-body -->
-            </div><!-- end block-card -->
-            <div class="submit-wrap pt-4">
-                <div class="btn-box">
-                    <button type="submit" class="theme-btn gradient-btn border-0" >Adicionar Comércio <i class="la la-arrow-right ml-1"></i></button>
-                </div><!-- end btn-box -->
-            </div><!-- end submit-wrap -->
-        </div><!-- end col-lg-8 -->
-        <div class="col-lg-4">
-            <div class="block-card mb-4">
-                <div class="block-card-header">
-                    <h2 class="widget-title">Categoria</h2>
-                    <div class="stroke-shape"></div>
-                </div><!-- end block-card-header -->
-                <div class="block-card-body">
-                    
-                    <div class="input-box">
-                        <label class="label-text">Categoria de comércio</label>
-                        <div class="form-group">
-                            <span class="la la-briefcase form-icon"></span>
-                            <select name="category" class="form-control" id="">
-                                <option value="">Selecionar Categoria</option>
-                                <?php foreach($listCategories as $item):?>
-                                    <option value="<?php echo $item['id']?>"><?php echo $item['title']?></option>
-                                <?php endforeach;?>
-                            </select>
+        
+        <div class="col-lg-3 col-md-6">
+            <div class="card-item dashboard-stat">
+                <div class="card-content">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2 class="card-title font-size-40">10</h2>
+                            <p class="card-sub font-size-18 line-height-24">Active Listings</p>
                         </div>
+                        <div class="col-auto font-size-60">
+                            <i class="la la-map-marked text-primary"></i>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end card-content -->
+            </div><!-- end card-item -->
+        </div><!-- end col-lg-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card-item dashboard-stat">
+                <div class="card-content">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2 class="card-title font-size-40">1,020</h2>
+                            <p class="card-sub font-size-18 line-height-24">Total Views</p>
+                        </div>
+                        <div class="col-auto font-size-60">
+                            <i class="la la-line-chart text-success"></i>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end card-content -->
+            </div><!-- end card-item -->
+        </div><!-- end col-lg-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card-item dashboard-stat">
+                <div class="card-content">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2 class="card-title font-size-40">200</h2>
+                            <p class="card-sub font-size-18 line-height-24">Total Reviews</p>
+                        </div>
+                        <div class="col-auto font-size-60">
+                            <i class="la la-star-o text-info"></i>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end card-content -->
+            </div><!-- end card-item -->
+        </div><!-- end col-lg-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card-item dashboard-stat">
+                <div class="card-content">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2 class="card-title font-size-40">120</h2>
+                            <p class="card-sub font-size-18 line-height-24">Bookmarked</p>
+                        </div>
+                        <div class="col-auto font-size-60">
+                            <i class="la la-bookmark text-warning"></i>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end card-content -->
+            </div><!-- end card-item -->
+        </div><!-- end col-lg-3 -->
+        <div class="col-lg-7">
+            <div class="block-card dashboard-card mb-4">
+                <div class="block-card-header d-flex flex-wrap align-items-center justify-content-between">
+                    <div id="myChartLegend">
+                        <ul class="0-legend d-flex align-items-center">
+                            <li class="btn-gray mr-2"><span></span>Listings Views</li>
+                            <li class="btn-gray"><span></span>Bookings</li>
+                        </ul>
                     </div>
-                    
-                </div><!-- end block-card-body -->
-            </div><!-- end block-card -->
-            
-            <div class="block-card">
-                <div class="block-card-header">
-                    <h2 class="widget-title">Imagens do Estabelecimento</h2>
-                    <div class="stroke-shape"></div>
-                </div><!-- end block-card-header -->
+                    <div class="user-chosen-select-container">
+                        <select class="user-chosen-select">
+                            <option value="1">Today</option>
+                            <option value="2">Week</option>
+                            <option value="3" selected>Month</option>
+                            <option value="4">This Year</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="block-card-body">
-                    <div class="file-upload-wrap file-upload-wrap-4">
-                        <input type="file" name="images[]" class="multi file-upload-input with-preview" multiple >
-                        <span class="file-upload-text"><i class="la la-upload mr-2"></i>Upload image</span>
+                    <div class="chart-block">
+                        <canvas id="lineChart"></canvas>
                     </div>
                 </div><!-- end block-card-body -->
             </div><!-- end block-card -->
-            
-        </div><!-- end col-lg-4 -->
+        </div><!-- end col-lg-7 -->
+        <div class="col-lg-5">
+            <div class="block-card dashboard-card mb-4">
+                <div class="block-card-header">
+                    <h2 class="widget-title pb-0">Recent Activities</h2>
+                </div>
+                <div class="block-card-body">
+                    <div class="generic-list-card d-flex align-items-center justify-content-between">
+                        <div class="generic-list-card-content d-flex align-items-center mr-2">
+                            <span class="icon-element bg-1 mr-2 after-none"><i class="la la-check"></i></span>
+                            <span class="font-weight-medium font-size-15">Your listing <a href="#" class="generic-link">Hotel Gulshan</a> has been approved!</span>
+                        </div>
+                        <a href="javascript:void(0)" class="generic-close"><i class="la la-times"></i></a>
+                    </div><!-- end generic-list-card -->
+                    <div class="generic-list-card d-flex align-items-center justify-content-between">
+                        <div class="generic-list-card-content d-flex align-items-center mr-2">
+                            <span class="icon-element bg-2 mr-2 after-none"><i class="la la-check"></i></span>
+                            <span class="font-weight-medium font-size-15">Your listing <a href="#" class="generic-link">Burger House</a> has been approved!</span>
+                        </div>
+                        <a href="javascript:void(0)" class="generic-close"><i class="la la-times"></i></a>
+                    </div><!-- end generic-list-card -->
+                    <div class="generic-list-card d-flex align-items-center justify-content-between">
+                        <div class="generic-list-card-content d-flex align-items-center mr-2">
+                            <span class="icon-element bg-3 mr-2 after-none"><i class="la la-star-o"></i></span>
+                            <span class="font-weight-medium font-size-15">Pitter Parker left a review <span class="badge badge-warning text-white">3.4</span> on <a href="#" class="generic-link">John's Coffee Shop</a></span>
+                        </div>
+                        <a href="javascript:void(0)" class="generic-close"><i class="la la-times"></i></a>
+                    </div><!-- end generic-list-card -->
+                    <div class="generic-list-card d-flex align-items-center justify-content-between">
+                        <div class="generic-list-card-content d-flex align-items-center mr-2">
+                            <span class="icon-element bg-4 mr-2 after-none"><i class="la la-bookmark"></i></span>
+                            <span class="font-weight-medium font-size-15">Someone bookmarked your <a href="#" class="generic-link">Super Duper Burgers</a></span>
+                        </div>
+                        <a href="javascript:void(0)" class="generic-close"><i class="la la-times"></i></a>
+                    </div><!-- end generic-list-card -->
+                    <div class="generic-list-card d-flex align-items-center justify-content-between">
+                        <div class="generic-list-card-content d-flex align-items-center mr-2">
+                            <span class="icon-element bg-5 mr-2 after-none"><i class="la la-star-o"></i></span>
+                            <span class="font-weight-medium font-size-15">Alex Smith left a review <span class="badge badge-warning text-white">4.4</span> on <a href="#" class="generic-link">Tom's Restaurant</a></span>
+                        </div>
+                        <a href="javascript:void(0)" class="generic-close"><i class="la la-times"></i></a>
+                    </div><!-- end generic-list-card -->
+                </div><!-- end block-card-body -->
+            </div><!-- end block-card -->
+        </div><!-- end col-lg-5 -->
+        <div class="col-lg-7">
+            <div class="block-card dashboard-card mb-4 px-0">
+                <div class="block-card-header d-flex flex-wrap align-items-center justify-content-between px-4 border-bottom-0 pb-0">
+                    <h2 class="widget-title pb-0">Invoices</h2>
+                    <a href="#" class="btn-gray">View More <i class="la la-arrow-right ml-1"></i></a>
+                </div>
+                <div class="block-card-body">
+                    <div class="my-table table-responsive">
+                        <table class="table align-items-center table-flush mb-0">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Item</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="order-id">RA0449</a></td>
+                                    <td>Udin Wayang</td>
+                                    <td>Nasi Padang</td>
+                                    <td>20/02/2020</td>
+                                    <td><span class="badge badge-success">Paid</span></td>
+                                    <td><a href="invoice.html" class="btn btn-sm theme-btn-primary">Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="order-id">RA5324</a></td>
+                                    <td>Jaenab Bajigur</td>
+                                    <td>Gundam 90' Edition</td>
+                                    <td>20/02/2020</td>
+                                    <td><span class="badge badge-warning text-white">Shipping</span></td>
+                                    <td><a href="invoice.html" class="btn btn-sm theme-btn-primary">Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="order-id">RA8568</a></td>
+                                    <td>Rivat Mahesa</td>
+                                    <td>Oblong T-Shirt</td>
+                                    <td>20/02/2020</td>
+                                    <td><span class="badge badge-danger">Unpaid</span></td>
+                                    <td><a href="invoice.html" class="btn btn-sm theme-btn-primary">Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="order-id">RA1453</a></td>
+                                    <td>Indri Junanda</td>
+                                    <td>Hat Rounded</td>
+                                    <td>20/02/2020</td>
+                                    <td><span class="badge badge-info">Processing</span></td>
+                                    <td><a href="invoice.html" class="btn btn-sm theme-btn-primary">Invoice</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="order-id">RA1998</a></td>
+                                    <td>Udin Cilok</td>
+                                    <td>Baby Powder</td>
+                                    <td>20/02/2020</td>
+                                    <td><span class="badge badge-success">Paid</span></td>
+                                    <td><a href="invoice.html" class="btn btn-sm theme-btn-primary">Invoice</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- end block-card-body -->
+            </div><!-- end block-card -->
+        </div><!-- end col-lg-7 -->
+        <div class="col-lg-5">
+            <div class="block-card dashboard-card mb-4 px-0 pb-0">
+                <div class="block-card-header px-4">
+                    <h2 class="widget-title pb-0">Message From Customer</h2>
+                </div>
+                <div class="block-card-body pt-0">
+                    <div class="generic-list msg-from-customer">
+                        <a class="generic-list-item d-flex align-items-center" href="dashboard-messages.html">
+                            <div class="user-thumb user-thumb-sm flex-shrink-0 position-relative">
+                                <img src="images/avatar-img.jpg" alt="author-image">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="ml-2">
+                                <p class="text-truncate text-color font-size-14 font-weight-medium">Hi there! I am wondering if you can help me with a problem I've been having.</p>
+                                <p class="small text-gray">Udin Cilok · 1m</p>
+                            </div>
+                        </a>
+                        <a class="generic-list-item d-flex align-items-center" href="dashboard-messages.html">
+                            <div class="user-thumb user-thumb-sm flex-shrink-0 position-relative">
+                                <img src="images/avatar-img2.jpg" alt="author-image">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="ml-2">
+                                <p class="text-truncate text-color font-size-14 font-weight-medium">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good</p>
+                                <p class="small text-gray">Joynal Ali · 4m</p>
+                            </div>
+                        </a>
+                        <a class="generic-list-item d-flex align-items-center" href="dashboard-messages.html">
+                            <div class="user-thumb user-thumb-sm flex-shrink-0 position-relative">
+                                <img src="images/avatar-img3.jpg" alt="author-image">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="ml-2">
+                                <p class="text-truncate text-color font-size-14 font-weight-medium">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good</p>
+                                <p class="small text-gray">Colin Smith · 10m</p>
+                            </div>
+                        </a>
+                        <a class="generic-list-item d-flex align-items-center" href="dashboard-messages.html">
+                            <div class="user-thumb user-thumb-sm flex-shrink-0 position-relative">
+                                <img src="images/avatar-img4.jpg" alt="author-image">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="ml-2">
+                                <p class="text-truncate text-color font-size-14 font-weight-medium">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good</p>
+                                <p class="small text-gray">Alex Smith · 1h</p>
+                            </div>
+                        </a>
+                        <a class="generic-list-item d-flex align-items-center" href="dashboard-messages.html">
+                            <div class="user-thumb user-thumb-sm flex-shrink-0 position-relative">
+                                <img src="images/avatar-img5.jpg" alt="author-image">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="ml-2">
+                                <p class="text-truncate text-color font-size-14 font-weight-medium">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good</p>
+                                <p class="small text-gray">Kamran adi · Yesterday</p>
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray font-weight-medium py-2" href="dashboard-messages.html">View More <i class="la la-arrow-right ml-1"></i></a>
+                    </div><!-- end generic-list -->
+                </div><!-- end block-card-body -->
+            </div><!-- end block-card -->
+        </div><!-- end col-lg-5 -->
     </div><!-- end row -->
-
-</form>
-
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery-2.2.4.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery-ui.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/popper.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/bootstrap.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/owl.carousel.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery.fancybox.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/animated-headline.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/chosen.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/datedropper.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/waypoints.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery.counterup.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery-te-1.4.0.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/jquery.MultiFile.min.js"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/main.js"></script>
+</div><!-- end dashboard-inner-body-container -->

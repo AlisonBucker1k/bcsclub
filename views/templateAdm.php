@@ -45,20 +45,20 @@
         </li>
         <li>
             <a class="sidebar-brand" href="<?php echo BASE_URL;?>">
-                <img src="<?php echo BASE_URL;?>assets/blog/images/logo-white.png" alt="logo">
+                <img src="<?php echo BASE_URL;?>assets/geral/images/logo-bcs-clubw.png" width="145px" alt="logo">
             </a>
         </li>
-        <li class="sidebar-heading pt-3">Main</li>
+        <li class="sidebar-heading pt-3">Principal</li>
         <li class="nav-item active">
-            <a class="nav-link" href="dashboard.html">
+            <a class="nav-link" href="<?php echo BASE_URL.'admin/';?>">
                 <i class="la la-dashboard font-size-18 mr-1"></i>
                 <span>Dashboard</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="dashboard-booking.html">
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL;?>">
                 <i class="la la-shopping-bag font-size-18 mr-1"></i>
-                <span>Bookings</span>
+                <span>Adicionar Comércio</span>
             </a>
         </li>
         <li class="nav-item">
@@ -78,27 +78,24 @@
                 <i class="la la-wallet font-size-18 mr-1"></i>
                 <span>Wallet</span>
             </a>
-        </li>
+        </li> -->
         <li><hr class="sidebar-divider border-top-color"></li>
-        <li class="sidebar-heading">Listings</li>
+        <li class="sidebar-heading">Comercios</li>
+        
         <li class="nav-item">
-            <a class="nav-link" href="dashboard-my-listings.html">
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/listPost">
                 <i class="la la-file-text-o font-size-18 mr-1"></i>
-                <span>My listings</span>
+                <span>Listar Comércios</span>
             </a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="dashboard-reviews.html">
-                <i class="la la-star-o font-size-18 mr-1"></i>
-                <span>Reviews</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="add-listing.html">
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/insertPost">
                 <i class="la la-plus-circle font-size-18 mr-1"></i>
-                <span>Add Listing</span>
+                <span>Adicionar Comércios</span>
             </a>
         </li>
+        
         <li><hr class="sidebar-divider border-top-color"></li>
         <li class="sidebar-heading">Account</li>
         <li class="nav-item">
@@ -108,7 +105,7 @@
             </a>
         </li>
          <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo BASE_URL;?>logout">
                 <i class="la la-power-off font-size-18 mr-1"></i>
                 <span>Logout</span>
             </a>

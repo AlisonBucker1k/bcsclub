@@ -70,9 +70,9 @@
                 <div class="col-lg-6 d-flex align-items-center justify-content-end header-top-info">
                     <span class="mr-2 text-white font-weight-semi-bold font-size-14">Siga-nos nas redes sociais:</span>
                     <ul class="social-profile social-profile-colored">
-                        <li><a href="<?php echo $config['facebook'];?>" class="facebook-bg"><i class="lab la-facebook-f"></i></a></li>
-                        <li><a href="<?php echo $config['twitter'];?>" class="twitter-bg"><i class="lab la-twitter"></i></a></li>
-                        <li><a href="<?php echo $config['instagram'];?>" class="instagram-bg"><i class="lab la-instagram"></i></a></li>
+                        <?php if(!empty($config['facebook'])):?><li><a href="<?php echo $config['facebook'];?>" class="facebook-bg"><i class="lab la-facebook-f"></i></a></li><?php endif;?>
+                        <?php if(!empty($config['twitter'])):?><li><a href="<?php echo $config['twitter'];?>" class="twitter-bg"><i class="lab la-twitter"></i></a></li><?php endif;?>
+                        <?php if(!empty($config['instagram'])):?><li><a href="<?php echo $config['instagram'];?>" class="instagram-bg"><i class="lab la-instagram"></i></a></li><?php endif;?>
                         <!-- <li><a href="<?php echo $config[''];?>" class="dribbble-bg"><i class="la la-dribbble"></i></a></li> -->
                     </ul>
                 </div>
@@ -87,9 +87,9 @@
                         <div class="logo">
                             <a href="<?php echo BASE_URL;?>"><img src="<?php echo BASE_URL.'assets/geral/images/logo-bcs-clubw.png';?>" alt="logo bcs club" width="150px"></a>
                             <div class="d-flex align-items-center">
-                                <a href="add-listing.html" class="btn-gray add-listing-btn-show font-size-24 mr-2 flex-shrink-0" data-toggle="tooltip" data-placement="left" title="Add Listing">
+                                <!-- <a href="add-listing.html" class="btn-gray add-listing-btn-show font-size-24 mr-2 flex-shrink-0" data-toggle="tooltip" data-placement="left" title="Add Listing">
                                     <i class="la la-plus"></i>
-                                </a>
+                                </a> -->
                                 <div class="menu-toggle">
                                     <span class="menu__bar"></span>
                                     <span class="menu__bar"></span>
@@ -239,10 +239,10 @@
             <div class="col-lg-4">
                 <h4 class="font-size-17 pb-3">Follow us on</h4>
                 <ul class="social-profile social-profile-styled">
-                    <li><a href="#" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li>
-                    <li><a href="#" class="twitter-bg" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="lab la-twitter"></i></a></li>
-                    <li><a href="#" class="instagram-bg" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="lab la-instagram"></i></a></li>
-                    <li><a href="#" class="dribbble-bg" data-toggle="tooltip" data-placement="top" title="Dribble"><i class="la la-dribbble"></i></a></li>
+                    <?php if(!empty($config['facebook'])):?><li><a href="<?php echo $config['facebook']?>" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li><?php endif;?>
+                    <?php if(!empty($config['twitter'])):?><li><a href="<?php echo $config['twitter']?>" class="twitter-bg" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="lab la-twitter"></i></a></li><?php endif;?>
+                    <?php if(!empty($config['instagram'])):?><li><a href="<?php echo $config['instagram']?>" class="instagram-bg" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="lab la-instagram"></i></a></li><?php endif;?>
+                    <!-- <li><a href="#" class="dribbble-bg" data-toggle="tooltip" data-placement="top" title="Dribble"><i class="la la-dribbble"></i></a></li> -->
                 </ul>
             </div>
             
