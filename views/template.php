@@ -186,9 +186,9 @@
                         <a href="<?php echo BASE_URL?>" class="foot-logo"><img src="<?php echo BASE_URL.'assets/geral/images/logo-bcs-club.png';?>" style="width: 200px;" alt="logo"></a>
                     </div><!-- end footer-logo -->
                     <ul class="list-items contact-links pt-3">
-                        <li><span class="d-block text-color mb-1"><i class="la la-map mr-1 text-color-2"></i>Address:</span> 12345 Little Baker St, Melbourne</li>
-                        <li><span class="d-block text-color mb-1"><i class="la la-phone mr-1 text-color-2"></i>Phone:</span><a href="#">+ 61 23 8093 3400</a></li>
-                        <li><span class="d-block text-color mb-1"><i class="la la-envelope mr-1 text-color-2"></i>Email:</span><a href="#">listhub@gmail.com</a></li>
+                        <li><span class="d-block text-color mb-1"><i class="la la-map mr-1 text-color-2"></i>Endereço:</span> Ed. Jusmar Rua Dr. Aristíddes Campos, 35- Sl 509, 5º Andar Centro, Vitória-Es</li>
+                        <li><span class="d-block text-color mb-1"><i class="la la-phone mr-1 text-color-2"></i>Telefone:</span><a href="#">27 4105-3060</a></li>
+                        <li><span class="d-block text-color mb-1"><i class="la la-envelope mr-1 text-color-2"></i>Email:</span><a href="#">contato@bcsclub.com.br</a></li>
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
@@ -237,7 +237,7 @@
         </div><!-- end row -->
         <div class="row pt-4 footer-action-wrap">
             <div class="col-lg-4">
-                <h4 class="font-size-17 pb-3">Follow us on</h4>
+                <h4 class="font-size-17 pb-3">Siga</h4>
                 <ul class="social-profile social-profile-styled">
                     <?php if(!empty($config['facebook'])):?><li><a href="<?php echo $config['facebook']?>" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li><?php endif;?>
                     <?php if(!empty($config['twitter'])):?><li><a href="<?php echo $config['twitter']?>" class="twitter-bg" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="lab la-twitter"></i></a></li><?php endif;?>

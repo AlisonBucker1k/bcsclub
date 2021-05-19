@@ -18,15 +18,10 @@
                             <table class="table card-table table-bordered table-hover table-vcenter text-nowrap display" id="listClients">
                                 <thead>
                                 <tr>
-                                        <th class="w-1">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" name="checkbox" value="checkbox">
-                                                <span class="custom-control-label"></span>
-                                            </label>
-                                        </th>
+                                        
                                         <th class="w-1">#</th>
                                         <th class="">Titulo</th>
-                                        <th class="">Icone</th>
+                                        <!-- <th class="">Icone</th> -->
                                         
                                         <th>Ações</th>
                                     </tr>
@@ -34,16 +29,11 @@
                                 <tbody>
                                     <?php foreach($listcategories as $item):?>
                                         <tr>
-                                            <th>
-                                                <label class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" name="checkbox" value="checkbox">
-                                                    <span class="custom-control-label"></span>
-                                                </label>
-                                            </th>
+                                            
                                             <td><a href="#" class="btn-link">#<?php echo $item['id'];?></a>
                                             </td>
                                             <td><?php echo $item['title'];?></td>
-                                            <td><img src="<?php echo BASE_URL."media/categories/".$item['icon'];?>" width="30px"></td>
+                                            <!-- <td><img src="<?php echo BASE_URL."media/categories/".$item['icon'];?>" width="30px"></td> -->
                                             <td>
                                                 <a href="<?php echo BASE_URL."admin/editCategory/".$item['id'];?>" class="btn btn-info">editar</a>
                                                 <a href="<?php echo BASE_URL."admin/deleteCategory/".$item['id'];?>" class="btn btn-danger">excluir</a>

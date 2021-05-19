@@ -17,18 +17,28 @@
                     <div class="alert alert-success"><?php echo $msg;?></div>
                 <?php endif;?>
 
-                <form method="POST">
-                    <?php if(isset($dataCategory['title'])):?>
-                        <div class="form-group ">
-                            <label class="form-label">Titulo da Categoria</label>
-                            <input type="text" class="form-control w-100" placeholder="Enter Title here" name="title" autofocus value="<?php echo $dataCategory['title'];?>">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="form-group ">
+                        <label class="form-label">Titulo da Categoria</label>
+                        <input type="text" class="form-control w-100" placeholder="Enter Title here" name="title" autofocus value="<?php echo (!empty($dataCategory['title']))?$dataCategory['title']:'';?>">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Icone da Categoria</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control w-100" name="icon" value="<?php echo (!empty($dataCategory['la_icon']))?$dataCategory['la_icon']:'';?>">
+                            <label class="custom-file-label"> Icone</label>
                         </div>
-                    <?php else:?>
-                        <div class="form-group ">
-                            <label class="form-label">Titulo da Categoria</label>
-                            <input type="text" class="form-control w-100" placeholder="Enter Title here" name="title" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Icone da Categoria</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" name="images[]">
+                            <label class="custom-file-label"> Icone</label>
                         </div>
-                    <?php endif;?>
+                    </div>
+                    
                     <!-- <div class="form-group">
                         <label class="form-label">Upload do Icone da Categoria</label>
                         <div class="custom-file">

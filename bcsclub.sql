@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Maio-2021 às 13:37
--- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.11
+-- Tempo de geração: 19-Maio-2021 às 21:56
+-- Versão do servidor: 10.4.18-MariaDB
+-- versão do PHP: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,7 +51,7 @@ CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `icon` varchar(100) NOT NULL,
-  `la-icon` varchar(50) DEFAULT NULL,
+  `la_icon` varchar(50) DEFAULT NULL,
   `bg-color` varchar(50) DEFAULT NULL,
   `status` int(11) NOT NULL DEFAULT 1 COMMENT '0 inativa 1 ativa'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -60,7 +60,7 @@ CREATE TABLE `categories` (
 -- Extraindo dados da tabela `categories`
 --
 
-INSERT INTO `categories` (`id`, `title`, `icon`, `la-icon`, `bg-color`, `status`) VALUES
+INSERT INTO `categories` (`id`, `title`, `icon`, `la_icon`, `bg-color`, `status`) VALUES
 (3, 'Academias', 'excercise.jpg', 'las la-dumbbell', NULL, 1),
 (4, 'Veículos', 'eco-car.png', 'las la-radiation', NULL, 1),
 (5, 'Escritórios', 'company.png', 'la la-building-o', NULL, 1),
@@ -68,7 +68,7 @@ INSERT INTO `categories` (`id`, `title`, `icon`, `la-icon`, `bg-color`, `status`
 (7, 'Educação', 'education.png', 'las la-university', NULL, 1),
 (8, 'Imóveis', 'home.png', NULL, NULL, 1),
 (9, 'Moda', 'sarafan.png', NULL, NULL, 1),
-(10, 'Decoração', 'pexels-daria-liudnaya-7354634.jpg', 'las la-pallet', NULL, 1),
+(10, 'Decoração', '7002d03415af95708d1516de09b1a010.jpg', 'las la-pallet', NULL, 1),
 (11, 'Eletrônicos', 'tv.png', 'las la-mobile', NULL, 1),
 (12, 'Musica e Hobbie', 'musical-notes.png', NULL, NULL, 1),
 (13, 'Esportes e Lazer', 'sport.png', NULL, NULL, 1),
@@ -80,7 +80,8 @@ INSERT INTO `categories` (`id`, `title`, `icon`, `la-icon`, `bg-color`, `status`
 (43, 'Vidraçaria', 'f0b0b35b2f15f93fb280ba65ee7bd5b2.png', NULL, NULL, 1),
 (45, 'Manutenção Celular', 'e611701a59088e1fa671790e4abff8e6.png', NULL, NULL, 1),
 (47, 'Variedades', '7f4f4c53b507dbcb2793395296113685.png', NULL, NULL, 1),
-(48, 'Negócios', '324b2882e6533ddd15d98b23f22f99a7.png', NULL, NULL, 1);
+(48, 'Negócios', '324b2882e6533ddd15d98b23f22f99a7.png', NULL, NULL, 1),
+(56, 'Tecnologia', '2699ecf473343102dadc78fc057c4163.jpg', 'las la-laptop', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -481,9 +482,11 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `id_admin`, `id_category`, `author`, `description`, `title`, `body`, `date_added`, `discount`, `featured`, `link`, `email`, `telefone`, `map`, `estado`, `rua`, `localizacao`, `la-icon`, `status`) VALUES
-(51, 2, 7, 'Almir Kool', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the ', 'BCS Club', 'A Excellence Group, foi fundado pelo senhor Weberth Martins dos Santos, com o objetivo de criar oportunidades onde discentes e docentes pudessem ter acesso à um ensino de qualidade, através de cursos de formação continuada e espaço plural para a divulgação de pesquisas científicas. Seu impulsionamento nasceu do convívio com instituições de ensino, vendo de perto suas dificuldades em mecanismos que colaborassem com ferramentas de aprimoramento e aperfeiçoamento. Dessa forma para atender os desafios do mundo globalizado, nasceu a Excellence Group, uma instituição apta à preparar profissionais que imprimam em suas frentes de trabalho a marca da seriedade e da responsabilidade, criando um singular espaço de pensadores, com o desejo de contribuir para a construção de um novo processo de aprendizagem que mude a cultura de ensino em nosso país (Brasil) que padece por reformulações.\r\n\r\nNossa principal missão é oferece cursos de atualização e aperfeiçoamento na área de Educação, Serviço Social, Segurança, Educação, Psicologia e Saúde, promovendo ensino de qualidade, compromissado com a extensão dos saberes, com a produção e a disseminação de conhecimentos, visando formar profissionais comprometidos, com uma postura ética, contribuindo para a sua inserção no contexto social e de trabalho como agente transformador.', '2020-08-05 10:31:29', 10, 1, 'www.bcsclub.com', '', '27 99801-1100', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'Espírito Santo', 'Av. Champs', 'Vila Velha', '', 1),
-(52, 2, 7, 'Alison Bucker', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the ', 'BCS Medical', 'A AS Assessoria e Consultoria em Educação, nome fantasia X EDUCACIONAL., é uma empresa de consultoria e assessoria educacional especializada em:\r\n\r\nAssessoria para reconhecimento de diplomas estrangeiros de mestrado e doutorado no Brasil.\r\nAssessoria para revalidação de diplomas de graduação.\r\nAssessoria para revalidação de pós-graduação lato sensu.\r\nPré-análise técnica de dissertação ou tese para fins de reconhecimento.\r\nGestão educacional e construção de conteúdo.\r\nRegulação, expansão, reestruturação e redesenho de IES.\r\nGeração de caixa e apoio a mantenedores na aquisição, venda ou fusão de IES.\r\nPlataforma educacional e gerenciamento escolar.\r\nAmbiente virtual de aprendizagem.\r\nAssessoria no credenciamento de IES junto ao MEC.\r\nAssessoria no reconhecimento de cursos de graduação no Brasil.\r\n\r\nSe você busca por uma empresa que lhe ofereça a segurança na execução do serviço com o resultado competente, então lhe apresentamos a X EDUCACIONAL.\r\n', '2020-08-06 10:19:26', 0, 1, 'www.bcsmedical.com', '', '27 3029 1111', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'Espírito Santo', 'Av. Bois', 'Vila Velha', '', 1),
-(53, 2, 7, 'Ricardo ISolutions', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the ', 'BCS Bank', 'A ACU – Absoulute Christian University é uma instituição de  religiosa, segundo o estabelecido na seção 1005.06 (1)(f), do estado da Flórida (USA), e amparada pelo regimento interno do código administrativo 6E-5.001. Por não estar sob a jurisdição ou competência da Comissão de Educação Independente, não é obrigada a obter licenciamento para exercer atividades de ensino, portanto autônoma em suas diretrizes pedagógicas e acadêmicas, atendendo ao seu regimento interno, na prática de ensino de qualidade e do incentivo à pesquisa em diversas áreas do conhecimento.\r\n\r\nReconhecida pela Comissão de Educação Independente da Flórida,oferece os mais variados cursos distribuídos em programas de extensão, mestrado e doutorado.\r\n\r\nEstes programas são reconhecidos em diversos países e estão beneficiando estudantes do mundo inteiro.\r\n\r\nA instituição mantém o compromisso de ofertar ensino de qualidade, na modalidade totalmente online, atendendo às necessidades do mercado, inovações tecnológicas educacionais, e vem se tornando uma excelência em sua área de atuação.\r\n\r\nSeu compromisso é promover o desenvolvimento social e espiritual, por meio do conhecimento, com valores éticos, senso de relevância, liberdade e democracia, aberta ao mundo para a aprendizagem, pesquisa e desenvolvimento permanente do talento humano, oferecendo uma grande contribuição não somente para seus discentes, como também para a sociedade.\r\n\r\nFocada em um público-alvo composto por adultos que não possuem disponibilidade de horário, a ACU – ABSOULUTE CHRISTIAN UNIVERSITY inovou ao apresentar ao seu público os programas doutrinários de pós-graduação stricto sensu internacional que, permitem a todos conciliar sua vida pessoal, familiar à seus estudos, agregando uma bagagem internacional enriquecedora ao seu aperfeiçoamento intelectual.\r\n\r\nOs resultados alcançados no âmbito acadêmicos são surpreendentes e podem ser verificados por meio de avaliações externas, que comprovam a confiabilidade institucional com elevados índices de produção intelectual e científica.', '2020-08-10 10:59:17', 0, 1, 'www.bcsbank.com', '', '+1 407 3092 2250', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'Espírito Santo', 'R. Sete', 'Vila Velha', '', 1);
+(51, 2, 7, '', '', 'BCS Club', '                                                                                                                                    A Excellence Group, foi fundado pelo senhor Weberth Martins dos Santos, com o objetivo de criar oportunidades onde discentes e docentes pudessem ter acesso à um ensino de qualidade, através de cursos de formação continuada e espaço plural para a divulgação de pesquisas científicas. <p><br><span style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"text-align:\\\\\\\\\\\"\\\\\\\" right;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\">Seu </span><b style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"text-align:\\\\\\\\\\\"\\\\\\\" right;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\">impulsionamento </b><span style=\\\\\\\"\\\\\\\\\\\"font-size:\\\\\\\" 14px;\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\" right;=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" font-size:=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" 14px;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\">nasceu do convívio com instituições de ensino, vendo de perto suas dificuldades em mecanismos que colaborassem com ferramentas de <sup style=\\\\\\\"\\\\\\\\\\\"font-size:\\\\\\\">aprimoramento </sup>e aperfeiçoamento. Dessa forma para atender os desafios do mundo globalizado, nasceu a Excellence Group, uma instituição apta à preparar profissionais que imprimam em suas frentes de trabalho a marca da seriedade e da responsabilidade, criando um singular <span style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"font-size:28px;text-align:\\\\\\\\\\\"\\\\\\\" right;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\">espaço </span>de pensadores, com o desejo de contribuir para a construção de um novo processo de aprendizagem que <span style=\\\\\\\"\\\\\\\\\\\"font-size:28px;\\\\\\\\\\\\\\\\\\\"text-align:\\\\\\\\\\\"\\\\\\\">mude </span>a cultura de ensino em nosso país (Brasil) que padece por reformulações.</span><br><br><span style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"text-align:\\\\\\\\\\\"\\\\\\\" right;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\">Nossa principal missão é oferece cursos de atualização e aperfeiçoamento na área de Educação, Serviço Social, Segurança, Educação, Psicologia e Saúde, promovendo ensino de qualidade, compromissado com a extensão dos saberes, com a produção e a disseminação de conhecimentos, visando formar profissionais comprometidos, com uma postura ética, contribuindo para a sua inserção no contexto social e de trabalho como agente transformador.</span><br></p><blockquote style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"margin:\\\\\\\\\\\"\\\\\\\" 0=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" 40px;=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" border:=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" none;=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" padding:=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" 0px;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\"><blockquote style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"margin:\\\\\\\\\\\"\\\\\\\" 0=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" 40px;=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" border:=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" none;=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" padding:=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\" 0px;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\"><p style=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\"text-align:\\\\\\\\\\\"\\\\\\\" right;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"=\\\\\\\"\\\\\\\\\\\"\\\\\\\\\\\"\\\\\\\"><br></p></blockquote></blockquote><p></p>                                                                                   \r\n                                        ', '2020-08-05 10:31:29', 10, 1, 'www.bcsclub.com', 'originalalison@gmail.com', '27 99801-1100', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'ES', 'Av. Champs', 'Vila Velha', '', 1),
+(52, 2, 7, '', '', 'BCS Medical', '                                                                                        A AS Assessoria e Consultoria em Educação, nome fantasia X EDUCACIONAL., é uma empresa de consultoria e assessoria educacional especializada em:\r\n\r\nAssessoria para reconhecimento de diplomas estrangeiros de mestrado e doutorado no Brasil.\r\nAssessoria para revalidação de diplomas de graduação.\r\nAssessoria para revalidação de pós-graduação lato sensu.\r\nPré-análise técnica de dissertação ou tese para fins de reconhecimento.\r\nGestão educacional e construção de conteúdo.\r\nRegulação, expansão, reestruturação e redesenho de IES.\r\nGeração de caixa e apoio a mantenedores na aquisição, venda ou fusão de IES.\r\nPlataforma educacional e gerenciamento escolar.\r\nAmbiente virtual de aprendizagem.\r\nAssessoria no credenciamento de IES junto ao MEC.\r\nAssessoria no reconhecimento de cursos de graduação no Brasil.\r\n\r\nSe você busca por uma empresa que lhe ofereça a segurança na execução do serviço com o resultado competente, então lhe apresentamos a X EDUCACIONAL.\r\n \r\n                                         \r\n                                        ', '2020-08-06 10:19:26', 0, 1, 'www.bcsmedical.com', '', '27 3029 1111', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'ES', 'Av. Bois', 'Vila Velha', '', 1),
+(53, 2, 7, 'Ricardo ISolutions', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the ', 'BCS Bank', 'A ACU – Absoulute Christian University é uma instituição de  religiosa, segundo o estabelecido na seção 1005.06 (1)(f), do estado da Flórida (USA), e amparada pelo regimento interno do código administrativo 6E-5.001. Por não estar sob a jurisdição ou competência da Comissão de Educação Independente, não é obrigada a obter licenciamento para exercer atividades de ensino, portanto autônoma em suas diretrizes pedagógicas e acadêmicas, atendendo ao seu regimento interno, na prática de ensino de qualidade e do incentivo à pesquisa em diversas áreas do conhecimento.\r\n\r\nReconhecida pela Comissão de Educação Independente da Flórida,oferece os mais variados cursos distribuídos em programas de extensão, mestrado e doutorado.\r\n\r\nEstes programas são reconhecidos em diversos países e estão beneficiando estudantes do mundo inteiro.\r\n\r\nA instituição mantém o compromisso de ofertar ensino de qualidade, na modalidade totalmente online, atendendo às necessidades do mercado, inovações tecnológicas educacionais, e vem se tornando uma excelência em sua área de atuação.\r\n\r\nSeu compromisso é promover o desenvolvimento social e espiritual, por meio do conhecimento, com valores éticos, senso de relevância, liberdade e democracia, aberta ao mundo para a aprendizagem, pesquisa e desenvolvimento permanente do talento humano, oferecendo uma grande contribuição não somente para seus discentes, como também para a sociedade.\r\n\r\nFocada em um público-alvo composto por adultos que não possuem disponibilidade de horário, a ACU – ABSOULUTE CHRISTIAN UNIVERSITY inovou ao apresentar ao seu público os programas doutrinários de pós-graduação stricto sensu internacional que, permitem a todos conciliar sua vida pessoal, familiar à seus estudos, agregando uma bagagem internacional enriquecedora ao seu aperfeiçoamento intelectual.\r\n\r\nOs resultados alcançados no âmbito acadêmicos são surpreendentes e podem ser verificados por meio de avaliações externas, que comprovam a confiabilidade institucional com elevados índices de produção intelectual e científica.', '2020-08-10 10:59:17', 0, 1, 'www.bcsbank.com', '', '+1 407 3092 2250', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14966.086783723498!2d-40.3307894!3d-20.3200558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1619411889468!5m2!1spt-BR!2sbr', 'ES', 'R. Sete', 'Vila Velha', '', 1),
+(54, 1, 3, '', '', 'Post com várias imagens', '                                             \r\n                                        ', '2021-05-19 11:04:10', 19, 1, '', '', '', '', '', '', '', '', 1),
+(55, 1, 56, '', '', 'BCK Code', '                                                                                        <b style=\\\\\\\\\\\\\\\"color: rgb(0, 0, 0); font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; text-align: justify;\\\\\\\\\\\\\\\">Lorem Ipsum</b><span style=\\\\\\\\\\\\\\\"color: rgb(0, 0, 0); font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; text-align: justify;\\\\\\\\\\\\\\\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\\\\\\\\\\\\\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span><p><span style=\\\\\\\\\\\\\\\"color: rgb(0, 0, 0); font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; text-align: justify;\\\\\\\\\\\\\\\"><br></span></p><p><span style=\\\\\\\\\\\\\\\"color: rgb(0, 0, 0); font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; text-align: justify;\\\\\\\\\\\\\\\">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p><p><span style=\\\\\\\\\\\\\\\"color: rgb(0, 0, 0); font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; text-align: justify;\\\\\\\\\\\\\\\"><br></span></p><p><span style=\\\\\\\\\\\\\\\"font-weight: bolder; font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; color: rgb(0, 0, 0); text-align: justify;\\\\\\\\\\\\\\\">Lorem Ipsum</span><span style=\\\\\\\\\\\\\\\"font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; color: rgb(0, 0, 0); text-align: justify;\\\\\\\\\\\\\\\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\\\\\\\\\\\\\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span><p><span style=\\\\\\\\\\\\\\\"font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; color: rgb(0, 0, 0); text-align: justify;\\\\\\\\\\\\\\\"><br></span></p><p><span style=\\\\\\\\\\\\\\\"font-family: \\\\\\\"Open Sans\\\\\\\", Arial, sans-serif; color: rgb(0, 0, 0); text-align: justify;\\\\\\\\\\\\\\\">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p></p> \r\n                                         \r\n                                        ', '2021-05-19 16:29:24', 15, 1, 'www.bckcode.com.br', 'contato@bckcode.com.br', '27 99658-1756', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239739.6271005351!2d-40.44379616994006!3d-20.136897947486286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ff105549a61%3A0x409c2919913258a7!2sSerra%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1621452541796!5m2!1spt-BR!2sbr', '', '', 'Serra', '', 1);
 
 -- --------------------------------------------------------
 
@@ -518,55 +521,12 @@ CREATE TABLE `posts_images` (
 --
 
 INSERT INTO `posts_images` (`id`, `id_post`, `urlf`) VALUES
-(18, 43, '90df748232a6fb649273606a325317ad.jpg'),
-(19, 43, '90df748232a6fb649273606a325317ad.jpg'),
-(21, 45, '90df748232a6fb649273606a325317ad.jpg'),
-(22, 45, '90df748232a6fb649273606a325317ad.jpg'),
-(23, 45, '90df748232a6fb649273606a325317ad.jpg'),
-(24, 34, '90df748232a6fb649273606a325317ad.jpg'),
-(25, 46, '90df748232a6fb649273606a325317ad.jpg'),
-(26, 47, '90df748232a6fb649273606a325317ad.jpg'),
-(27, 47, '90df748232a6fb649273606a325317ad.jpg'),
-(28, 48, '90df748232a6fb649273606a325317ad.jpg'),
-(29, 49, '90df748232a6fb649273606a325317ad.jpg'),
-(30, 50, '90df748232a6fb649273606a325317ad.jpg'),
-(31, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(33, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(34, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(35, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(36, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(37, 51, '90df748232a6fb649273606a325317ad.jpg'),
-(40, 55, '90df748232a6fb649273606a325317ad.jpg'),
-(42, 53, '90df748232a6fb649273606a325317ad.jpg'),
-(43, 52, '90df748232a6fb649273606a325317ad.jpg'),
-(44, 56, '90df748232a6fb649273606a325317ad.jpg'),
-(45, 57, '90df748232a6fb649273606a325317ad.jpg'),
-(46, 54, '90df748232a6fb649273606a325317ad.jpg'),
-(47, 58, '90df748232a6fb649273606a325317ad.jpg'),
-(48, 59, '90df748232a6fb649273606a325317ad.jpg'),
-(49, 60, '90df748232a6fb649273606a325317ad.jpg'),
-(50, 61, '90df748232a6fb649273606a325317ad.jpg'),
-(51, 62, '90df748232a6fb649273606a325317ad.jpg'),
-(52, 63, '90df748232a6fb649273606a325317ad.jpg'),
-(53, 64, '90df748232a6fb649273606a325317ad.jpg'),
-(54, 65, '90df748232a6fb649273606a325317ad.jpg'),
-(55, 66, '90df748232a6fb649273606a325317ad.jpg'),
-(56, 67, '90df748232a6fb649273606a325317ad.jpg'),
-(57, 68, '90df748232a6fb649273606a325317ad.jpg'),
-(58, 69, '90df748232a6fb649273606a325317ad.jpg'),
-(59, 70, '90df748232a6fb649273606a325317ad.jpg'),
-(60, 71, '90df748232a6fb649273606a325317ad.jpg'),
-(61, 72, '90df748232a6fb649273606a325317ad.jpg'),
-(62, 73, '90df748232a6fb649273606a325317ad.jpg'),
-(63, 74, '90df748232a6fb649273606a325317ad.jpg'),
-(64, 75, '90df748232a6fb649273606a325317ad.jpg'),
-(68, 77, '90df748232a6fb649273606a325317ad.jpg'),
-(69, 76, '90df748232a6fb649273606a325317ad.jpg'),
-(70, 78, '90df748232a6fb649273606a325317ad.jpg'),
-(71, 79, '90df748232a6fb649273606a325317ad.jpg'),
-(72, 80, '90df748232a6fb649273606a325317ad.jpg'),
-(74, 81, '90df748232a6fb649273606a325317ad.jpg'),
-(75, 82, '90df748232a6fb649273606a325317ad.jpg');
+(85, 51, 'a9c1a618fdbd9ccd007e97799dba1ecd.jpg'),
+(94, 55, '29158628cebd83bc8f0d454848edab38.jpg'),
+(95, 55, 'ccb7f592dadb1e3ebad8c647be9ae0ef.jpg'),
+(96, 55, '12e16dbf555178af59c09bb812352cae.jpg'),
+(97, 52, 'f875fb27b1218c78b61b96ed6c7b9c78.jpg'),
+(98, 55, '32fd317a3542fc857f3882370775762d.jpg');
 
 --
 -- Índices para tabelas despejadas
@@ -682,7 +642,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT de tabela `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT de tabela `clientes`
@@ -754,7 +714,7 @@ ALTER TABLE `leads`
 -- AUTO_INCREMENT de tabela `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT de tabela `posts_comments`
@@ -766,7 +726,7 @@ ALTER TABLE `posts_comments`
 -- AUTO_INCREMENT de tabela `posts_images`
 --
 ALTER TABLE `posts_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

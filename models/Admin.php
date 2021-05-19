@@ -75,7 +75,7 @@ class Admin extends Model {
         $sql->execute();
 
         if($sql->rowCount() > 0){
-            $array = $sql->fetch();
+            $array = $sql->fetchAll();
         }
 
         return $array;
@@ -132,6 +132,8 @@ class Admin extends Model {
             $array = $sql->fetchAll();
         }
 
+        
+
         return $array;
     }
 
@@ -157,7 +159,7 @@ class Admin extends Model {
         $sql->bindValue(':id', $id);
         $sql->execute();
 
-        $u->upload($images, $id, 'post');
+        $u->move_files($images, $id);
         
         return true;
     }
@@ -185,17 +187,19 @@ class Admin extends Model {
 
         return $total;
     }
-    public function insertNewCat($title, $icon){
-        $sql = "INSERT INTO categories SET title = :title";
+    public function insertNewCat($title, $icon, $images){
+        $sql = "INSERT INTO categories SET title = :title, la_icon = :la";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':title', $title);
+        $sql->bindValue(':la', $icon);
         $sql->execute();
 
         $idCat = $this->db->lastInsertId();
 
         $u = new Uploader();
 
-        $u->upload($icon, $idCat, 'category');
+        // $u->upload($icon, $idCat, 'category');
+        $u->move_files($images, $idCat, 'categories');
 
         return true;
     }
@@ -227,12 +231,17 @@ class Admin extends Model {
         return $array;
     }
 
-    public function editCategory($title, $id){
-        $sql = "UPDATE categories SET title = :title WHERE id = :id";
+    public function editCategory($title, $icon, $images, $id){
+        $sql = "UPDATE categories SET title = :title, la_icon = :la WHERE id = :id";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':title', $title);
+        $sql->bindValue(':la',$icon);
         $sql->bindValue(':id', $id);
         $sql->execute();
+
+        $u = new Uploader();
+
+        $u->move_files($images, $id, 'categories');
 
         return true;
     }

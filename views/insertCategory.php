@@ -23,10 +23,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Upload do Icone da Categoria</label>
+                        <label class="form-label">Icone da Categoria</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control w-100" name="icon">
+                            <label class="custom-file-label"> Icone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Icone da Categoria</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="icon[]">
-                            <label class="custom-file-label">Upload Icone</label>
+                            <input type="file" class="custom-file-input" name="images[]">
+                            <label class="custom-file-label"> Icone</label>
                         </div>
                     </div>
 

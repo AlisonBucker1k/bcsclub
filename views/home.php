@@ -26,7 +26,7 @@
                             <b>Bares?</b>
                             <b>Salões?</b>
                             <b>Apartamentos?</b>
-                            <b>Viajens?</b>
+                            <b>Viagens?</b>
                             <b>Negócios?</b>
                             <b>Academias?</b>
                             <b>BCSClub</b>
@@ -41,14 +41,14 @@
                     <div class="main-search-input">
                         <div class="main-search-input-item">
                             
-                                <div class="form-group mb-0">
-                                    <span class="la la-search form-icon"></span>
-                                    <input class="form-control" type="search" placeholder="O que você procura?" name="keyword">
-                                </div>
+                            <div class="form-group mb-0">
+                                <span class="la la-search form-icon"></span>
+                                <input class="form-control" type="search" placeholder="O que você procura?" name="keyword">
+                            </div>
                             
                         </div><!-- end main-search-input-item -->
                         <div class="main-search-input-item user-chosen-select-container">
-                            <select class="user-chosen-select" name="local">
+                            <select class="form-control user-chosen-select" name="local">
                                 <option value="">Selecione um Estado</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
@@ -80,7 +80,7 @@
                             </select>
                         </div><!-- end main-search-input-item -->
                         <div class="main-search-input-item user-chosen-select-container">
-                            <select class="user-chosen-select" name="category">
+                            <select class="form-control user-chosen-select" name="category">
                                 <option value="">Selecione uma categoria</option>
                                 <?php foreach($listCategories as $item):?>
                                     <option data-select2-id="" value="<?php echo $item['id'];?>"><?php echo $item['title'];?></option>
@@ -102,7 +102,7 @@
                         <?php $qt=1; foreach($listCategories as $item):?>
                             <div class="hero-category-item">
                                 <a href="<?php echo BASE_URL."categories/index/".$item['id'];?>" class="d-block hero-cat-link hover-y">
-                                    <span class="icon-element bg-<?php echo $qt;?> mx-auto"><i class="<?php echo (!empty($item['la-icon']))?$item['la-icon']:'la la-building-o';?>"></i></span>
+                                    <span class="icon-element bg-<?php echo $qt;?> mx-auto"><i class="<?php echo (!empty($item['la_icon']))?$item['la_icon']:'la la-building-o';?>"></i></span>
                                     <?php echo $item['title'];?>
                                 </a>
                             </div>
@@ -110,10 +110,7 @@
                                 if($qt>= 6){break;}
                                 $qt++;
                             ?>
-
                         <?php endforeach;?>
-                        
-                        
                     </div>
                 </div><!-- end highlighted-categories -->
             </div><!-- end col-lg-12 -->

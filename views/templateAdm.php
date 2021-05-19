@@ -95,17 +95,39 @@
                 <span>Adicionar Comércios</span>
             </a>
         </li>
-        
+
         <li><hr class="sidebar-divider border-top-color"></li>
-        <li class="sidebar-heading">Account</li>
+        <li class="sidebar-heading">Categorias</li>
+
         <li class="nav-item">
-            <a class="nav-link" href="dashboard-my-profile.html">
-                <i class="la la-user font-size-18 mr-1"></i>
-                <span>My Profile</span>
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/listCategories">
+                <i class="la la-file-text-o font-size-18 mr-1"></i>
+                <span>Listar Categorias</span>
             </a>
         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="<?php echo BASE_URL;?>logout">
+
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/insertCategory">
+                <i class="la la-plus-circle font-size-18 mr-1"></i>
+                <span>Adicionar Categoria</span>
+            </a>
+        </li>
+
+        <li><hr class="sidebar-divider border-top-color"></li>
+        <li class="sidebar-heading">Contatos</li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/contacts">
+                <i class="la la-file-text-o font-size-18 mr-1"></i>
+                <span>Listar Contatos</span>
+            </a>
+        </li>
+        
+        <li><hr class="sidebar-divider border-top-color"></li>
+        <li class="sidebar-heading">Conta</li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASE_URL;?>admin/logout">
                 <i class="la la-power-off font-size-18 mr-1"></i>
                 <span>Logout</span>
             </a>

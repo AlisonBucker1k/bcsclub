@@ -143,10 +143,10 @@ class adminController extends Controller {
 
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 $title = addslashes($_POST['title']);
-                $description = addslashes($_POST['description']);
+                $description = '';
                 $category = addslashes($_POST['category']);
                 $body = addslashes($_POST['body']);
-                $author = addslashes($_POST['author_name']);
+                $author = '';
                 $link = addslashes($_POST['link']);
                 $featured = addslashes($_POST['featured']);
                 $email = addslashes($_POST['email']);
@@ -158,9 +158,9 @@ class adminController extends Controller {
 
                 $discount = addslashes($_POST['discount']);
 
-                $images = (!empty($_FILES['images']))?$_FILES['images']:array();
+                // $images = (!empty($_FILES))?$_FILES['images']:array();
                 
-                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount, $id)){
+                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $id)){
                     $dados['msg'] = "Post Editado"; 
                 }
             }
@@ -199,8 +199,9 @@ class adminController extends Controller {
 
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 $title = addslashes($_POST['title']);
-                $icon = (!empty($_FILES['icon']))?$_FILES['icon']:array();
-                if($a->insertNewCat($title, $icon)){
+                $icon = addslashes($_POST['icon']);
+                
+                if($a->insertNewCat($title, $icon, $_FILES)){
                     $dados['msg'] = "Categoria Adicionada!";
                 }
             }
@@ -233,17 +234,10 @@ class adminController extends Controller {
 
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 $title = addslashes($_POST['title']);
-
-                if($a->editCategory($title, $id)){
-                    $dados['msg'] = "Categoria Editada"; 
-                }
-            }
-
-            if(isset($_POST['title']) && !empty($_POST['title'])){
-                $title = addslashes($_POST['title']);
+                $icon = addslashes($_POST['icon']);
                 
-                if($a->editCategory($title, $id)){
-                    $dados['msg'] = "Categoria editada";
+                if($a->editCategory($title, $icon, $_FILES, $id)){
+                    $dados['msg'] = "Categoria Adicionada!";
                 }
             }
 
@@ -271,16 +265,16 @@ class adminController extends Controller {
         }
     }
 
-    public function delImages($url){
+    public function delImages($url, $id){
         if(isset($_SESSION['login_adm_bsb']) && !empty($_SESSION['login_adm_bsb'])){
             $dados = array();
 
             $a = new Admin();
 
             if($a->deleteImages($url)){
-                // header('Location: '.BASE_URL.'admin/editPost/'.$id);
+                header('Location: '.BASE_URL.'admin/editPost/'.$id);
             }else{
-                // header('Location: '.BASE_URL.'admin/listCategories/?status=error');
+                header('Location: '.BASE_URL.'admin/listCategories/?status=error');
             }
         }else{
             header("Location: ".BASE_URL."admin/login");

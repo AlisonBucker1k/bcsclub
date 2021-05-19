@@ -1,13 +1,16 @@
 <?php
 class Uploader extends Model {
 
-    public function move_files($arquivos, $id_post){
+    public function move_files($arquivos, $id_post, $to = 'posts'){
         $array = array();
 
         $a = new Admin();
-        
+
+        // echo "<pre>";
+        // print_r($arquivos);exit;
+
         for($q=0;$q<count($arquivos['images']['tmp_name']);$q++){
-            echo $arquivos['images']['type'][$q].'<br>';
+            // echo $arquivos['images']['type'][$q].'<br>';
             switch($arquivos['images']['type'][$q]){
                 case 'image/jpeg':
                     $type = '.jpg';
@@ -21,16 +24,26 @@ class Uploader extends Model {
                 case 'image/gif':
                     $type = '.gif';
                     break;
+                default:
+                    return true;
+                    break;
             }
 
             $hashFile = md5(rand(1111,99999).date('d/m/y').rand(111,9999999)).$type;
-            move_uploaded_file($arquivos['images']['tmp_name'][$q], PATH_SITE.'/media/posts/'.$hashFile);
+            move_uploaded_file($arquivos['images']['tmp_name'][$q], PATH_SITE.'/media/'.$to.'/'.$hashFile);
 
-            $sql = "INSERT INTO posts_images SET id_post = :id_post, urlf = :urlf";
-            $sql = $this->db->prepare($sql);
-            $sql->bindValue(':id_post', $id_post);
-            $sql->bindValue(':urlf', $hashFile);
-            $sql->execute();
+            if($to == 'posts'){
+                $sql = "INSERT INTO posts_images SET id_post = :id_post, urlf = :urlf";
+                $sql = $this->db->prepare($sql);
+                $sql->bindValue(':id_post', $id_post);
+                $sql->bindValue(':urlf', $hashFile);
+                $sql->execute();
+            }elseif($to == 'categories'){
+               $sql = $this->db->prepare("UPDATE categories SET icon = :icon WHERE id = :id");
+               $sql->bindValue(':icon', $hashFile);
+               $sql->bindValue(':id', $id_post);
+               $sql->execute();
+            }
         }
         return true;
     }
