@@ -15,7 +15,7 @@ if(ENVIRONMENT == 'development') {
 	$config['dbpass'] = '';
 } else {
 	// define("PATH_SITE", "media/");
-	define("BASE_URL", "https://bcsclub.bcsbank.com.br/");
+	define("BASE_URL", "https://bcsclub.com.br/");
 	$config['dbname'] = 'isolutio_club';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'isolutio_bucker';
