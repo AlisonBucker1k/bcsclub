@@ -60,7 +60,7 @@
 
 .gradient-btn {
   //background: linear-gradient(to right, #ff6b6b, #ffbb3d);
-  background: linear-gradient(270deg, #9f8fff, #7b68ee);
+  background: linear-gradient(270deg, #9f8fff, #29235c );
   position: relative;
   color: $white;
   @include box-shadow(0 5px 25px rgba(123,104,238,.3));
@@ -74,7 +74,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background: linear-gradient(270deg, #7b68ee, #9f8fff);
+    background: linear-gradient(270deg, #29235c , #9f8fff);
     @include border-radius(4px);
     @include transition(0.4s);
     z-index: -1;

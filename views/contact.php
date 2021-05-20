@@ -78,7 +78,7 @@
                     </div><!-- end info-icon-->
                     <div class="info-content">
                         <h4 class="info__title mb-2">Fale conosco</h4>
-                        <p class="info__desc"><a href="tel:+1811864592" class="btn-text">+1 (811) 86 45 92</a></p>
+                        <p class="info__desc"><a href="tel:+1811864592" class="btn-text">27 4105-3060</a></p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
             </div><!-- end col-lg-4 -->
@@ -150,7 +150,7 @@
                     </div><!-- end info-icon-->
                     <div class="info-content">
                         <h4 class="info__title mb-2">Visite nossa sede</h4>
-                        <p class="info__desc">Ed. Jusmar Av. Princesa isabel.</p>
+                        <p class="info__desc">Av. Princesa isabel. Ed. Jusmar 509</p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
             </div><!-- end col-lg-4 -->
@@ -226,14 +226,14 @@
                         <div class="stroke-shape"></div>
                     </div><!-- block-card-header -->
                     <div class="block-card-body">
-                        <img src="<?php echo BASE_URL;?>assets/blog/images/img-loading.png" data-src="<?php echo BASE_URL;?>assets/blog/images/img31.jpg" alt="group-img" class="w-100 radius-round lazy">
+                        <img src="<?php echo BASE_URL;?>assets/blog/images/img-loading.png" data-src="<?php echo BASE_URL;?>assets/blog/images/edif-jusmar.jpg" alt="group-img" class="w-100 radius-round lazy">
                         <ul class="list-items list--items list-items-style-2 py-4">
-                            <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> Av. Princesa Isabel, Ed. Jusmar, Sala , Vitória ES</li>
-                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="#">0800 4004-1111</a></li>
+                            <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> Ed. Jusmar Rua Dr. Aristíddes Campos, 35- Sl 509, 5º Andar Centro, Vitória-Es</li>
+                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="#">27 4105-3060</a></li>
                             <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="#">contato@bcsclub.com</a></li>
                         </ul>
                         <div class="section-block-2"></div>
-                        <h3 class="widget-title font-size-16 pt-4">Horario de funcionamento</h3>
+                        <h3 class="widget-title font-size-16 pt-4">Horário de funcionamento</h3>
                         <ul class="list-items pb-4">
                             <li class="d-flex align-items-center justify-content-between"><span>Segunda a Sexta</span> <span class="text-success">9:00 - 17:00</span></li>
                             <li class="d-flex align-items-center justify-content-between"><span>Sábado</span> <span class="text-success">09:00 - 12:00</span></li>
@@ -259,14 +259,15 @@
 
 <!--========= start google map ===========-->
 <div class="map-container height-500">
-    <div id="map"></div>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.5219771768807!2d-40.330957037865275!3d-20.32004416955529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83daa08a2e2bb%3A0xbb67b2517d9003d3!2sEdif%C3%ADcio%20Jusmar!5e0!3m2!1spt-BR!2sbr!4v1621521272539!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- <div id="map"></div> -->
 </div>
 <!--========= end google map ===========-->
     
     
     
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&libraries=places&callback=initAutocomplete"></script>
-<script src="<?php echo BASE_URL;?>assets/blog/js/gmap-script.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&libraries=places&callback=initAutocomplete"></script> -->
+<!-- <script src="<?php echo BASE_URL;?>assets/blog/js/gmap-script.js"></script> -->
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
