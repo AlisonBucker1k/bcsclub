@@ -103,15 +103,15 @@
                 <div class="img-boxes row">
                     <div class="col-lg-6 responsive-column">
                         <div class="img-box-item mb-4 js-tilt-2">
-                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img20.jpg" alt="about-img">
+                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/compra-telefone.jpg" alt="about-img">
                         </div>
                         <div class="img-box-item js-tilt-2">
-                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img21.jpg" alt="about-img">
+                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/transacao-on-line.webp" alt="about-img">
                         </div>
                     </div>
                     <div class="col-lg-6 responsive-column">
                         <div class="img-box-item js-tilt-2">
-                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img38.jpg" alt="about-img">
+                            <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/vendedor-satisfeito.jpg" alt="about-img">
                         </div>
                     </div>
                 </div><!-- end img-boxes -->
@@ -122,7 +122,7 @@
             <div class="col-lg-6">
                 <div class="img-boxes">
                     <div class="img-box-item">
-                        <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img31.jpg" alt="about-img">
+                        <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/leader.jpeg" alt="about-img">
                     </div>
                 </div><!-- end img-boxes -->
             </div><!-- end col-lg-6 -->
@@ -151,7 +151,7 @@
             <div class="col-lg-10 mx-auto">
                 <div class="about-content text-center">
                     <div class="section-heading">
-                        <h2 class="sec__title">Oportuinizarr novos negócios, fortalecer o comércio e o Empreendedorismo.</h2>
+                        <h2 class="sec__title">Oportuinizar novos negócios, fortalecer o comércio e o Empreendedorismo.</h2>
                         <p class="sec__desc">
                             A plataforma BCS Club, está presente em todos os municipios da Grande Vitória, trazendo para a sua plataforma negocios que vão desde microempreendedores até grandes empresas, ambas voltadas ao comércio varegista quato a prestação de serviços.
                         </p>
@@ -638,7 +638,7 @@
             <div class="col-lg-3 responsive-column">
                 <div class="card-item card-item-layout-2 hover-y">
                     <div class="card-image after-none">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/team1.jpg" class="card__img lazy" alt="Team member image">
+                        <img width="300" height="270" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/edson.jpg" class="card__img lazy" alt="Team member image">
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">
@@ -656,7 +656,7 @@
             <div class="col-lg-3 responsive-column">
                 <div class="card-item card-item-layout-2 hover-y">
                     <div class="card-image after-none">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/team2.jpg" class="card__img lazy" alt="Team member image">
+                        <img width="300" height="270" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/wallace.jpg" class="card__img lazy" alt="Team member image">
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">
@@ -674,7 +674,7 @@
             <div class="col-lg-3 responsive-column">
                 <div class="card-item card-item-layout-2 hover-y">
                     <div class="card-image after-none">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/team3.jpg" class="card__img lazy" alt="Team member image">
+                        <img width="300" height="270" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/carolina.jpg" class="card__img lazy" alt="Team member image">
                         <svg class="small-wave-shape" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 415" preserveAspectRatio="none"><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="700"><path class="bg-gray-1" fill-opacity="0.2" d="M5.68434189e-13,292.788567 C80.6666667,271.41188 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C788.879994,215.494242 940.849865,-5.02123357 1200,0.788566864 C1200,33.4552335 1200,171.525711 1200,415 L9.19819776e-13,414.788567 L5.68434189e-13,292.788567 Z"></path></g><g class="pix-waiting animated" data-anim-type="fade-in-up" data-anim-delay="500"><path class="bg-gray-1" fill-opacity="0.6" d="M2.08355555e-12,332.788567 C80.6666667,284.745214 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.08369,215.39446 940.387018,21.5609115 1200,37.7885669 C1200,55.7885669 1200,181.525711 1200,415 L1.8189894e-12,414.788567 L2.08355555e-12,332.788567 Z"></path></g><path class="bg-gray-1" d="M9.09494702e-13,373.771254 C80.6666667,298.406109 159.333333,260.723537 236,260.723537 C421,260.723537 525,344.759008 670,273.729027 C789.088175,215.392262 940.369069,48.85905 1200,74.7885669 C1200,148.788567 1200,262.192378 1200,415 L1.0227342e-12,414.788567 L9.09494702e-13,373.771254 Z"></path><defs></defs></svg>
                     </div><!-- end card-image -->
                     <div class="card-content pt-3">

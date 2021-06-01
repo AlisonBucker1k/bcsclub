@@ -779,7 +779,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/avatar-img.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/t2.png" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Ricardo Aquino</h4>
                             <span class="testi__meta">Cariacica</span>
                         </div>
@@ -791,7 +791,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/avatar-img2.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/t3.png" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Joana Simões</h4>
                             <span class="testi__meta">Serra</span>
                         </div>
@@ -803,7 +803,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/avatar-img3.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/'?>images/t1.jpg" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Alemão Rações</h4>
                             <span class="testi__meta">Bento Ferreira</span>
                         </div>
@@ -862,19 +862,19 @@
                 <div class="mobile-img">
                     <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/map-img.png" alt="map-img">
                     <div class="map-marker map-marker-1 bounce">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img.jpg" alt="">
+                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img.png" alt="">
                         <div class="map-pin-bg"></div>
                     </div><!-- end map-marker -->
                      <div class="map-marker map-marker-2 bounce">
-                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img2.jpg" alt="">
+                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img-medical.png" alt="">
                          <div class="map-pin-bg"></div>
                     </div><!-- end map-marker -->
                     <div class="map-marker map-marker-3 bounce">
-                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img3.jpg" alt="">
+                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img-club.png" alt="">
                          <div class="map-pin-bg"></div>
                     </div><!-- end map-marker -->
                     <div class="map-marker map-marker-4 bounce">
-                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img4.jpg" alt="">
+                         <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img-bckcode.png" alt="">
                          <div class="map-pin-bg"></div>
                     </div><!-- end map-marker -->
                     <div class="map-marker map-marker-5 bounce">
@@ -1035,7 +1035,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5">
                             <div class="cta-img">
-                                <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img37.jpg" alt="">
+                                <img class="lazy" src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img37.png" alt="">
                                 <div class="cta-img-shape">
                                     <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                                         <path d="M627.25,-82.39 C346.22,43.91 512.69,168.25 560.66,205.75 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: #fff;"></path>
