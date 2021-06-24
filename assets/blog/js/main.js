@@ -502,7 +502,7 @@ Author Email:   contact@tecydevs.com
 
         /*=========== Google map ============*/
         if($("#map").length) {
-            initMap('map', 40.717499, -74.044113, 'images/map-marker.png');
+            // initMap('map', 40.717499, -74.044113, 'images/map-marker.png');
         }
 
         /*======== Rating Overview ===========*/

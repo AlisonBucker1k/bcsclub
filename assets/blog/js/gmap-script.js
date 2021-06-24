@@ -16,10 +16,10 @@ function initMap(dom_el_id, lat, lng, marker_icon) {
         dom_el_id = 'map';
     }
     if (typeof lat === 'undefined') {
-        lat = 40.728157;
+        lat = -40.330957;
     }
     if (typeof lng === 'undefined') {
-        lng = -74.077644;
+        lng = -20.3200442;
     }
     if (typeof marker_icon === 'undefined') {
         marker_icon = '../images/map-marker.png';
@@ -28,8 +28,8 @@ function initMap(dom_el_id, lat, lng, marker_icon) {
 
 
     let lat_lng = {
-        lat: lat,
-        lng: lng
+        lat,
+        lng
     }; // lattitude and longitude of your place
     let element_to_mount_map = document.getElementById(dom_el_id); // get the dom element using the given ID
     if("undefined" === typeof google){
