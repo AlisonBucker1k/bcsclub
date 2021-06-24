@@ -58,7 +58,7 @@
                                     <label class="label-text">Site do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="link" placeholder="Porcentagem de desconto para clientes do bcs">
+                                        <input class="form-control" type="text" name="link" placeholder="bckcode.com.br">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -68,7 +68,7 @@
                                     <label class="label-text">Email do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="email" placeholder="Porcentagem de desconto para clientes do bcs">
+                                        <input class="form-control" type="text" name="email" placeholder="contato@bckcode.com.br">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -78,7 +78,36 @@
                                     <label class="label-text">Telefone</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="phone" placeholder="Porcentagem de desconto para clientes do bcs">
+                                        <input class="form-control" id="telefone" type="text" name="phone" placeholder="(27) 99999-9999">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">CEP</label>
+                                    <div class="form-group">
+                                        <!-- <span class="la la-briefcase form-icon"></span> -->
+                                        <input class="form-control" id="cep" type="text" name="cep" placeholder="99999-999" onblur="pesquisacep(this.value)">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">Rua</label>
+                                    <div class="form-group">
+                                        <!-- <span class="la la-briefcase form-icon"></span> -->
+                                        <input class="form-control" type="text" name="phone" placeholder="Av Geronimo Monteiro" id="rua">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">Bairro</label>
+                                    <div class="form-group">
+                                        <!-- <span class="la la-briefcase form-icon"></span> -->
+                                        <input class="form-control" type="text" name="phone" placeholder="Jacaraípe" id="bairro">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -88,7 +117,7 @@
                                     <label class="label-text">Cidade do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="local" placeholder="Cidade">
+                                        <input class="form-control" type="text" name="local" placeholder="Cidade" id="cidade">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -193,6 +222,7 @@
 
 <script src="<?php echo BASE_URL;?>assets/blog/js/jquery-2.2.4.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/popper.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/bootstrap.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/owl.carousel.min.js"></script>
@@ -206,6 +236,80 @@
 <script src="<?php echo BASE_URL;?>assets/blog/js/jquery.MultiFile.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/main.js"></script>
 
+<script>
+    $('#cep').mask('99999999');
+    $('#telefone').mask('(99) 99999-9999');
+</script>
+
+<script>
+  function limpa_formulário_cep() {
+    //Limpa valores do formulário de cep.
+    document.getElementById('rua').value=("");
+    document.getElementById('bairro').value=("");
+    document.getElementById('cidade').value=("");
+    document.getElementById('uf').value=("");
+    document.getElementById('ibge').value=("");
+}
+
+function meu_callback(conteudo) {
+if (!("erro" in conteudo)) {
+    //Atualiza os campos com os valores.
+    document.getElementById('rua').value=(conteudo.logradouro);
+    document.getElementById('bairro').value=(conteudo.bairro);
+    document.getElementById('cidade').value=(conteudo.localidade);
+    document.getElementById('uf').value=(conteudo.uf);
+    // document.getElementById('ibge').value=(conteudo.ibge);
+} //end if.
+else {
+    //CEP não Encontrado.
+    limpa_formulário_cep();
+    alert("CEP não encontrado.");
+}
+}
+
+function pesquisacep(valor) {
+
+//Nova variável "cep" somente com dígitos.
+var cep = valor.replace(/\D/g, '');
+
+//Verifica se campo cep possui valor informado.
+if (cep != "") {
+
+    //Expressão regular para validar o CEP.
+    var validacep = /^[0-9]{8}$/;
+
+    //Valida o formato do CEP.
+    if(validacep.test(cep)) {
+
+        //Preenche os campos com "..." enquanto consulta webservice.
+        document.getElementById('rua').value="...";
+        document.getElementById('bairro').value="...";
+        document.getElementById('cidade').value="...";
+        document.getElementById('uf').value="";
+        // document.getElementById('ibge').value="...";
+
+        //Cria um elemento javascript.
+        var script = document.createElement('script');
+
+        //Sincroniza com o callback.
+        script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+        //Insere script no documento e carrega o conteúdo.
+        document.body.appendChild(script);
+
+    } //end if.
+    else {
+        //cep é inválido.
+        limpa_formulário_cep();
+        alert("Formato de CEP inválido.");
+    }
+} //end if.
+else {
+    //cep sem valor, limpa formulário.
+    limpa_formulário_cep();
+}
+};
+</script>
 
 <!-- <div class="page-header">
     <h4 class="page-title">Inserir Post</h4>
