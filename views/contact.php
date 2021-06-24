@@ -78,11 +78,11 @@
                     </div><!-- end info-icon-->
                     <div class="info-content">
                         <h4 class="info__title mb-2">Fale conosco</h4>
-<<<<<<< HEAD
+
                         <p class="info__desc"><a href="tel:+1811864592" class="btn-text">0800 150 5051</a></p>
-=======
-                        <p class="info__desc"><a href="tel:+1811864592" class="btn-text">27 4105-3060</a></p>
->>>>>>> 219c9345db1d57e9d6131ca72cff28e697f68041
+
+                        <!-- <p class="info__desc"><a href="tel:+1811864592" class="btn-text">27 4105-3060</a></p> -->
+
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
             </div><!-- end col-lg-4 -->
@@ -232,18 +232,17 @@
                     <div class="block-card-body">
                         <img src="<?php echo BASE_URL;?>assets/blog/images/img-loading.png" data-src="<?php echo BASE_URL;?>assets/blog/images/edif-jusmar.jpg" alt="group-img" class="w-100 radius-round lazy">
                         <ul class="list-items list--items list-items-style-2 py-4">
-<<<<<<< HEAD
+
                             <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço Brasil:</span> Av. Princesa Isabel, Ed. Jusmar, Sala , Vitória ES</li>
                             <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço EUA:</span> 2584 Avenue Au Soleil, Gulf Stream, Fl 33483 United States</li>
                             <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 0800 4004-1111">0800 4004-1111</a></li>
                             <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 4000 2051"> 4000 2051</a></li>
                             <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 4000 2052"> 4000 2052</a></li>
-                            <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="">contato@bcsclub.com</a></li>
-=======
+
                             <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> Ed. Jusmar Rua Dr. Aristíddes Campos, 35- Sl 509, 5º Andar Centro, Vitória-Es</li>
-                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="#">27 4105-3060</a></li>
+                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 27 4105-3060">27 4105-3060</a></li>
                             <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="#">contato@bcsclub.com</a></li>
->>>>>>> 219c9345db1d57e9d6131ca72cff28e697f68041
+
                         </ul>
                         <div class="section-block-2"></div>
                         <h3 class="widget-title font-size-16 pt-4">Horário de funcionamento</h3>
