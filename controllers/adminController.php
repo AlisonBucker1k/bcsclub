@@ -37,13 +37,15 @@ class adminController extends Controller {
             $dash = new Dashboard();
             
             $dados['leadsCount'] = $dash->countLeads();
-            $dados['clinicasCount'] = $dash->countClinicas();
-            $dados['appointmentMarked'] = $dash->countAppointmentMarkeds();
+            $dados['countComercios'] = $dash->countComercios();
+            $dados['countCat'] = $dash->countCat();
             
             $dados['montlyRevenue'] = $dash->getMontlyRevenue();
             $dados['clinicsBalance'] = $dash->getClinicsBalance();
             $dados['clientsBalance'] = 0;//$dash->getClientsBalance();
             $dados['listCategories'] = $a->listCategories();
+
+            $dados['lastContact'] = $dash->getLastContact(5);
 
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 
@@ -58,6 +60,9 @@ class adminController extends Controller {
                 $phone = addslashes($_POST['phone']);
                 $map = addslashes($_POST['map']);
 
+                $cep = addslashes($_POST['cep']);
+                $bairro = addslashes($_POST['bairro']);
+
                 $localizacao = addslashes($_POST['local']);
                 $estado = addslashes($_POST['estado']);
 
@@ -65,7 +70,7 @@ class adminController extends Controller {
 
                 // $images = (!empty($_FILES['images']))?$_FILES['images']:array();
 
-                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount);
+                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $cep, $bairro);
                 if($idPost){
                     header('Location: '.BASE_URL."admin/editPost/".$idPost."/?status=success");
                 }
@@ -101,6 +106,10 @@ class adminController extends Controller {
                 $phone = addslashes($_POST['phone']);
                 $map = addslashes($_POST['map']);
 
+                $cep = addslashes($_POST['cep']);
+                $bairro = addslashes($_POST['bairro']);
+                $rua = addslashes($_POST['rua']);
+
                 $localizacao = addslashes($_POST['local']);
                 $estado = addslashes($_POST['estado']);
 
@@ -108,7 +117,7 @@ class adminController extends Controller {
 
                 // $images = (!empty($_FILES['images']))?$_FILES['images']:array();
 
-                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount);
+                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $cep, $bairro, $rua);
                 if($idPost){
                     header('Location: '.BASE_URL."admin/editPost/".$idPost."/?status=success");
                 }
@@ -153,6 +162,10 @@ class adminController extends Controller {
                 $phone = addslashes($_POST['phone']);
                 $map = addslashes($_POST['map']);
 
+                $cep = addslashes($_POST['cep']);
+                $bairro = addslashes($_POST['bairro']);
+                $rua = addslashes($_POST['rua']);
+
                 $localizacao = addslashes($_POST['local']);
                 $estado = addslashes($_POST['estado']);
 
@@ -160,7 +173,7 @@ class adminController extends Controller {
 
                 // $images = (!empty($_FILES))?$_FILES['images']:array();
                 
-                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $id)){
+                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $id, $cep, $bairro, $rua)){
                     $dados['msg'] = "Post Editado"; 
                 }
             }

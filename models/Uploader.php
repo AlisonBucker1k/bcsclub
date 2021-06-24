@@ -2,6 +2,9 @@
 class Uploader extends Model {
 
     public function move_files($arquivos, $id_post, $to = 'posts'){
+        // echo $id_post;
+        // echo '<pre>';
+        // print_r($arquivos); exit;
         $array = array();
 
         $a = new Admin();
@@ -45,6 +48,8 @@ class Uploader extends Model {
                $sql->execute();
             }
         }
+
+       
         return true;
     }
 

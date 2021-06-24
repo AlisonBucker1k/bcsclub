@@ -367,6 +367,8 @@
 <script src="<?php echo BASE_URL;?>assets/blog/js/jquery.counterup.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/chart.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/line-chart.js"></script>
+<script src="<?php echo BASE_URL;?>assets/blog/js/jquery-te-1.4.0.min.js"></script>
 <script src="<?php echo BASE_URL;?>assets/blog/js/main.js"></script>
+
 </body>
 </html>

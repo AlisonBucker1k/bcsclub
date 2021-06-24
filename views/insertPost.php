@@ -16,7 +16,7 @@
                                     <label class="label-text">Nome do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="title" placeholder="Nome do Comércio">
+                                        <input class="form-control" type="text" name="title" placeholder="Nome do Comércio" required="">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -25,7 +25,7 @@
                                     <label class="label-text">Desconto%</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="discount" placeholder="Porcentagem de desconto para clientes do bcs">
+                                        <input class="form-control" type="text" name="discount" placeholder="Porcentagem de desconto para clientes do bcs" required="">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -35,7 +35,7 @@
                                     <label class="label-text">Comercio em destaque?</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <select name="featured" class="form-control" id="">
+                                        <select name="featured" class="form-control" id="" required="">
                                             <option value="0">Não</option>
                                             <option value="1">Sim</option>
                                             
@@ -48,7 +48,7 @@
                                 <div class="input-box">
                                     <label class="label-text">Detalhes do Comércio</label>
                                     <div class="form-group">
-                                        <textarea class="message-control form-control user-text-editor" name="body" placeholder="Insira os detalhes sobre o comércio"></textarea>
+                                        <textarea required="" class="message-control form-control user-text-editor" name="body" placeholder="Insira os detalhes sobre o comércio"></textarea>
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -58,7 +58,7 @@
                                     <label class="label-text">Site do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="link" placeholder="bckcode.com.br">
+                                        <input required="" class="form-control" type="text" name="link" placeholder="bckcode.com.br">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -68,7 +68,7 @@
                                     <label class="label-text">Email do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="email" placeholder="contato@bckcode.com.br">
+                                        <input required="" class="form-control" type="text" name="email" placeholder="contato@bckcode.com.br">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -78,7 +78,7 @@
                                     <label class="label-text">Telefone</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" id="telefone" type="text" name="phone" placeholder="(27) 99999-9999">
+                                        <input required="" class="form-control" id="telefone" type="text" name="phone" placeholder="(27) 99999-9999">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -87,7 +87,7 @@
                                     <label class="label-text">CEP</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" id="cep" type="text" name="cep" placeholder="99999-999" onblur="pesquisacep(this.value)">
+                                        <input required="" class="form-control" id="cep" type="text" name="cep" placeholder="99999-999" onblur="pesquisacep(this.value)">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -97,7 +97,7 @@
                                     <label class="label-text">Rua</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="phone" placeholder="Av Geronimo Monteiro" id="rua">
+                                        <input required="" class="form-control" type="text" name="rua" placeholder="Av Geronimo Monteiro" id="rua">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -107,7 +107,7 @@
                                     <label class="label-text">Bairro</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="phone" placeholder="Jacaraípe" id="bairro">
+                                        <input required="" class="form-control" type="text" name="bairro" placeholder="Jacaraípe" id="bairro">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -117,7 +117,7 @@
                                     <label class="label-text">Cidade do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="local" placeholder="Cidade" id="cidade">
+                                        <input required="" class="form-control" type="text" name="local" placeholder="Cidade" id="cidade">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -127,34 +127,34 @@
                                     <label class="label-text">Estado do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <select id="estado" name="estado" class="form-control w-100">
-                                            <option value="Acre">Acre</option>
-                                            <option value="Alagoas">Alagoas</option>
-                                            <option value="Amapá">Amapá</option>
-                                            <option value="Amazonas">Amazonas</option>
-                                            <option value="Bahia">Bahia</option>
-                                            <option value="Ceará">Ceará</option>
-                                            <option value="Distrito Federaç">Distrito Federal</option>
-                                            <option value="Espírito Santo" selected="">Espírito Santo</option>
-                                            <option value="Goias">Goiás</option>
-                                            <option value="Maranhão">Maranhão</option>
-                                            <option value="Mato Grosso">Mato Grosso</option>
-                                            <option value="Mato grosso do Sul">Mato Grosso do Sul</option>
-                                            <option value="Minas Gerais">Minas Gerais</option>
-                                            <option value="Pará">Pará</option>
-                                            <option value="Paraíba">Paraíba</option>
-                                            <option value="Paraná">Paraná</option>
-                                            <option value="Pernambuco">Pernambuco</option>
-                                            <option value="Piauí">Piauí</option>
-                                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                                            <option value="Rndônia">Rondônia</option>
-                                            <option value="Roraima">Roraima</option>
-                                            <option value="Santa Catarina">Santa Catarina</option>
-                                            <option value="São Paulo">São Paulo</option>
-                                            <option value="Sergipe">Sergipe</option>
-                                            <option value="Tocantins">Tocantins</option>
+                                        <select required="" id="estado" name="estado" class="form-control w-100">
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PB">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
                                         </select>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                     <label class="label-text">Google Maps</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
-                                        <input class="form-control" type="text" name="map" placeholder="Link do google Maps">
+                                        <input required="" class="form-control" type="text" name="map" placeholder="Link do google Maps">
                                     </div>
                                 </div>
                             </div><!-- end col-lg-12 -->
@@ -190,7 +190,7 @@
                         <label class="label-text">Categoria de comércio</label>
                         <div class="form-group">
                             <span class="la la-briefcase form-icon"></span>
-                            <select name="category" class="form-control" id="">
+                            <select name="category" class="form-control" id="" required="">
                                 <option value="">Selecionar Categoria</option>
                                 <?php foreach($listCategories as $item):?>
                                     <option value="<?php echo $item['id']?>"><?php echo $item['title']?></option>
@@ -237,8 +237,10 @@
 <script src="<?php echo BASE_URL;?>assets/blog/js/main.js"></script>
 
 <script>
-    $('#cep').mask('99999999');
+    $('#cep').mask('99999-999');
     $('#telefone').mask('(99) 99999-9999');
+
+    
 </script>
 
 <script>
@@ -247,8 +249,8 @@
     document.getElementById('rua').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
-    document.getElementById('uf').value=("");
-    document.getElementById('ibge').value=("");
+    $("#estado").val("").change();
+    // document.getElementById('ibge').value=("");
 }
 
 function meu_callback(conteudo) {
@@ -257,7 +259,9 @@ if (!("erro" in conteudo)) {
     document.getElementById('rua').value=(conteudo.logradouro);
     document.getElementById('bairro').value=(conteudo.bairro);
     document.getElementById('cidade').value=(conteudo.localidade);
-    document.getElementById('uf').value=(conteudo.uf);
+    // document.getElementById('uf').value=(conteudo.uf);
+    $("#estado").val(conteudo.uf).change();
+
     // document.getElementById('ibge').value=(conteudo.ibge);
 } //end if.
 else {
@@ -285,7 +289,7 @@ if (cep != "") {
         document.getElementById('rua').value="...";
         document.getElementById('bairro').value="...";
         document.getElementById('cidade').value="...";
-        document.getElementById('uf').value="";
+        // document.getElementById('uf').value="";
         // document.getElementById('ibge').value="...";
 
         //Cria um elemento javascript.

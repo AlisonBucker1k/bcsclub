@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Icone da Categoria</label>
+                        <label class="form-label">Icone da Categoria <a href="https://icons8.com/line-awesome" target="_blank">Lista de icones</a></label>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" name="images[]">
                             <label class="custom-file-label"> Icone</label>

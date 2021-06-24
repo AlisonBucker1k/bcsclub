@@ -328,8 +328,8 @@
                 <div class="icon-element icon-element-white mx-auto shadow-sm after-none font-size-20 margin-bottom-45px">
                     <i class="las la-angle-double-down"></i>
                 </div>
-                <a class="video-box video-box-negative hover-scale-2" href="https://www.youtube.com/watch?v=GlrxcuEDyF8" data-fancybox title="Play Video">
-                    <img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/video-img.jpg" alt="video image">
+                <a class="video-box video-box-negative hover-scale-2" href="https://youtu.be/r5JjlOtd5Dg" data-fancybox title="Play Video">
+                    <img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/thumb-video.jpg" alt="video image">
                     <div class="video-content d-flex align-items-center justify-content-center">
                        <span class="d-block mr-3 font-weight-semi-bold">Video institucional</span>
                         <span class="icon-element icon-element-white">

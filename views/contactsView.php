@@ -10,7 +10,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Por: <?php echo $contactData['name'];?> no dia <?php echo date('d/m/Y', strtotime($contactData['date_contact']));?> às <?php echo date('H:i:s', strtotime($contactData['date_contact']));?></h3>
+                    <h3 class="card-title">Por: <?php echo $contactData['name'];?></h3>
                     <div class="card-options">
                         <?php if($contactData['status'] == 0):?>
                             <a href="<?php echo BASE_URL."admin/readContact/".$contactData['id'];?>" class="btn btn-sm btn-pink mr-2"><i class="icon icon-check"></i> Marcar como lido</a>

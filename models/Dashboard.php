@@ -11,10 +11,10 @@ class Dashboard extends Model{
         return $array['c'];
     }
 
-    public function countClinicas(){
+    public function countComercios(){
         $array = array();
 
-        $sql = "SELECT count(*) as c FROM clinicas WHERE status = 1";
+        $sql = "SELECT count(*) as c FROM posts WHERE status = 1";
         $sql = $this->db->query($sql);
         
         $array = $sql->fetch();
@@ -22,10 +22,10 @@ class Dashboard extends Model{
         return $array['c'];
     }
 
-    public function countAppointmentMarkeds(){
+    public function countCat(){
         $qt = 0;
 
-        $sql = "SELECT COUNT(*) as c FROM consultas_marcadas WHERE status_marcado = 1 AND status_pay = 1";
+        $sql = "SELECT COUNT(*) as c FROM categories";
         $sql = $this->db->query($sql);
 
         $sql = $sql->fetch();
@@ -83,5 +83,17 @@ class Dashboard extends Model{
         }
 
         return $saldo;
+    }
+
+    public function getLastContact($limit){
+        $array = array();
+
+        $sql = $this->db->query("SELECT * FROM contact_form WHERE status = 0 ORDER BY id ASC LIMIT 5");
+
+        if($sql->rowCount() > 0){
+            $array = $sql->fetchAll();
+        }
+
+        return $array;
     }
 }

@@ -22,8 +22,9 @@ class Admin extends Model {
 
     // POSTS
 
-    public function insertPost($title, $category, $body, $description, $althor, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount){
-        $sql = "INSERT INTO posts SET id_admin = :id_admin, id_category = :id_category, title = :title, body = :body, author = :author_name, description = :description, featured = :featured, email = :email, telefone = :telefone, map = :map, localizacao = :localizacao, estado = :estado, link = :link, discount = :discount";
+    public function insertPost($title, $category, $body, $description, $althor, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount, $cep, $bairro, $rua){
+        
+        $sql = "INSERT INTO posts SET id_admin = :id_admin, id_category = :id_category, title = :title, body = :body, author = :author_name, description = :description, featured = :featured, email = :email, telefone = :telefone, map = :map, localizacao = :localizacao, estado = :estado, link = :link, discount = :discount, cep = :cep, bairro = :bairro, rua = :rua";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':id_admin', $_SESSION['login_adm_bsb']);
         $sql->bindValue(':id_category', $category);
@@ -39,6 +40,9 @@ class Admin extends Model {
         $sql->bindValue(':estado', $estado);
         $sql->bindValue(':link', $link);
         $sql->bindValue(':discount', $discount);
+        $sql->bindValue(':cep', $cep);
+        $sql->bindValue(':bairro', $bairro);
+        $sql->bindValue(':rua', $rua);
         $sql->execute();
 
         $idPost = $this->db->lastInsertId();
@@ -138,10 +142,10 @@ class Admin extends Model {
     }
 
     
-    public function editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount, $id){
+    public function editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $images, $discount, $id, $cep, $bairro, $rua){
         $u = new Uploader();
 
-        $sql = "UPDATE posts SET title = :title, description = :description, id_category = :category, body = :body, author = :author, link = :link, featured = :featured, email = :email, telefone =:phone, map = :map, localizacao = :localizacao, estado = :estado, discount = :discount WHERE id = :id";
+        $sql = "UPDATE posts SET title = :title, description = :description, id_category = :category, body = :body, author = :author, link = :link, featured = :featured, email = :email, telefone =:phone, map = :map, localizacao = :localizacao, estado = :estado, discount = :discount, cep = :cep, bairro = :bairro, rua = :rua WHERE id = :id";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':title', $title);
         $sql->bindValue(':description', $description);
@@ -157,6 +161,9 @@ class Admin extends Model {
         $sql->bindValue(':estado', $estado);
         $sql->bindValue(':discount', $discount);
         $sql->bindValue(':id', $id);
+        $sql->bindValue(':cep', $cep);
+        $sql->bindValue(':bairro', $bairro);
+        $sql->bindValue(':rua', $rua);
         $sql->execute();
 
         $u->move_files($images, $id);
