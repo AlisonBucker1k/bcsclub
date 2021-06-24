@@ -186,7 +186,8 @@
                         <a href="<?php echo BASE_URL?>" class="foot-logo"><img src="<?php echo BASE_URL.'assets/geral/images/logo-bcs-club.png';?>" style="width: 200px;" alt="logo"></a>
                     </div><!-- end footer-logo -->
                     <ul class="list-items contact-links pt-3">
-                        <li><span class="d-block text-color mb-1"><i class="la la-map mr-1 text-color-2"></i>Endereço:</span> Ed. Jusmar Rua Dr. Aristíddes Campos, 35- Sl 509, 5º Andar Centro, Vitória-Es</li>
+                        <li><span class="d-block text-color mb-1"><i class="la la-map mr-1 text-color-2"></i>Endereço Brasil:</span> Ed. Jusmar Rua Dr. Aristíddes Campos, 35- Sl 509, 5º Andar Centro, Vitória-ES</li>
+                        <li><span class="d-block text-color mb-1"><i class="la la-map mr-1 text-color-2"></i>Endereço EUA:</span> 2584 Avenue Au Soleil, Gulf Stream, Fl 33483 United States</li>
                         <li><span class="d-block text-color mb-1"><i class="la la-phone mr-1 text-color-2"></i>Telefone:</span><a href="#">27 4105-3060</a></li>
                         <li><span class="d-block text-color mb-1"><i class="la la-envelope mr-1 text-color-2"></i>Email:</span><a href="#">contato@bcsclub.com.br</a></li>
                     </ul>
@@ -194,54 +195,52 @@
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3 responsive-column">
                 <div class="footer-item">
-                    <h4 class="footer__title">Company</h4>
+                    <h4 class="footer__title">Nosso Clube</h4>
                     <div class="stroke-shape mb-3"></div>
                     <ul class="list-items">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="career.html">Careers</a></li>
-                        <li><a href="blog-grid.html">Press</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Content Guidelines</a></li>
-                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="https://bcsbank.com.br" target="_blank">BCS Bank</a></li>
+                        <li><a href="https://bcsclub.com.br" target="_blank">BCS Club</a></li>
+                        <li><a href="https://bcsmedical.com.br" target="_blank">BCS Medical</a></li>
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3 responsive-column">
                 <div class="footer-item">
-                    <h4 class="footer__title">Discover</h4>
+                    <h4 class="footer__title">Links</h4>
                     <div class="stroke-shape mb-3"></div>
                     <ul class="list-items">
-                        <li><a href="#">Listhub Project Cost Guides</a></li>
-                        <li><a href="#">The Local Listhub</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Listhub Mobile</a></li>
-                        <li><a href="blog-grid.html">Listhub Blog</a></li>
-                        <li><a href="contact.html">Support</a></li>
+                        <li><a href="<?php echo "{BASE_URL}";?>">Home</a></li>
+                        <li><a href="<?php echo "{BASE_URL}pages/about";?>">Sobre Nós</a></li>
+                        <li><a href="<?php echo "{BASE_URL}pages/contato";?>">Contato</a></li>
+                        <li><a href="<?php echo "{BASE_URL}pages/categories";?>">Categorias</a></li>
+                        <!-- <li><a href="blog-grid.html">Listhub Blog</a></li>
+                        <li><a href="contact.html">Support</a></li> -->
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3 responsive-column">
                 <div class="footer-item">
-                    <h4 class="footer__title">Listhub for Business</h4>
+                    <h4 class="footer__title">Categorias</h4>
                     <div class="stroke-shape mb-3"></div>
                     <ul class="list-items">
-                        <li><a href="#">Claim your Business</a></li>
-                        <li><a href="#">Advertise on Listhub</a></li>
-                        <li><a href="#">Add Restaurant</a></li>
-                        <li><a href="#">Business Support</a></li>
-                        <li><a href="#">Products for Businesses</a></li>
-                        <li><a href="#">Business Success Stories</a></li>
+                        <!-- <pre><?php print_r($viewData['listCategories']);?></pre> -->
+                        <?php for($q=0;$q<count($viewData['listCategories']); $q++):?>
+                            <li><a href="<?php echo BASE_URL."categories/index/".$viewData['listCategories'][$q]['id'];?>"><?php echo $viewData['listCategories'][$q]['title'];?></a></li>    
+                            <?php if($q == 2):?>
+                                <li><a href="<?php echo BASE_URL.'pages/categories'?>">Ver Todas</a></li> 
+                            <?php break; endif;?>
+                        <?php  endfor;?>
                     </ul>
                 </div><!-- end footer-item -->
             </div><!-- end col-lg-3 -->
         </div><!-- end row -->
         <div class="row pt-4 footer-action-wrap">
             <div class="col-lg-4">
-                <h4 class="font-size-17 pb-3">Siga</h4>
+                <h4 class="font-size-17 pb-3">Siga-nos nas redes sociais:</h4>
                 <ul class="social-profile social-profile-styled">
-                    <?php if(!empty($config['facebook'])):?><li><a href="<?php echo $config['facebook']?>" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li><?php endif;?>
-                    <?php if(!empty($config['twitter'])):?><li><a href="<?php echo $config['twitter']?>" class="twitter-bg" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="lab la-twitter"></i></a></li><?php endif;?>
-                    <?php if(!empty($config['instagram'])):?><li><a href="<?php echo $config['instagram']?>" class="instagram-bg" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="lab la-instagram"></i></a></li><?php endif;?>
+                    <?php if(!empty($config['facebook'])):?><li><a target="_blank" href="<?php echo $config['facebook']?>" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li><?php endif;?>
+                    <?php if(!empty($config['twitter'])):?><li><a target="_blank" href="<?php echo $config['twitter']?>" class="twitter-bg" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="lab la-twitter"></i></a></li><?php endif;?>
+                    <?php if(!empty($config['instagram'])):?><li><a target="_blank" href="<?php echo $config['instagram']?>" class="instagram-bg" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="lab la-instagram"></i></a></li><?php endif;?>
                     <!-- <li><a href="#" class="dribbble-bg" data-toggle="tooltip" data-placement="top" title="Dribble"><i class="la la-dribbble"></i></a></li> -->
                 </ul>
             </div>
@@ -256,8 +255,8 @@
                         <span class="la la-heart-o"></span> by <a href="https://bckcode.com.br">BCKCode</a>
                     </p>
                     <ul class="list-items term-list text-right">
-                        <li class="font-size-14"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                        <li class="font-size-14"><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <!-- <li class="font-size-14"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li class="font-size-14"><a href="privacy-policy.html">Privacy Policy</a></li> -->
                     </ul>
                 </div><!-- end copy-right -->
             </div><!-- end col-lg-12 -->

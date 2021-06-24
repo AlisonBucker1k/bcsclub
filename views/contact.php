@@ -78,7 +78,7 @@
                     </div><!-- end info-icon-->
                     <div class="info-content">
                         <h4 class="info__title mb-2">Fale conosco</h4>
-                        <p class="info__desc"><a href="tel:+1811864592" class="btn-text">+1 (811) 86 45 92</a></p>
+                        <p class="info__desc"><a href="tel:+1811864592" class="btn-text">0800 150 5051</a></p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
             </div><!-- end col-lg-4 -->
@@ -228,9 +228,12 @@
                     <div class="block-card-body">
                         <img src="<?php echo BASE_URL;?>assets/blog/images/img-loading.png" data-src="<?php echo BASE_URL;?>assets/blog/images/img31.jpg" alt="group-img" class="w-100 radius-round lazy">
                         <ul class="list-items list--items list-items-style-2 py-4">
-                            <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> Av. Princesa Isabel, Ed. Jusmar, Sala , Vitória ES</li>
-                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="#">0800 4004-1111</a></li>
-                            <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="#">contato@bcsclub.com</a></li>
+                            <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço Brasil:</span> Av. Princesa Isabel, Ed. Jusmar, Sala , Vitória ES</li>
+                            <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço EUA:</span> 2584 Avenue Au Soleil, Gulf Stream, Fl 33483 United States</li>
+                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 0800 4004-1111">0800 4004-1111</a></li>
+                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 4000 2051"> 4000 2051</a></li>
+                            <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: 4000 2052"> 4000 2052</a></li>
+                            <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="">contato@bcsclub.com</a></li>
                         </ul>
                         <div class="section-block-2"></div>
                         <h3 class="widget-title font-size-16 pt-4">Horario de funcionamento</h3>

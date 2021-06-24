@@ -39,17 +39,18 @@
                             </div>
                         </div>
                         <p class="sec__desc py-2 font-size-17"><i class="la la-map-marker mr-1 text-color-2"></i><?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}";?></p>
+                        <p class="sec__desc py-2 font-size-17"><i class="la <?php echo (!empty($getCategory['la-icon']))?$getCategory['la-icon']:'la la-cutlery'?> text-color-2"></i><?php echo $getCategory['title'];?></p>
                         <p class="pb-2 font-weight-medium">
                             <!-- <span class="price-range mr-1 text-color font-size-16" data-toggle="tooltip" data-placement="top" title="Moderate">
                                 <strong class="font-weight-medium">$</strong>
                                 <strong class="font-weight-medium ml-n1">$</strong>
                             </span> -->
-                            <span class="category-link">
+                            <!-- <span class="category-link"> -->
                                 <!-- <a href="#">Categoria</a>, -->
-                                <a href="<?php echo BASE_URL.'categories/index/'.$getCategory['id'];?>">
+                                <!-- <a href="<?php echo BASE_URL.'categories/index/'.$getCategory['id'];?>">
                                     <span class="<?php echo (!empty($getCategory['la-icon']))?$getCategory['la-icon']:'la la-cutlery'?>"></span> <?php echo $getCategory['title'];?>
-                                </a>
-                            </span>
+                                </a> -->
+                            <!-- </span> -->
                         </p>
                         <!-- <div class="d-flex flex-wrap align-items-center">
                             <div class="star-rating-wrap d-flex align-items-center">
@@ -193,10 +194,21 @@
                                 </div>
                             </div>
                             <ul class="list-items list--items list-items-style-2 py-4">
-                                <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> <?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}";?></li>
-                                <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="#"><?php echo "{$dataPost['telefone']}";?></a></li>
+
+                                <?php if(!empty($dataPost['estado'])):?>
+                                    <li><span class="text-color"><i class="la la-map mr-2 text-color-2 font-size-18"></i>Endereço:</span> <?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}, CEP: {$dataPost['cep']}";?></li>
+                                <?php endif;?>
+
+                                <?php if(!empty($dataPost['telefone'])):?>
+                                    <li><span class="text-color"><i class="la la-phone mr-2 text-color-2 font-size-18"></i>Telefone:</span><a href="tel: <?php echo $dataPost['telefone']?>"><?php echo "{$dataPost['telefone']}";?></a></li>
+                                <?php endif;?>
+
+                                <?php if(!empty($dataPost['link'])):?>
+                                    <li><span class="text-color"><i class="la la-globe mr-2 text-color-2 font-size-18"></i>Website:</span><a target="_blank" href="<?php echo 'https://'.$dataPost['link'];?>"><?php echo "www.{$dataPost['link']}";?></a></li>
+                                <?php endif;?>
                                 <!-- <li><span class="text-color"><i class="la la-envelope mr-2 text-color-2 font-size-18"></i>Email:</span><a href="#">listhub@gmail.com</a></li> -->
-                                <li><span class="text-color"><i class="la la-globe mr-2 text-color-2 font-size-18"></i>Website:</span><a href="<?php echo "{$dataPost['link']}";?>"><?php echo "{$dataPost['link']}";?></a></li>
+                                
+
                             </ul>
                             <!-- <ul class="social-profile social-profile-styled">
                                 <li><a href="#" class="facebook-bg" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="lab la-facebook-f"></i></a></li>
@@ -220,11 +232,18 @@
                         <h3 class="widget-title">Informações Gerais</h3>
                         <div class="stroke-shape mb-4"></div>
                         <ul class="list-items list-items-style-2">
-                            <li><i class="la la-external-link mr-2 text-color-2 font-size-18"></i><a href="#"><?php echo "{$dataPost['link']}";?></a></li>
-                            <li><i class="la la-phone mr-2 text-color-2 font-size-18"></i><a href="#"><?php echo "{$dataPost['telefone']}";?></a></li>
-                            <li><i class="la la-map-signs mr-2 text-color-2 font-size-18"></i><a href="#"><?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}";?></a></li>
-                            <!-- <li><i class="la la-cutlery mr-2 text-color-2 font-size-18"></i><a href="#">Full menu <i class="la la-external-link ml-1"></i></a></li> -->
-                            <!-- <li><i class="la la-comment mr-2 text-color-2 font-size-18"></i><a href="#" data-toggle="modal" data-target="#messageModal">Message the Business</a></li> -->
+                            <?php if(!empty($dataPost['link'])):?>
+                                <li><i class="la la-external-link mr-2 text-color-2 font-size-18"></i><a target="_blank" href="<?php echo "https://{$dataPost['link']}"?>"><?php echo "www.{$dataPost['link']}";?></a></li>
+                            <?php endif;?>
+                            <?php if(!empty($dataPost['telefone'])):?>
+                                <li><i class="la la-phone mr-2 text-color-2 font-size-18"></i><a href="tel: <?php echo $dataPost['telefone']?>"><?php echo "{$dataPost['telefone']}";?></a></li>    
+                            <?php endif;?>
+                            <?php if(!empty($dataPost['localizacao'])):?>
+                                <li><i class="la la-map-signs mr-2 text-color-2 font-size-18"></i><a href=""><?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}, {$dataPost['cep']}";?></a></li>
+                            <?php endif;?>
+
+                            <!-- <li><i class="la la-cutlery mr-2 text-color-2 font-size-18"></i><a href="#">Full menu <i class="la la-external-link ml-1"></i></a></li>
+                            <li><i class="la la-comment mr-2 text-color-2 font-size-18"></i><a href="#" data-toggle="modal" data-target="#messageModal">Message the Business</a></li> -->
                         </ul>
                     </div><!-- end sidebar-widget -->
                 </div><!-- end sidebar -->

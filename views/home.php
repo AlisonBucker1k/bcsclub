@@ -235,57 +235,11 @@
             <div class="col-lg-12">
                 <div class="card-carousel owl-trigger-action">
 
-                    <?php foreach($listPostFeatured as $item):?>
-                        <?php 
-                            $a = new Admin();
-                            $categoryName = $a->getDadosFromCategory($item['id_category']);
-                        ?>
-                    <div class="card-item border border-color">
-                        <div class="card-image">
-                            <a href="<?php echo BASE_URL."showcase/index/".$item['id'];?>" class="d-block">
-                                <img src="<?php echo BASE_URL."media/posts/{$item['images'][0]['urlf']}";?>" class="card__img" alt="">
-                                <!-- <span class="badge">now open</span> -->
-                            </a>
-                            <span class="bookmark-btn" data-toggle="tooltip" data-placement="top" title="<?php echo $item['discount'];?>% de desconto">
-                                <!-- <i class="la la-bookmark"></i> --><?php echo $item['discount'];?>%
-                            </span>
-                        </div>
-                        <div class="card-content">
-                            <!-- <a href="#" class="user-thumb d-inline-block" data-toggle="tooltip" data-placement="top" title="TechyDevs">
-                                <img src="<?php echo BASE_URL.'assets/blog/';?>images/listing-logo.jpg" alt="author-img">
-                            </a> -->
-                            <h4 class="card-title pt-3">
-                                <a href="<?php echo BASE_URL."showcase/index/".$item['id'];?>"><?php echo $item['title'];?></a>
-                                <i class="la la-check-circle ml-1" data-toggle="tooltip" data-placement="top" title="Claimed"></i>
-                            </h4>
-                            <p class="card-sub"><a href="#"><i class="la la-map-marker mr-1 text-color-2"></i><?php echo "{$item['rua']}, {$item['localizacao']}"?></a></p>
-                            <ul class="listing-meta d-flex align-items-center">
-                                <li class="d-flex align-items-center">
-                                    <!-- <span class="rate flex-shrink-0">4.7</span>
-                                    <span class="rate-text">5 Ratings</span> -->
-                                </li>
-                                <li>
-                                    <span class="price-range" data-toggle="tooltip" data-placement="top" title="Melhores Descontos">
-                                        <strong class="font-weight-medium">$</strong>
-                                        <strong class="font-weight-medium">$</strong>
-                                        <strong class="font-weight-medium">$</strong>
-                                    </span>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <i class=" <?php echo (!empty($categoryName['la-icon']))?$categoryName['la-icon']:'la la-cutlery';?> mr-1 listing-icon"></i><a href="#" class="listing-cat-link"><?php echo $categoryName['title'];?></a>
-                                </li>
-                            </ul>
-                            <ul class="info-list padding-top-20px">
-                                <li><span class="la la-link icon"></span>
-                                    <a href="<?php echo $item['link'];?>" target="_blank"> <?php echo $item['link'];?></a>
-                                </li>
-                                <!-- <li><span class="la la-calendar-check-o icon"></span>
-                                    Opened 1 month ago
-                                </li> -->
-                            </ul>
-                        </div>
-                    </div><!-- end card-item -->
-                    <?php endforeach;?>
+                    <?php 
+                        foreach($listPostFeatured as $item){
+                            $this->loadView('itens/listComercioHome',$item);    
+                        }
+                    ?>
                 </div><!-- end card-carousel-3 -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
