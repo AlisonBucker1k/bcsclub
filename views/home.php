@@ -8,9 +8,9 @@
         <ul class="slides-container">
             <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg1.jpg" alt=""></li>
             <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg2.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/hero-bg3.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/hero-bg4.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/hero-bg5.jpg" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg03.jpg" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg04.jpg" alt=""></li>
+            <!-- <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/hero-bg5.jpg" alt=""></li> -->
         </ul>
     </div><!-- End fullscreen-slide-container -->
     <div class="container">

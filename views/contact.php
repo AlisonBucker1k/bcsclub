@@ -1,7 +1,7 @@
 <!-- ================================
     START BREADCRUMB AREA
 ================================= -->
-<section class="breadcrumb-area bread-bg-3 bread-overlay overflow-hidden" style="background-image: url('https://images.pexels.com/photos/4458403/pexels-photo-4458403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); background-position: top;">
+<section class="breadcrumb-area bread-bg-3 bread-overlay overflow-hidden" style="background-image: url('<?php echo BASE_URL."assets/blog/images/fale-conosco.png";?>'); background-position: center;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

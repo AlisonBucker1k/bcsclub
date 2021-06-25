@@ -1,7 +1,7 @@
 <!-- ================================
     START BREADCRUMB AREA
 ================================= -->
-<section class="breadcrumb-area breadcrumb--area  bread-overlay overflow-hidden" style="background-image: url('https://socialprofit.com.br/wp-content/uploads/2015/10/fundo_sobre.jpg');">
+<section class="breadcrumb-area breadcrumb--area  bread-overlay overflow-hidden" style="background-image: url('<?php echo BASE_URL;?>assets/blog/images/about.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -33,33 +33,33 @@
             <div class="col-lg-4 responsive-column">
                 <a href="#" class="card-item card-item-layout-2 d-block hover-scale-2">
                     <div class="card-image">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img31.jpg" class="card__img lazy" alt="blog image">
+                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/bcsbank.png" class="card__img lazy" alt="blog image">
                     </div><!-- end card-image -->
                     <div class="card-content">
                         <h4 class="card-title">BCS Bank</h4>
-                        <p class="card-sub mt-3">O primeiro banco digital de múltiplos benefícios do país.</p>
+                        <p class="card-sub mt-3">O primeiro banco digital de múltiplos benefícios do país. <br></p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
             <div class="col-lg-4 responsive-column">
                 <a href="#" class="card-item card-item-layout-2 d-block hover-scale-2">
                     <div class="card-image">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img32.jpg" class="card__img lazy" alt="blog image">
+                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/bcsclub.png" class="card__img lazy" alt="blog image">
                     </div><!-- end card-image -->
                     <div class="card-content">
                         <h4 class="card-title">BCS Club</h4>
-                        <p class="card-sub mt-3">Plataforma multi comercial, milhares de estabelecimentos credenciados </p>
+                        <p class="card-sub mt-3">Plataforma multi comercial, milhares de estabelecimentos credenciados <br></p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
             <div class="col-lg-4 responsive-column">
                 <a href="#" class="card-item card-item-layout-2 d-block hover-scale-2">
-                    <div class="card-image">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/img33.jpg" class="card__img lazy" alt="blog image">
+                    <div class="card-image" style="max-height: 197.33px;">
+                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/bcsmedical.jpg" class="card__img lazy" alt="blog image" style="max-height: 197.33px;">
                     </div><!-- end card-image -->
                     <div class="card-content">
-                        <h4 class="card-title">BCS Médical</h4>
-                        <p class="card-sub mt-3">Plataforma de intermediação para serviços médicos, odontológicos e exames. </p>
+                        <h4 class="card-title">BCS Medical</h4>
+                        <p class="card-sub mt-3">Plataforma de agendamento de serviços médicos, odontológicos e exames. </p>
                     </div><!-- end card-content -->
                 </a><!-- end card-item -->
             </div><!-- end col-lg-4 -->
@@ -327,7 +327,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/amaurir.png" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Amaurir Barreto</h4>
                             <span class="testi__meta">Aracruz</span>
                         </div>
@@ -339,7 +339,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img2.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/rose.png" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Rose Maria</h4>
                             <span class="testi__meta">Carapina</span>
                         </div>
@@ -351,7 +351,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img3.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/marcio.png" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Márcio Honoráto</h4>
                             <span class="testi__meta">Serra</span>
                         </div>
@@ -363,7 +363,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/kevin.jpg" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Kevin Douglas</h4>
                             <span class="testi__meta">Serra</span>
                         </div>
@@ -375,7 +375,7 @@
                             </p>
                         </div>
                         <div class="testi-content">
-                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/avatar-img2.jpg" class="testi__img" alt="testimonial image">
+                            <img src="<?php echo BASE_URL.'assets/blog/';?>images/gabriela.jpg" class="testi__img" alt="testimonial image">
                             <h4 class="tesi__title">Gabriela Passos</h4>
                             <span class="testi__meta">Guarapari</span>
                         </div>
