@@ -2,15 +2,9 @@
 class Uploader extends Model {
 
     public function move_files($arquivos, $id_post, $to = 'posts'){
-        // echo $id_post;
-        // echo '<pre>';
-        // print_r($arquivos); exit;
         $array = array();
 
         $a = new Admin();
-
-        // echo "<pre>";
-        // print_r($arquivos);exit;
 
         for($q=0;$q<count($arquivos['images']['tmp_name']);$q++){
             // echo $arquivos['images']['type'][$q].'<br>';
@@ -26,6 +20,9 @@ class Uploader extends Model {
                     break;
                 case 'image/gif':
                     $type = '.gif';
+                    break;
+                case 'image/png':
+                    $type = '.png';
                     break;
                 default:
                     return true;

@@ -5,7 +5,7 @@
 $a = new Admin();
     $dadosCategory = $a->getDadosFromCategory($id_category);
 ?>
-<section class="breadcrumb-area bread-bg bread-overlay overflow-hidden" style="background-image: url('<?php echo BASE_URL."media/categories/{$dadosCategory['icon']}";?>');">
+<section class="breadcrumb-area bread-bg bread-overlay overflow-hidden" style="background-position: <?php echo $dadosCategory['back_pos'];?>; background-image: url('<?php echo BASE_URL."media/categories/{$dadosCategory['icon']}";?>');">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

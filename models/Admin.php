@@ -194,11 +194,12 @@ class Admin extends Model {
 
         return $total;
     }
-    public function insertNewCat($title, $icon, $images){
-        $sql = "INSERT INTO categories SET title = :title, la_icon = :la";
+    public function insertNewCat($title, $icon, $images, $back_position){
+        $sql = "INSERT INTO categories SET title = :title, laicon = :la, back_pos = :back_pos";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':title', $title);
         $sql->bindValue(':la', $icon);
+        $sql->bindValue(':back_pos', $back_position);
         $sql->execute();
 
         $idCat = $this->db->lastInsertId();
@@ -238,12 +239,13 @@ class Admin extends Model {
         return $array;
     }
 
-    public function editCategory($title, $icon, $images, $id){
-        $sql = "UPDATE categories SET title = :title, la_icon = :la WHERE id = :id";
+    public function editCategory($title, $icon, $images, $id, $back_position){
+        $sql = "UPDATE categories SET title = :title, laicon = :laicon, back_pos = :back_pos WHERE id = :id";
         $sql = $this->db->prepare($sql);
         $sql->bindValue(':title', $title);
-        $sql->bindValue(':la',$icon);
+        $sql->bindValue(':laicon', $icon);
         $sql->bindValue(':id', $id);
+        $sql->bindValue(':back_pos', $back_position);
         $sql->execute();
 
         $u = new Uploader();

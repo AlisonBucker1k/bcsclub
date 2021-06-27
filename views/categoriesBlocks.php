@@ -1,7 +1,7 @@
 <!-- ================================
     START BREADCRUMB AREA
 ================================= -->
-<section class="breadcrumb-area bread-bg bread-overlay overflow-hidden">
+<section class="breadcrumb-area overflow-hidden" style="background-position: auto; background-image: url('<?php echo BASE_URL."assets/blog/images/banner-categorias.png";?>');">
     <div class="breadcrumb-wrap">
         <div class="container">
             <div class="row">
@@ -50,7 +50,7 @@
                     <div class="category-content d-flex align-items-center justify-content-center">
                         <a href="<?php echo BASE_URL."categories/index/".$item['id'];?>" class="category-link d-flex flex-column justify-content-center w-100 h-100">
                             <div class="icon-element mb-3 mx-auto">
-                                <span class="<?php echo (!empty($item['la_icon']))?$item['la_icon']:'la la-cutlery';?>"></span>
+                                <span class="<?php echo (!empty($item['laicon']))?$item['laicon']:'la la-cutlery';?>"></span>
                             </div>
                             <div class="cat-content">
                                 <h4 class="cat__title mb-3"><?php echo $item['title'];?></h4>

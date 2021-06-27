@@ -55,7 +55,7 @@
             <div class="col-lg-4 responsive-column">
                 <a href="#" class="card-item card-item-layout-2 d-block hover-scale-2">
                     <div class="card-image" style="max-height: 197.33px;">
-                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/bcsmedical.jpg" class="card__img lazy" alt="blog image" style="max-height: 197.33px;">
+                        <img src="<?php echo BASE_URL.'assets/blog/';?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/';?>images/bcsmedical.png" class="card__img lazy" alt="blog image" style="max-height: 197.33px;">
                     </div><!-- end card-image -->
                     <div class="card-content">
                         <h4 class="card-title">BCS Medical</h4>

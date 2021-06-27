@@ -24,21 +24,30 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Icone da Categoria</label>
+                        <label class="form-label">Icone da Categoria <a href="https://icons8.com/line-awesome" target="_blank">Lista de icones</a></label>
                         <div class="form-group">
-                            <input type="text" class="form-control w-100" name="icon" value="<?php echo (!empty($dataCategory['la_icon']))?$dataCategory['la_icon']:'';?>">
+                            <input type="text" class="form-control w-100" name="icon" value="<?php echo (!empty($dataCategory['laicon']))?$dataCategory['laicon']:'';?>">
                             <label class="custom-file-label"> Icone</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Icone da Categoria</label>
+                        <label class="form-label">Imagem da Categoria</label>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" name="images[]">
-                            <label class="custom-file-label"> Icone</label>
+                            <label class="custom-file-label"> Imagem de fundo</label>
                         </div>
                     </div>
-                    
+
+                    <div class="form-group">
+                        <label class="form-label">Posição da imagem</label>
+                        <select name="back-position" class="form-control">
+                            <option <?php echo ($dataCategory['back_pos'] == "top")?'selected':'';?> value="top">Parte de cima</option>
+                            <option <?php echo ($dataCategory['back_pos'] == "center")?'selected':'';?> value="center">Meio</option>
+                            <option <?php echo ($dataCategory['back_pos'] == "bottom")?'selected':'';?> value="bottom">Parte de baixo</option>
+                        </select>
+                    </div>
+
                     <!-- <div class="form-group">
                         <label class="form-label">Upload do Icone da Categoria</label>
                         <div class="custom-file">
@@ -48,7 +57,7 @@
                     </div> -->
 
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary waves-effect waves-light">Inserir</button>
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Salvar</button>
                     </div>
                 </form>
             </div>
