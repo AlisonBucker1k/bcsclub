@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Icone da Categoria</label>
+                        <label class="form-label">Icone da Categoria <a href="https://icons8.com/line-awesome" target="_blank">Lista de icones</a></label>
                         <div class="form-group">
                             <input type="text" class="form-control w-100" name="icon">
                             <label class="custom-file-label"> Icone</label>
@@ -31,10 +31,22 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">Icone da Categoria <a href="https://icons8.com/line-awesome" target="_blank">Lista de icones</a></label>
+                        <label class="form-label">Imagem da Categoria </label>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" name="images[]">
-                            <label class="custom-file-label"> Icone</label>
+                            <label class="custom-file-label"> Imagem de fundo</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Posição da imagem</label>
+                        <div class="custom-file">
+                            <select name="back-position" class="custom-file-input">
+                                <option value="top">Parte de cima</option>
+                                <option value="center">Meio</option>
+                                <option value="bottom">Parte de baixo</option>
+                            </select>
+                            <label class="custom-file-label">Posição da Imagem de fundo</label>
                         </div>
                     </div>
 

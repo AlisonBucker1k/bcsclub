@@ -213,8 +213,9 @@ class adminController extends Controller {
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 $title = addslashes($_POST['title']);
                 $icon = addslashes($_POST['icon']);
+                $back_position = addslashes($_POST['back-position']);
                 
-                if($a->insertNewCat($title, $icon, $_FILES)){
+                if($a->insertNewCat($title, $icon, $_FILES, $back_position)){
                     $dados['msg'] = "Categoria Adicionada!";
                 }
             }
@@ -248,8 +249,9 @@ class adminController extends Controller {
             if(isset($_POST['title']) && !empty($_POST['title'])){
                 $title = addslashes($_POST['title']);
                 $icon = addslashes($_POST['icon']);
+                $back_position = addslashes($_POST['back-position']);
                 
-                if($a->editCategory($title, $icon, $_FILES, $id)){
+                if($a->editCategory($title, $icon, $_FILES, $id, $back_position)){
                     $dados['msg'] = "Categoria Adicionada!";
                 }
             }

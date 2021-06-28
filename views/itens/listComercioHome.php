@@ -41,7 +41,7 @@
             </span> -->
         </li>
         <li class="d-flex align-items-center">
-            <i class=" <?php echo (!empty($categoryName['la-icon']))?$categoryName['la-icon']:'la la-cutlery';?> mr-1 listing-icon"></i><a href="<?php echo BASE_URL."categories/index/{$categoryName['id']}"?>" class="listing-cat-link"><?php echo $categoryName['title'];?></a>
+            <i class=" <?php echo (!empty($categoryName['laicon']))?$categoryName['laicon']:'la la-cutlery';?> mr-1 listing-icon"></i><a href="<?php echo BASE_URL."categories/index/{$categoryName['id']}"?>" class="listing-cat-link"><?php echo $categoryName['title'];?></a>
         </li>
     </ul>
     <ul class="info-list padding-top-20px">

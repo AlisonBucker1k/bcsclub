@@ -6,11 +6,11 @@
     <div class="overlay"></div><!-- end overlay -->
     <div id="fullscreen-slide-container">
         <ul class="slides-container">
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg1.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg2.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg03.jpg" alt=""></li>
-            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg04.jpg" alt=""></li>
-            <!-- <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/hero-bg5.jpg" alt=""></li> -->
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg1.png" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg2.png" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg3.png" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg4.png" alt=""></li>
+            <li><img class="lazy" src="<?php echo BASE_URL.'assets/blog/'?>images/img-loading.png" data-src="<?php echo BASE_URL.'assets/blog/'?>images/banners/bg5.png" alt=""></li>
         </ul>
     </div><!-- End fullscreen-slide-container -->
     <div class="container">
@@ -21,15 +21,10 @@
                         <h2 class="sec__title cd-headline slide">
                             Você está procurando por
                             <span class="cd-words-wrapper py-0">
-                            <b class="is-visible">Hoteis?</b>
-                            <b>Restaurantes?</b>
-                            <b>Bares?</b>
-                            <b>Salões?</b>
-                            <b>Apartamentos?</b>
-                            <b>Viagens?</b>
-                            <b>Negócios?</b>
-                            <b>Academias?</b>
-                            <b>BCSClub</b>
+                            <?php for($q=0;$q < count($listCategories); $q++):?>
+                                <b class="<?php echo ($q == 0)?'is-visible':''?>"><?php echo $listCategories[$q]['title'];?>?</b>
+                            <?php endfor;?>
+                            <b>BCSClub!</b>
                         </span>
                         </h2>
                         <p class="sec__desc">
@@ -102,7 +97,7 @@
                         <?php $qt=1; foreach($listCategories as $item):?>
                             <div class="hero-category-item">
                                 <a href="<?php echo BASE_URL."categories/index/".$item['id'];?>" class="d-block hero-cat-link hover-y">
-                                    <span class="icon-element bg-<?php echo $qt;?> mx-auto"><i class="<?php echo (!empty($item['la_icon']))?$item['la_icon']:'la la-building-o';?>"></i></span>
+                                    <span class="icon-element bg-<?php echo $qt;?> mx-auto"><i class="<?php echo (!empty($item['laicon']))?$item['laicon']:'la la-building-o';?>"></i></span>
                                     <?php echo $item['title'];?>
                                 </a>
                             </div>
