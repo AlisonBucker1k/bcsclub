@@ -110,6 +110,8 @@ class adminController extends Controller {
                 $bairro = addslashes($_POST['bairro']);
                 $rua = addslashes($_POST['rua']);
 
+                $numero = addslashes($_POST['numero']);
+
                 $localizacao = addslashes($_POST['local']);
                 $estado = addslashes($_POST['estado']);
 
@@ -117,7 +119,7 @@ class adminController extends Controller {
 
                 // $images = (!empty($_FILES['images']))?$_FILES['images']:array();
 
-                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $cep, $bairro, $rua);
+                $idPost = $a->insertPost($title, $category, $body, $description, $althor_name, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $cep, $bairro, $rua, $numero);
                 if($idPost){
                     header('Location: '.BASE_URL."admin/editPost/".$idPost."/?status=success");
                 }
@@ -166,6 +168,8 @@ class adminController extends Controller {
                 $bairro = addslashes($_POST['bairro']);
                 $rua = addslashes($_POST['rua']);
 
+                $numero = addslashes($_POST['numero']);
+
                 $localizacao = addslashes($_POST['local']);
                 $estado = addslashes($_POST['estado']);
 
@@ -173,7 +177,7 @@ class adminController extends Controller {
 
                 // $images = (!empty($_FILES))?$_FILES['images']:array();
                 
-                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $id, $cep, $bairro, $rua)){
+                if($a->editPost($title, $description, $category, $body, $author, $link, $featured, $email, $phone, $map, $localizacao, $estado, $_FILES, $discount, $id, $cep, $bairro, $rua, $numero)){
                     $dados['msg'] = "Post Editado"; 
                 }
             }

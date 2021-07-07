@@ -124,6 +124,16 @@
 
                             <div class="col-lg-12">
                                 <div class="input-box">
+                                    <label class="label-text">Número</label>
+                                    <div class="form-group">
+                                        <!-- <span class="la la-briefcase form-icon"></span> -->
+                                        <input required="" class="form-control" type="text" name="numero" placeholder="1758" id="numero" value="<?php echo (!empty($dataPost['numero']))?$dataPost['numero']:'';?>">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+
+                            <div class="col-lg-12">
+                                <div class="input-box">
                                     <label class="label-text">Cidade do Comércio</label>
                                     <div class="form-group">
                                         <!-- <span class="la la-briefcase form-icon"></span> -->
@@ -291,6 +301,8 @@ if (!("erro" in conteudo)) {
     document.getElementById('cidade').value=(conteudo.localidade);
     // document.getElementById('uf').value=(conteudo.uf);
     $("#estado").val(conteudo.uf).change();
+
+    $('#numero').focus();
 
     // document.getElementById('ibge').value=(conteudo.ibge);
 } //end if.

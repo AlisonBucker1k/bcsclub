@@ -90,7 +90,7 @@
                 <div class="highlighted-categories">
                     <div class="d-flex align-items-end justify-content-center highlight-search-desc py-5 text-center">
                         <img src="<?php echo BASE_URL.'assets/blog'?>images/arrow-shape.png" alt="" class="mr-5 cat-arrow-icon">
-                        <h5 class="highlighted__title">Está em duvida do que procurar? <br> Veja abaixo nossas categorias em destaque!</h5>
+                        <h5 class="highlighted__title">Está em dúvida do que procurar? <br> Veja abaixo nossas categorias em destaque!</h5>
                     </div>
                     <div class="highlight-lists d-flex justify-content-center mt-4">
                         
@@ -520,7 +520,7 @@
                     </div>
                     <h2 class="sec__title">O que nós oferecemos?</h2>
                     <p class="sec__desc">
-                        O BCS Club, é a mais nova plataforma de Negócops On Line, Com a maior abrangência do Espírito Santo. <br>
+                        O BCS Club, é a mais nova plataforma de Negócios On Line, Com a maior abrangência do Espírito Santo. <br>
                         Nossos Objetivos: Proporcionar aos nossos clientes produtos e serviços de qualidade e ao menor custo; <br>
                         Contribuir com o aumento do volume de vendas do Comércio Local e Regional.
                     </p>
