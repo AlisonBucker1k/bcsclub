@@ -29,7 +29,7 @@
                         <a href="<?php echo BASE_URL."showcase/index/".$id;?>"><?php echo $title;?></a>
                         <i class="la la-check-circle ml-1" data-toggle="tooltip" data-placement="top" title="Claimed"></i>
                     </h4>
-                    <p class="card-sub"><a href="#"><i class="la la-map-marker mr-1 text-color-2"></i><?php echo "{$rua}, {$bairro},  {$localizacao}, {$estado}";?></a></p>
+                    <p class="card-sub"><a href="#"><i class="la la-map-marker mr-1 text-color-2"></i><?php echo "{$rua}, {$bairro} ".(!empty($numero)?'Nº':'')." {$numero} {$localizacao}, {$estado}";?></a></p>
                     <ul class="listing-meta d-flex align-items-center">
                         <li class="d-flex align-items-center">
                             <span class="rate flex-shrink-0">5.0</span>

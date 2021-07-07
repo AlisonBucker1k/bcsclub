@@ -239,7 +239,7 @@
                                 <li><i class="la la-phone mr-2 text-color-2 font-size-18"></i><a href="tel: <?php echo $dataPost['telefone']?>"><?php echo "{$dataPost['telefone']}";?></a></li>    
                             <?php endif;?>
                             <?php if(!empty($dataPost['localizacao'])):?>
-                                <li><i class="la la-map-signs mr-2 text-color-2 font-size-18"></i><a href=""><?php echo "{$dataPost['rua']}, {$dataPost['localizacao']}, {$dataPost['estado']}, {$dataPost['cep']}";?></a></li>
+                                <li><i class="la la-map-signs mr-2 text-color-2 font-size-18"></i><a href=""><?php echo "{$dataPost['rua']} {$dataPost['numero']},git  {$dataPost['localizacao']}, {$dataPost['estado']}, {$dataPost['cep']}";?></a></li>
                             <?php endif;?>
 
                             <!-- <li><i class="la la-cutlery mr-2 text-color-2 font-size-18"></i><a href="#">Full menu <i class="la la-external-link ml-1"></i></a></li>
