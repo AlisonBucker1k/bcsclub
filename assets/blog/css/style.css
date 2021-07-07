@@ -8375,7 +8375,10 @@ div.datedropper {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .review-content {
-    display: block !important; } }
+    display: block !important; }
+    .full-screen-slider-area{
+      margin-top: 165px !important;
+    }  }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .review-bars {
