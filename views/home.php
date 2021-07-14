@@ -312,7 +312,7 @@
                     <div class="info-content">
                         <h4 class="info__title">Veja tudo o que precisa saber</h4>
                         <p class="info__desc">
-                            Veja tudo o que você precisa saber sobre os estabelecimentos BCSClub, e escolha o que mais atendeu as suas necessidades!
+                            Veja tudo o que você precisa saber sobre os estabelecimentos BCSClub, e escolha o que mais atende as suas necessidades!
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->

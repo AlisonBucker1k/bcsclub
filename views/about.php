@@ -151,12 +151,12 @@
             <div class="col-lg-10 mx-auto">
                 <div class="about-content text-center">
                     <div class="section-heading">
-                        <h2 class="sec__title">Oportuinizar novos negócios, fortalecer o comércio e o Empreendedorismo.</h2>
+                        <h2 class="sec__title">Formar novos negócios, fortalecer o comércio e o Empreendedorismo.</h2>
                         <p class="sec__desc">
-                            A plataforma BCS Club, está presente em todos os municipios da Grande Vitória, trazendo para a sua plataforma negocios que vão desde microempreendedores até grandes empresas, ambas voltadas ao comércio varegista quato a prestação de serviços.
+                            A plataforma BCS Club, está presente em todos os municipios da Grande Vitória, trazendo para a sua plataforma negócios que vão desde microempreendedores até grandes empresas, ambas voltadas ao comércio varejista e prestação de serviços.
                         </p>
                         <p class="sec__desc">
-                            A presença da marca dos seus clientes em nossa plataforma, possibilita o aumento exponencial dos resultados financeiros para o anuncante, e gerar valor aos nossos clientes.
+                            A presença da marca dos seus clientes em nossa plataforma, possibilita o aumento exponencial dos resultados financeiros para o anunciante, e gerar valor aos nossos clientes.
                         </p>
                     </div><!-- end section-heading -->
                 </div>
@@ -400,7 +400,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading text-center">
-                    <h2 class="sec__title">Porque escolher nossos serviços?</h2>
+                    <h2 class="sec__title">Por que escolher nossos serviços?</h2>
                     <p class="sec__desc">
                         Somos uma plataforma completa para o seu negócio e para o seu cliente!<br>
                         BCS Club, levando o produto ou serviço que você procura, sem gastar a mais por isso!
@@ -443,7 +443,7 @@
                     <div class="info-content">
                         <h4 class="info__title">+ 20k de acessos diários</h4>
                         <p class="info__desc">
-                            Milhares de acessos por dia de nossos clientes em busca dos melhores descontos dos comercios credenciados BCS Club.
+                            Milhares de acessos por dia de nossos clientes em busca dos melhores descontos dos comércios credenciados BCS Club.
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -544,7 +544,7 @@
                     <div class="info-content">
                         <h4 class="info__title">Busca por categorias</h4>
                         <p class="info__desc">
-                            Realize sua busca através de nosso sistema de busca, selecione a categoria que desejar e confira os melhores descontos!
+                            Realize sua busca através de nosso sistema de pesquisa, selecione a categoria que deseja e confira os melhores descontos!
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -607,7 +607,7 @@
                     <div class="info-content">
                         <h4 class="info__title">Chat On-line</h4>
                         <p class="info__desc">
-                            Se precisar de unm atendimento mais especifico sobre um parceiro ou sobre nossa plataforma, estaremos aqui para ajuda-lo!
+                            Se precisar de um atendimento mais específico sobre um parceiro ou sobre nossa plataforma, estaremos aqui para ajuda-lo!
                         </p>
                     </div><!-- end info-content -->
                 </div><!-- end info-box -->
@@ -732,7 +732,7 @@
                     </h2>
                     <p class="sec__desc mb-2">
                         Ops! Não encontrei o produto ou serviço que preciso!<br>
-                        Não se preocupe, atraves da suas informações faremos a pesquisa pela sua necessidade e lhe traremos mais informações.
+                        Não se preocupe, através da suas informações faremos a pesquisa pela sua necessidade e lhe traremos mais informações.
                     </p>
                 </div><!-- end section-heading -->
                 <div class="btn-box pt-4">
