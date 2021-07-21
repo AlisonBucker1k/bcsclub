@@ -209,7 +209,7 @@
                     <h4 class="footer__title">Links</h4>
                     <div class="stroke-shape mb-3"></div>
                     <ul class="list-items">
-                        <li><a href="<?php echo "{BASE_URL}";?>">Home</a></li>
+                        <li><a href="<?php echo BASE_URL;?>">Home</a></li>
                         <li><a href="<?php echo "{BASE_URL}pages/about";?>">Sobre Nós</a></li>
                         <li><a href="<?php echo "{BASE_URL}pages/contato";?>">Contato</a></li>
                         <li><a href="<?php echo "{BASE_URL}pages/categories";?>">Categorias</a></li>

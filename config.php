@@ -23,7 +23,7 @@ if(ENVIRONMENT == 'development') {
 }
 
 $config['facebook'] = "https://www.facebook.com/BCS-Club-103043408701685/";
-$config['twitter'] = "";
+$config['twitter'] = "https://twitter.com/bcs_bank";
 $config['instagram'] = "https://www.instagram.com/bcs_club/";
 
 define("SITE_NAME", 'BCSClub');
