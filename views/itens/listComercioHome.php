@@ -48,7 +48,7 @@
         <?php if(!empty($link)):?>
             <li>
                 <span class="<?php echo (!empty($link))?'la la-link icon':'icon';?>"></span>
-                <a href="<?php echo 'https://'.$link;?>" target="_blank"> <?php echo 'www.'.$link;?></a>
+                <a href="<?php echo 'https://'.$link;?>" target="_blank"> <?php echo 'www.'.substr($link, 0, 27);?></a>
             </li>
         <?php endif;?>
         <?php if(!empty($telefone)):?>
