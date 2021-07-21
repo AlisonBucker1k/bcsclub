@@ -7,7 +7,7 @@
 <div class="card-image" style="min-width: 368px; min-height: 294.41px;">
     <a href="<?php echo BASE_URL."showcase/index/".$id;?>" class="d-block">
         <?php if(!empty($images[0]['urlf'])):?>
-            <img src="<?php echo BASE_URL."media/posts/{$images[0]['urlf']}";?>" class="card__img" alt="<?php echo $title;?>">  
+            <img height="294.41" src="<?php echo BASE_URL."media/posts/{$images[0]['urlf']}";?>" class="card__img" alt="<?php echo $title;?>">  
         <?php else:?>
             <img src="<?php echo BASE_URL."assets/blog/images/4243275ad9ae9683fffa91531e297de18b52ed21_hq.gif";?>" style="max-width: 368; min-height: 294.41px;" class="card__img" alt="">  
         <?php endif;?>

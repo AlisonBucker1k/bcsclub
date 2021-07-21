@@ -134,7 +134,7 @@
                         </div>
                         <h2 class="sec__title">O principal fator que nos torna um diferencial:</h2>
                         <p class="sec__desc">
-                            Auxiliar a todos que precisam se adaptar às n ovas exigências do mercado.
+                            Auxiliar a todos que precisam se adaptar às novas exigências do mercado.
                         </p>
                          <p class="sec__desc">
                             O sistema BCS Club, além de oferecer aos seus clientes uma plataforma comercial com o que há de melhor em produtos e serviços, oferece também aos seus parceiros de forma GRATUITA, conforto e segurança através de seguros para si e para sua família.

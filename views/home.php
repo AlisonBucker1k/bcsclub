@@ -521,7 +521,7 @@
                     <h2 class="sec__title">O que nós oferecemos?</h2>
                     <p class="sec__desc">
                         O BCS Club, é a mais nova plataforma de Negócios On Line, Com a maior abrangência do Espírito Santo. <br>
-                        Nossos Objetivos: Proporcionar aos nossos clientes produtos e serviços de qualidade e ao menor custo; <br>
+                        Nossos Objetivos: Proporcionar aos nossos clientes produtos e serviços de qualidade e ao menor custo. <br>
                         Contribuir com o aumento do volume de vendas do Comércio Local e Regional.
                     </p>
                 </div><!-- end section-heading -->
@@ -826,14 +826,14 @@
                          <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img-bckcode.png" alt="">
                          <div class="map-pin-bg"></div>
                     </div><!-- end map-marker -->
-                    <div class="map-marker map-marker-5 bounce">
+                    <!-- <div class="map-marker map-marker-5 bounce">
                          <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img5.jpg" alt="">
                          <div class="map-pin-bg"></div>
-                    </div><!-- end map-marker -->
-                    <div class="map-marker map-marker-6 bounce">
+                    </div>end map-marker -->
+                    <!-- <div class="map-marker map-marker-6 bounce">
                          <img src="<?php echo BASE_URL.'assets/blog/';?>images/small-img6.jpg" alt="">
                          <div class="map-pin-bg"></div>
-                    </div><!-- end map-marker -->
+                    </div>end map-marker -->
                 </div><!-- end mobile-img -->
             </div><!-- end col-lg-6 -->
         </div><!-- end row -->
