@@ -22,7 +22,7 @@ if(ENVIRONMENT == 'development') {
 	$config['dbpass'] = 'Reo$+vZ-#=pZ';
 }
 
-$config['facebook'] = "";
+$config['facebook'] = "https://www.facebook.com/BCS-Club-103043408701685/";
 $config['twitter'] = "";
 $config['instagram'] = "https://www.instagram.com/bcs_club/";
 
