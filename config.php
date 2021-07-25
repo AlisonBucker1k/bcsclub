@@ -25,6 +25,7 @@ if(ENVIRONMENT == 'development') {
 $config['facebook'] = "https://www.facebook.com/BCS-Club-103043408701685/";
 $config['twitter'] = "https://twitter.com/bcs_bank";
 $config['instagram'] = "https://www.instagram.com/bcs_club/";
+$config['max-destaque'] = 4;
 
 define("SITE_NAME", 'BCSClub');
 define("PATH_SITE", dirname(__FILE__));

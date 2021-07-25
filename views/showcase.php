@@ -5,7 +5,7 @@
     <div class="full-screen-slider owl-trigger-action owl-trigger-action-2">
         <?php foreach($imagesPost as $q => $img):?>
             <a href="<?php echo BASE_URL."media/posts/".$img['urlf'];?>" class="fs-slider-item d-block" data-fancybox="gallery" data-caption="<?php echo $dataPost['title'];?>">
-                <img src="<?php echo BASE_URL."media/posts/".$img['urlf'];?>" alt="single listing image">
+                <img src="<?php echo BASE_URL."media/posts/".$img['urlf'];?>" alt="single listing image" height="325px">
             </a><!-- end fs-slider-item -->
         <?php endforeach;?>
         

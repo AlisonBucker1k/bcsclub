@@ -125,6 +125,23 @@ class Admin extends Model {
         return $array;
     }
 
+    public function listPostFeaturedWPagination($offset, $limit){
+        $sql = "SELECT * FROM posts WHERE featured = :featured LIMIT $offset, $limit";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(':featured', 1);
+        $sql->execute();
+
+        if($sql->rowCount() > 0){
+            $array = $sql->fetchAll();
+            
+            foreach($array as $key => $item){
+                $array[$key]['images'] = $this->getImagesByProductId($item['id']);
+            }
+        }
+
+        return $array;
+    }
+
     public function getImagesByProductId($id){
         $array = array();
 
